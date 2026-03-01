@@ -1,64 +1,130 @@
+import 'dotenv/config';
 import pkg from 'whatsapp-web.js';
 import qrcode from 'qrcode-terminal';
-import ollama from 'ollama';
+import Groq from 'groq-sdk';
 import axios from 'axios';
 import { readFile } from 'fs/promises';
 
 const { Client, LocalAuth } = pkg;
 
-const client = new Client({
-    authStrategy: new LocalAuth()
-});
-
-client.on('ready', () => console.log('[STATUS] WhatsApp client is ready'));
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 const systemPrompt = await readFile('./system_prompt.txt', 'utf-8');
 
-client.on('message_create', async (msg) => {
-    if (msg.body.startsWith("!summarise") && msg.fromMe) {
-        let message_collection = [];
-        let number_of_messages = msg.body.split(" ")[1];
-        let chat = await msg.getChat();
-        let asc_messages = await chat.fetchMessages({ limit: number_of_messages });
+let _io = null;
+let _status = 'loading'; // 'loading' | 'qr' | 'connected'
+let _qr = null;
 
-        // Use a for ... of loop instead of forEach
-        for (const message of asc_messages) {
-            let contact = await message.getContact();
-            let contact_name = contact.name;
-            message_collection.push(`${message.author} aka ${contact_name} : ${message.body}`);
-        }
-	message_collection.pop();
-	console.log(message_collection.join("\n"))
-        console.log("[STATUS] Messages fetched and recorded");
+function emit(level, message) {
+    console.log(message);
+    if (_io) _io.emit('log', { level, message });
+}
 
-        // AI processing begins here
-        console.log("[STATUS] Sending messages to AI...");
+const client = new Client({ authStrategy: new LocalAuth() });
 
-        const ai_response = await ollama.generate({
-            model: 'deepseek-r1',
-            system: systemPrompt.trim(),
-            prompt: message_collection.join('\n'),
+client.on('qr', qr => {
+    _status = 'qr';
+    _qr = qr;
+    qrcode.generate(qr, { small: true });
+    if (_io) _io.emit('qr', qr);
+});
+
+client.on('ready', () => {
+    _status = 'connected';
+    _qr = null;
+    emit('success', '[STATUS] WhatsApp client is ready');
+    if (_io) _io.emit('ready');
+});
+
+client.on('disconnected', () => {
+    _status = 'loading';
+    emit('error', '[STATUS] WhatsApp client disconnected');
+});
+
+async function summariseChat(chat, limit, socketId) {
+    let message_collection = [];
+    let asc_messages = await chat.fetchMessages({ limit });
+
+    for (const message of asc_messages) {
+        let contact = await message.getContact();
+        let contact_name = contact.name || contact.pushname || message.author || 'Unknown';
+        message_collection.push(`${message.author ?? contact_name} aka ${contact_name} : ${message.body}`);
+    }
+    message_collection.pop();
+
+    emit('info', '[STATUS] Messages fetched and recorded');
+    emit('info', '[STATUS] Sending messages to AI...');
+
+    const ai_response = await groq.chat.completions.create({
+        model: process.env.GROQ_MODEL,
+        messages: [
+            { role: 'system', content: systemPrompt.trim() },
+            { role: 'user', content: message_collection.join('\n') }
+        ],
+    });
+
+    const summary = ai_response.choices[0].message.content.replace(/<think>.*?<\/think>/gs, '').trim();
+    emit('success', '[STATUS] Summary generated');
+    return summary;
+}
+
+async function sendNtfy(summary) {
+    try {
+        const response = await axios.post(process.env.NTFY_TOPIC, summary, {
+            headers: {
+                'Title': process.env.NTFY_TITLE,
+                'Priority': process.env.NTFY_PRIORITY,
+            },
         });
+        emit('success', '[STATUS] Notification sent: ' + response.data.message);
+    } catch (error) {
+        emit('error', '[STATUS] Error sending notification: ' + error.message);
+    }
+}
 
-        let notif_content = ai_response.response.replace(/<think>.*?<\/think>/gs, '').trim();
-        console.log("[STATUS] Sending notification via NTFY...");
+client.on('message_create', async (msg) => {
+    emit('info', `[DEBUG] Message received: "${msg.body}" | fromMe: ${msg.fromMe}`);
+    if ((msg.body.startsWith("!summarise") || msg.body.startsWith("!summarize")) && msg.fromMe) {
+        const parts = msg.body.split(" ");
+        const secondArg = parts[1];
+        let chat, number_of_messages;
 
-        // Axios POST request to send the summary
+        if (!secondArg) {
+            chat = await msg.getChat();
+            number_of_messages = parseInt(process.env.DEFAULT_MESSAGE_LIMIT);
+        } else if (!isNaN(secondArg)) {
+            chat = await msg.getChat();
+            number_of_messages = parseInt(secondArg);
+        } else {
+            const lastArg = parts[parts.length - 1];
+            const hasCount = !isNaN(lastArg) && parts.length > 2;
+            number_of_messages = hasCount ? parseInt(lastArg) : parseInt(process.env.DEFAULT_MESSAGE_LIMIT);
+            const groupName = hasCount ? parts.slice(1, -1).join(" ") : parts.slice(1).join(" ");
+
+            emit('info', `[STATUS] Searching for chat: "${groupName}"`);
+            const allChats = await client.getChats();
+            chat = allChats.find(c => c.name?.toLowerCase() === groupName.toLowerCase())
+                || allChats.find(c => c.name?.toLowerCase().includes(groupName.toLowerCase()));
+
+            if (!chat) { emit('error', `[ERROR] No chat found matching "${groupName}"`); return; }
+            emit('info', `[STATUS] Found chat: "${chat.name}"`);
+        }
+
         try {
-            const response = await axios.post('https://ntfy.sh/feychat', notif_content, {
-                headers: {
-                    'Title': 'WhatsApp summary',
-                    'Priority': 'high',
-                },
-            });
-            console.log('[STATUS] Notification sent: ', response.data.message);
-        } catch (error) {
-            console.error('[STATUS] Error sending notification: ', error);
+            const summary = await summariseChat(chat, number_of_messages);
+            await sendNtfy(summary);
+            if (_io) _io.emit('summary_done', summary);
+        } catch (err) {
+            emit('error', '[ERROR] ' + err.message);
         }
     }
 });
 
-client.on('qr', qr => qrcode.generate(qr, { small: true }));
+export function init(io) {
+    _io = io;
+    client.initialize();
+}
 
-client.initialize();
+export { client, summariseChat, sendNtfy };
+export function getStatus() { return { status: _status, qr: _qr }; }
 

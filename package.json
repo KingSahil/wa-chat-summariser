@@ -4,6 +4,10 @@
   "description": "- iOS 18.3 update brings Apple Intelligence features to iPhone - In a move to bring the much awaited AI-enabled features to the iPhone, Apple rushes prototypes into production. - The result: insert images here - The result: Apple rolls back Apple Intelligence features not even n months after releasing them!",
   "main": "main.js",
   "scripts": {
+    "start": "node server.js",
+    "dev:server": "node server.js",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
     "test": "node ."
   },
   "repository": {
@@ -20,8 +24,13 @@
   "homepage": "https://github.com/syswraith/wa-chat-summariser#readme",
   "dependencies": {
     "axios": "^1.7.9",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "groq-sdk": "^0.37.0",
     "ollama": "^0.5.12",
     "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.8.3",
     "whatsapp-web.js": "^1.26.0"
   }
 }
