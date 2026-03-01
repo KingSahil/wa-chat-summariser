@@ -20,7 +20,21 @@ function emit(level, message) {
     if (_io) _io.emit('log', { level, message });
 }
 
-const client = new Client({ authStrategy: new LocalAuth() });
+const client = new Client({
+    authStrategy: new LocalAuth(),
+    puppeteer: {
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-gpu',
+            '--no-first-run',
+            '--no-zygote',
+            '--single-process',
+        ],
+    },
+});
 
 client.on('qr', qr => {
     _status = 'qr';

@@ -11,9 +11,20 @@ import { init, client, summariseChat, sendNtfy, getStatus } from './main.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const httpServer = createServer(app);
-const io = new Server(httpServer, { cors: { origin: '*' } });
+const io = new Server(httpServer, {
+    cors: {
+        origin: process.env.ALLOWED_ORIGINS
+            ? process.env.ALLOWED_ORIGINS.split(',')
+            : '*',
+        methods: ['GET', 'POST'],
+    },
+});
 
-app.use(cors());
+app.use(cors({
+    origin: process.env.ALLOWED_ORIGINS
+        ? process.env.ALLOWED_ORIGINS.split(',')
+        : '*',
+}));
 app.use(express.json());
 
 // Serve built frontend

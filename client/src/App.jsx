@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSocket } from './hooks/useSocket';
+import { api } from './api';
 import QRScreen from './components/QRScreen';
 import Sidebar from './components/Sidebar';
 import ChatPanel from './components/ChatPanel';
@@ -13,8 +14,7 @@ export default function App() {
 
     useEffect(() => {
         if (status === 'connected') {
-            fetch('/api/chats')
-                .then(r => r.json())
+            api.get('/api/chats')
                 .then(data => setChats(Array.isArray(data) ? data : []))
                 .catch(() => {});
         }

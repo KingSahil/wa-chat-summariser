@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { io } from 'socket.io-client';
 
+// In dev: proxy handles routing to localhost:3000
+// In production (Vercel): VITE_BACKEND_URL = your Cloudflare tunnel URL
+const BACKEND = import.meta.env.VITE_BACKEND_URL || '';
+
 export function useSocket() {
     const [status, setStatus] = useState('loading');
     const [qr, setQr] = useState(null);
@@ -9,7 +13,7 @@ export function useSocket() {
     const socketRef = useRef(null);
 
     useEffect(() => {
-        const socket = io({ path: '/socket.io' });
+        const socket = io(BACKEND, { path: '/socket.io' });
         socketRef.current = socket;
 
         socket.on('status', s => setStatus(s));

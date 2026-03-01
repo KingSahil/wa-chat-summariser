@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { X, Save, Eye, EyeOff } from 'lucide-react';
+import { api } from '../api';
 
 const FIELDS = [
     { key: 'GROQ_API_KEY', label: 'Groq API Key', type: 'password' },
@@ -17,16 +18,12 @@ export default function SettingsModal({ onClose }) {
     const [saved, setSaved] = useState(false);
 
     useEffect(() => {
-        fetch('/api/settings').then(r => r.json()).then(d => setValues(d));
+        api.get('/api/settings').then(d => setValues(d));
     }, []);
 
     const handleSave = async () => {
         setSaving(true);
-        await fetch('/api/settings', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(values),
-        });
+        await api.post('/api/settings', values);
         setSaving(false);
         setSaved(true);
         setTimeout(() => setSaved(false), 2000);

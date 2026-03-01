@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Sparkles, Loader2, Users, User } from 'lucide-react';
+import { api } from '../api';
 import LogTerminal from './LogTerminal';
 import SummaryCard from './SummaryCard';
 
@@ -18,11 +19,7 @@ export default function ChatPanel({ chat, logs, summary, setSummary }) {
         setError(null);
         setSummary(null);
         try {
-            const res = await fetch('/api/summarise', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ chatId: chat.id, limit }),
-            });
+            const res = await api.post('/api/summarise', { chatId: chat.id, limit });
             const data = await res.json();
             if (!res.ok) throw new Error(data.error || 'Failed');
             setSummary(data.summary);
