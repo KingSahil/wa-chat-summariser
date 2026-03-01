@@ -15,6 +15,10 @@ let _io = null;
 let _status = 'loading'; // 'loading' | 'qr' | 'connected'
 let _qr = null;
 
+// Auto-summary: track unread group message counts per chatId
+const unreadCounts = new Map();
+const AUTO_THRESHOLD = parseInt(process.env.AUTO_SUMMARY_THRESHOLD || '20');
+
 function emit(level, message) {
     console.log(message);
     if (_io) _io.emit('log', { level, message });
@@ -98,6 +102,31 @@ async function sendNtfy(summary) {
 
 client.on('message_create', async (msg) => {
     emit('info', `[DEBUG] Message received: "${msg.body}" | fromMe: ${msg.fromMe}`);
+
+    // Auto-summary: count incoming group messages (not from me)
+    if (!msg.fromMe) {
+        const chat = await msg.getChat();
+        if (chat.isGroup) {
+            const id = chat.id._serialized;
+            const count = (unreadCounts.get(id) || 0) + 1;
+            unreadCounts.set(id, count);
+            emit('info', `[AUTO] "${chat.name}" unread: ${count}/${AUTO_THRESHOLD}`);
+
+            if (count >= AUTO_THRESHOLD) {
+                unreadCounts.set(id, 0); // reset before async work
+                emit('info', `[AUTO] Threshold hit for "${chat.name}" — generating summary...`);
+                try {
+                    const summary = await summariseChat(chat, AUTO_THRESHOLD);
+                    const ntfyText = `📋 ${chat.name}\n\n${summary}`;
+                    await sendNtfy(ntfyText);
+                    if (_io) _io.emit('summary_done', summary);
+                } catch (err) {
+                    emit('error', '[AUTO ERROR] ' + err.message);
+                }
+            }
+        }
+    }
+
     if ((msg.body.startsWith("!summarise") || msg.body.startsWith("!summarize")) && msg.fromMe) {
         const parts = msg.body.split(" ");
         const secondArg = parts[1];
