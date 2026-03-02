@@ -24,12 +24,21 @@ export default function App() {
         return <QRScreen qr={qr} status={status} />;
     }
 
+    function handleSelectChat(chat) {
+        setSelectedChat(chat);
+        if (chat.unreadCount > 0) {
+            api.post(`/api/chats/${chat.id}/read`)
+                .catch(() => {});
+            setChats(prev => prev.map(c => c.id === chat.id ? { ...c, unreadCount: 0 } : c));
+        }
+    }
+
     return (
         <div className="flex h-screen overflow-hidden">
             <Sidebar
                 chats={chats}
                 selectedId={selectedChat?.id}
-                onSelect={setSelectedChat}
+                onSelect={handleSelectChat}
                 onSettings={() => setShowSettings(true)}
             />
             <ChatPanel

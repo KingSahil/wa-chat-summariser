@@ -6,7 +6,7 @@ import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { writeFile, readFile } from 'fs/promises';
-import { init, client, summariseChat, sendNtfy, getStatus } from './main.js';
+import { init, client, summariseChat, sendNtfy, getStatus, resetUnreadCount } from './main.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -51,6 +51,21 @@ app.get('/api/chats', async (req, res) => {
             timestamp: c.timestamp,
         }));
         res.json(payload);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+app.post('/api/chats/:id/read', async (req, res) => {
+    try {
+        const { status } = getStatus();
+        if (status !== 'connected') return res.status(503).json({ error: 'WhatsApp not connected yet' });
+        const chats = await client.getChats();
+        const chat = chats.find(c => c.id._serialized === req.params.id);
+        if (!chat) return res.status(404).json({ error: 'Chat not found' });
+        await chat.sendSeen();
+        resetUnreadCount(req.params.id);
+        res.json({ ok: true });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }

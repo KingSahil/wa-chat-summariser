@@ -166,6 +166,7 @@ export function init(io) {
     client.initialize();
 }
 
+export function resetUnreadCount(chatId) { unreadCounts.set(chatId, 0); }
 export { client, summariseChat, sendNtfy };
 export function getStatus() { return { status: _status, qr: _qr }; }
 
