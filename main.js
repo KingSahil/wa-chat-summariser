@@ -57,24 +57,33 @@ client.on('disconnected', () => {
     emit('error', '[STATUS] WhatsApp client disconnected');
 });
 
-async function summariseChat(chat, limit, socketId) {
+async function summariseChat(chat, limit, detailed = false) {
     let message_collection = [];
     let asc_messages = await chat.fetchMessages({ limit });
 
     for (const message of asc_messages) {
-        let contact = await message.getContact();
-        let contact_name = contact.name || contact.pushname || message.author || 'Unknown';
-        message_collection.push(`${message.author ?? contact_name} aka ${contact_name} : ${message.body}`);
+        if (!message.body) continue; // skip system/empty messages
+        try {
+            let contact = await message.getContact();
+            let contact_name = contact.name || contact.pushname || message.author || 'Unknown';
+            message_collection.push(`${message.author ?? contact_name} aka ${contact_name} : ${message.body}`);
+        } catch {
+            // skip messages where contact cannot be resolved (system events, etc.)
+        }
     }
     message_collection.pop();
 
     emit('info', '[STATUS] Messages fetched and recorded');
     emit('info', '[STATUS] Sending messages to AI...');
 
+    const detailPrefix = detailed
+        ? 'Provide a DETAILED, thorough summary covering all topics, decisions, questions asked, and important context. Do not omit anything significant.\n\n'
+        : '';
+
     const ai_response = await groq.chat.completions.create({
         model: process.env.GROQ_MODEL,
         messages: [
-            { role: 'system', content: systemPrompt.trim() },
+            { role: 'system', content: detailPrefix + systemPrompt.trim() },
             { role: 'user', content: message_collection.join('\n') }
         ],
     });
@@ -103,7 +112,13 @@ client.on('message_create', async (msg) => {
 
     // Auto-summary: count incoming group messages (not from me)
     if (!msg.fromMe) {
-        const chat = await msg.getChat();
+        let chat;
+        try {
+            chat = await msg.getChat();
+        } catch (err) {
+            emit('error', '[AUTO] Failed to get chat (possibly a Channel with missing metadata): ' + err.message);
+            return;
+        }
         if (chat.isGroup) {
             const id = chat.id._serialized;
             const count = (unreadCounts.get(id) || 0) + 1;
@@ -126,7 +141,10 @@ client.on('message_create', async (msg) => {
     }
 
     if ((msg.body.startsWith("!summarise") || msg.body.startsWith("!summarize")) && msg.fromMe) {
-        const parts = msg.body.split(" ");
+        const raw = msg.body;
+        const detailed = raw.trimEnd().toLowerCase().endsWith(' detail');
+        const stripped = detailed ? raw.trimEnd().slice(0, -7).trimEnd() : raw; // remove trailing ' detail'
+        const parts = stripped.split(" ");
         const secondArg = parts[1];
         let chat, number_of_messages;
 
@@ -152,7 +170,7 @@ client.on('message_create', async (msg) => {
         }
 
         try {
-            const summary = await summariseChat(chat, number_of_messages);
+            const summary = await summariseChat(chat, number_of_messages, detailed);
             await sendNtfy(summary);
             if (_io) _io.emit('summary_done', summary);
         } catch (err) {
