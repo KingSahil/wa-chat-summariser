@@ -48,6 +48,7 @@ Good response: Ali and Sam are planning a trip together. Ali is clearly excited 
 Write in plain text, using natural paragraphs.
 DO NOT use Markdown, bullet points, or formatting symbols.
 DO NOT be vague — be specific about what happened.
+Keep the summary under 100 words. Be concise — prioritise the most important points and cut anything that is not essential.
 DO NOT limit yourself to a fixed number of sentences. Write as much as is needed to fully capture the conversation.
 Your output should leave the reader with a complete and accurate picture of what is going on in the chat.
 

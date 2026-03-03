@@ -1,15 +1,15 @@
-import 'dotenv/config';
+// dotenv is configured in entry.cjs (pkg bootstrap) before this module loads
 import pkg from 'whatsapp-web.js';
 import qrcode from 'qrcode-terminal';
 import Groq from 'groq-sdk';
 import axios from 'axios';
 import { readFile } from 'fs/promises';
+// systemPrompt is inlined by esbuild from generated-prompt.cjs (built by build.js)
+import systemPrompt from './generated-prompt.cjs';
 
 const { Client, LocalAuth } = pkg;
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-
-const systemPrompt = await readFile('./system_prompt.txt', 'utf-8');
 
 let _io = null;
 let _status = 'loading'; // 'loading' | 'qr' | 'connected'
@@ -108,8 +108,6 @@ async function sendNtfy(summary) {
 }
 
 client.on('message_create', async (msg) => {
-    emit('info', `[DEBUG] Message received: "${msg.body}" | fromMe: ${msg.fromMe}`);
-
     // Auto-summary: count incoming group messages (not from me)
     if (!msg.fromMe) {
         let chat;
@@ -119,6 +117,20 @@ client.on('message_create', async (msg) => {
             emit('error', '[AUTO] Failed to get chat (possibly a Channel with missing metadata): ' + err.message);
             return;
         }
+        emit('info', `[MSG] "${chat.name || chat.id.user}": ${msg.body}`);
+        // "whatsapp summary" trigger — anyone (not me) types it in any chat/group
+        if (msg.body.toLowerCase().trim() === 'whatsapp summary') {
+            emit('info', `[TRIGGER] "whatsapp summary" requested in "${chat.name || chat.id.user}"`);
+            try {
+                const summary = await summariseChat(chat, parseInt(process.env.DEFAULT_MESSAGE_LIMIT));
+                await chat.sendMessage(summary);
+                if (_io) _io.emit('summary_done', summary);
+            } catch (err) {
+                emit('error', '[TRIGGER ERROR] ' + err.message);
+            }
+            return;
+        }
+
         if (chat.isGroup) {
             const id = chat.id._serialized;
             const count = (unreadCounts.get(id) || 0) + 1;
@@ -138,6 +150,13 @@ client.on('message_create', async (msg) => {
                 }
             }
         }
+    }
+
+    if (msg.fromMe) {
+        try {
+            const chat = await msg.getChat();
+            emit('info', `[YOU → "${chat.name || chat.id.user}"]: ${msg.body}`);
+        } catch (err) { /* ignore */ }
     }
 
     if ((msg.body.startsWith("!summarise") || msg.body.startsWith("!summarize")) && msg.fromMe) {
