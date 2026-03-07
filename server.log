@@ -1,46 +1,256 @@
 [SERVER] Running at http://localhost:3000
 [STATUS] WhatsApp client is ready
-[DEBUG] Message received: "ithe punjabi aundi saaryan nu ver" | fromMe: false
-[AUTO] "studio privato" unread: 1/20
-[DEBUG] Message received: "all are compulsory punjabi students" | fromMe: false
-[AUTO] "studio privato" unread: 2/20
-[DEBUG] Message received: "nimish thodi saaare" | fromMe: false
-[AUTO] "studio privato" unread: 3/20
-[DEBUG] Message received: "Taahi likheya veerji 😂" | fromMe: false
-[AUTO] "studio privato" unread: 4/20
-[DEBUG] Message received: "Meaning." | fromMe: false
-[AUTO] "studio privato" unread: 5/20
-[DEBUG] Message received: "tu te kehaa si gaalaan not aalowed" | fromMe: false
-[AUTO] "studio privato" unread: 6/20
-[DEBUG] Message received: "Damn" | fromMe: true
-[DEBUG] Message received: "idiot" | fromMe: false
-[AUTO] "studio privato" unread: 7/20
-[DEBUG] Message received: "mental" | fromMe: false
-[AUTO] "studio privato" unread: 8/20
-[DEBUG] Message received: "stupid" | fromMe: false
-[AUTO] "studio privato" unread: 9/20
-[DEBUG] Message received: "💋" | fromMe: false
-[AUTO] "studio privato" unread: 10/20
-[DEBUG] Message received: "@182566476886137" | fromMe: false
-[AUTO] "studio privato" unread: 11/20
-[DEBUG] Message received: "das te dita" | fromMe: false
-[AUTO] "studio privato" unread: 12/20
-[DEBUG] Message received: "hun kinni waari dasa" | fromMe: false
-[AUTO] "studio privato" unread: 13/20
-[DEBUG] Message received: "Main vi mtlb hi daseya" | fromMe: false
-[AUTO] "studio privato" unread: 14/20
-[DEBUG] Message received: "Damnn" | fromMe: true
-[DEBUG] Message received: "😂😂😂" | fromMe: false
-[AUTO] "studio privato" unread: 15/20
-[DEBUG] Message received: "😆😆😆😆😆" | fromMe: false
-[AUTO] "studio privato" unread: 16/20
-[DEBUG] Message received: "koi na rahul bhaiii" | fromMe: false
-[AUTO] "studio privato" unread: 17/20
-[DEBUG] Message received: "🙏" | fromMe: false
-[AUTO] "studio privato" unread: 18/20
-[DEBUG] Message received: "Dekha?" | fromMe: true
-[DEBUG] Message received: "Nai" | fromMe: false
+[MSG] "WhatsApp" from WhatsApp: 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
+[YOU → "Vicky Gupta"]: https://suno.com/s/61UiuyRJeaz85yWF
+[WS] Client connected: ioP7cBp7QQ9RybWVAAAB
+[WS] Client connected: So1hagv7qiapBDuEAAAD
+[YOU → "Vicky Gupta"]: https://youtube.com/shorts/xIIt1ITNAQA?si=Rdl2CEHMGFNV8URK
+[MSG] "HackMol 7.0 | Find Teammate" from Anmol: Is there any specific format/template for the PPT?
+[AUTO] "HackMol 7.0 | Find Teammate" unread: 1/20
+[MSG] "HackMol 7.0 | Find Teammate" from 230206170238976@lid: Yes, will be shared after the team will start reviewing teams
+[AUTO] "HackMol 7.0 | Find Teammate" unread: 2/20
+[YOU → "Réunion!"]: 🤔
+[YOU → "status"]: https://youtube.com/shorts/_yfGb9uix1w
+[MSG] "status" from Kashish Gupta (Doctor): 
+[MSG] "Réunion!" from Navya: Kal uni aana he kisi ne Holi khelne?
+[AUTO] "Réunion!" unread: 1/20
+[MSG] "Sports DCET 2026" from Aniket Singh: Instructions & Fixture of Hockey.pdf
+[AUTO] "Sports DCET 2026" unread: 1/20
+[MSG] "Réunion!" from Samaira: Aap aa rahe ho navya😌😌
+[AUTO] "Réunion!" unread: 2/20
+[MSG] "Samaira" from Samaira: So cute yr 🥰🥰
+[MSG] "Réunion!" from Shashank: Nahiii
+[AUTO] "Réunion!" unread: 3/20
+[MSG] "Iron Man" from Iron Man: Awwwwww 🙁
+[YOU → "Prabhnoor Singh"]: Also sec c
+[MSG] "status" from Satish Delhi: https://www.facebook.com/share/r/1Lh5PVfEd6/?mibextid=wwXIfr
+[MSG] "Prabhnoor Singh" from Prabhnoor Singh: python mai pehle 2 sections aune a?
+[MSG] "Réunion!" from Shashank: Image to PDF 20260226 14.34.01.pdf
+[AUTO] "Réunion!" unread: 4/20
+[MSG] "Réunion!" from Shashank: ye kaffi haii ?
+[AUTO] "Réunion!" unread: 5/20
+[YOU → "Prabhnoor Singh"]: No bro
+[YOU → "Réunion!"]: Ha lagta to hai... Manraj ne jo bheje vobhi dekh lena
+[YOU → "1st year sec b (Unofficial)"]: 
+[MSG] "Réunion!" from Navya: Wah bhai
+[AUTO] "Réunion!" unread: 6/20
+[MSG] "Prabhnoor Singh" from Prabhnoor Singh: auna aj holi khelan uni?
+[MSG] "status" from Rajan: 
+[MSG] "Réunion!" from Raghav Sharma: Panga lena chahta he koi?
+[AUTO] "Réunion!" unread: 7/20
+[MSG] "Réunion!" from Samaira: Wowww yr🫡☺️☺️
+[AUTO] "Réunion!" unread: 8/20
+[MSG] "Réunion!" from Samaira: Logo ke upar fekne ka irada toh nhi hai😅😅🤨🤨
+[AUTO] "Réunion!" unread: 9/20
+[MSG] "Réunion!" from Samaira: Nvm 
+Happy Holi to all❤️
+[AUTO] "Réunion!" unread: 10/20
+[MSG] "Réunion!" from Shashank: nahi nahi
+[AUTO] "Réunion!" unread: 11/20
+[MSG] "Réunion!" from Shashank: ye to bus sajane ke liye hai
+[AUTO] "Réunion!" unread: 12/20
+[MSG] "Réunion!" from Shashank: khud ke upr hi maarega
+[AUTO] "Réunion!" unread: 13/20
+[MSG] "Réunion!" from Shashank: logo ke liye thodi haiii
+[AUTO] "Réunion!" unread: 14/20
+[YOU → "Réunion!"]: 🔥🔥
+[MSG] "Réunion!" from Shashank: happpa holoaaaa
+[AUTO] "Réunion!" unread: 15/20
+[MSG] "1st year sec b (Unofficial)" from Shashank: happy holi
+[AUTO] "1st year sec b (Unofficial)" unread: 1/20
+[MSG] "Réunion!" from Samaira: Acha shareef hai isliye😅😅😅
+[AUTO] "Réunion!" unread: 16/20
+[MSG] "Réunion!" from Raghav Sharma: Palekha teraa
+[AUTO] "Réunion!" unread: 17/20
+[MSG] "Réunion!" from Raghav Sharma: Happiiii houliiaaaa
+[AUTO] "Réunion!" unread: 18/20
+[MSG] "Réunion!" from Shashank: sarcasm tha mera
+[AUTO] "Réunion!" unread: 19/20
+[MSG] "Réunion!" from Shashank: aaj uni laathi cahrge hogya
+[AUTO] "Réunion!" unread: 20/20
+[AUTO] Threshold hit for "Réunion!" — generating summary...
+[MSG] "Réunion!" from Shashank: police dwaara
+[AUTO] "Réunion!" unread: 1/20
+[MSG] "Réunion!" from Raghav Sharma: Hn hn
+[AUTO] "Réunion!" unread: 2/20
+[MSG] "Réunion!" from Raghav Sharma: Ab baat ye he bahr hu or kapde leke ni aya
+[AUTO] "Réunion!" unread: 3/20
+[MSG] "Réunion!" from Shashank: bhar ?
+[AUTO] "Réunion!" unread: 4/20
+[MSG] "Réunion!" from Shashank: kdr?
+[AUTO] "Réunion!" unread: 5/20
+[MSG] "Réunion!" from Shashank: kehte id leke aao agar aan hai to
+[AUTO] "Réunion!" unread: 6/20
+[MSG] "Réunion!" from Raghav Sharma: Tbhi ni gyeaa
+[AUTO] "Réunion!" unread: 7/20
+[MSG] "Réunion!" from Raghav Sharma: Vaha gayatha pele
+[AUTO] "Réunion!" unread: 8/20
+[MSG] "Réunion!" from Raghav Sharma: Fir kisi k ghr hi a gya
+[AUTO] "Réunion!" unread: 9/20
+[MSG] "Réunion!" from Shashank: okkkieeee
+[AUTO] "Réunion!" unread: 10/20
+[MSG] "Réunion!" from Shashank: dammm
+[AUTO] "Réunion!" unread: 11/20
+[MSG] "Btech cse notes" from Manrajdeep Singh: Vocabulary and Report Writing.pdf
+[AUTO] "Btech cse notes" unread: 1/20
+[YOU → "Vicky Gupta"]: Hey, check out this product on Meesho! 
+
+Get upto 25% OFF on your first order. Also grab extra 25% on new products every 3 hours!
+
+https://ltl.sh/share/bniwxmaaaa?external_product_id=cjuyn8&product_name=product&shared_by=NTM4OTE2MjQw
+[MSG] "Just Chill Chill Just Chill" from Dhruv Sharma: Wishing you all a very happy holi
+[AUTO] "Just Chill Chill Just Chill" unread: 1/20
+[MSG] "Just Chill Chill Just Chill" from Samaira: 
+[AUTO] "Just Chill Chill Just Chill" unread: 2/20
+[YOU → "Just Chill Chill Just Chill"]: damn this group become more like old people sending festival pictures💀🤣
+[YOU → "Just Chill Chill Just Chill"]: 
+[MSG] "Just Chill Chill Just Chill" from vasukapila: 
+[AUTO] "Just Chill Chill Just Chill" unread: 3/20
+[MSG] "Just Chill Chill Just Chill" from vasukapila: 
+[AUTO] "Just Chill Chill Just Chill" unread: 4/20
+[MSG] "Just Chill Chill Just Chill" from vasukapila: 
+[AUTO] "Just Chill Chill Just Chill" unread: 5/20
+[YOU → "Just Chill Chill Just Chill"]: aye to hai
+[YOU → "Just Chill Chill Just Chill"]: nit jalandhar
+[YOU → "Just Chill Chill Just Chill"]: west bengal
+[YOU → "Just Chill Chill Just Chill"]: madhya pradehs
+[YOU → "Just Chill Chill Just Chill"]: @182566476886137
+[MSG] "Just Chill Chill Just Chill" from Dhruv Sharma: Bhaijan kya karein kuch toh karna pdega group active karne ke liye koi achee hackathon vagera aa hi nahi rahe
+[AUTO] "Just Chill Chill Just Chill" unread: 6/20
+[MSG] "Just Chill Chill Just Chill" from Dhruv Sharma: 
+[AUTO] "Just Chill Chill Just Chill" unread: 7/20
+[YOU → "Just Chill Chill Just Chill"]: ohkk main to bhul gya tha yeh bhi group hai lol
+[YOU → "Just Chill Chill Just Chill"]: GNDU to hai bhi nahi
+[MSG] "Just Chill Chill Just Chill" from vasukapila: 
+[AUTO] "Just Chill Chill Just Chill" unread: 8/20
+[MSG] "Just Chill Chill Just Chill" from vasukapila: 
+[AUTO] "Just Chill Chill Just Chill" unread: 9/20
+[YOU → "Just Chill Chill Just Chill"]: https://hackmol-7.devfolio.co/overview
+[MSG] "Just Chill Chill Just Chill" from Dhruv Sharma: Toh bhaijan group mein bhejne ki kirpalta please kardiya karo hum jese bachon ka bhala hojata hai sarkar
+[AUTO] "Just Chill Chill Just Chill" unread: 10/20
+[MSG] "Just Chill Chill Just Chill" from Dhruv Sharma: 
+[AUTO] "Just Chill Chill Just Chill" unread: 11/20
+[MSG] "Just Chill Chill Just Chill" from Dhruv Sharma: 
+[AUTO] "Just Chill Chill Just Chill" unread: 12/20
+[YOU → "Just Chill Chill Just Chill"]: https://hacktropica2k26.devfolio.co/overview
+[YOU → "Just Chill Chill Just Chill"]: https://hackbyte4.devfolio.co/
+[MSG] "Just Chill Chill Just Chill" from vasukapila: 
+[AUTO] "Just Chill Chill Just Chill" unread: 13/20
+[MSG] "Just Chill Chill Just Chill" from ‎HS: 
+[AUTO] "Just Chill Chill Just Chill" unread: 14/20
+[MSG] "Just Chill Chill Just Chill" from Shashank: mujhe kyu toda
+[AUTO] "Just Chill Chill Just Chill" unread: 15/20
+[MSG] "Just Chill Chill Just Chill" from Shashank: ?
+[AUTO] "Just Chill Chill Just Chill" unread: 16/20
+[MSG] "Just Chill Chill Just Chill" from Shashank: happy holi bhaii log
+[AUTO] "Just Chill Chill Just Chill" unread: 17/20
+[YOU → "Iron Man"]: write a note on extrinsic semiconductors, explain how charge flows in semiconductors.
+
+Hey if you get a question like this for 14 marks! How would you write the answer?
+[YOU → "Iron Man"]: hmm but intrinsic to pucha hi nhi, to likh sakte?
+[MSG] "Just Chill Chill Just Chill" from vasukapila: 
+[AUTO] "Just Chill Chill Just Chill" unread: 18/20
+[MSG] "GNDU TECH CLUB" from Khanna Sparsh (Тужды): https://youtu.be/ysA7IeyfO3c?si=rcHvVvcPbnyaUatv
+[AUTO] "GNDU TECH CLUB" unread: 1/20
+[MSG] "Iron Man" from Iron Man: 
+[MSG] "Iron Man" from Iron Man: Haan
+[MSG] "Iron Man" from Iron Man: It's an intro
+[YOU → "Iron Man"]: Okkay thanku!
+[MSG] "Iron Man" from Iron Man: 
+[YOU → "Study!"]: https://englishvocab-ruby.vercel.app/
+
+A-G english vocabulary for mid-sem in story format
+
+(Just tap the word to get meaning also)
+[YOU → "Study!"]: Yeah that hand hiding trick also works🤣
+[MSG] "Raji Bhua" from Raji Bhua: 
+[MSG] "Study!" from Shailesh: I prefer hit and trial for vocab
+[AUTO] "Study!" unread: 1/20
+[YOU → "Estudiar"]: Yo guys, just trying to ameliorate my vocabulary with some alacrity so I can elucidate my thoughts with more erudition and brevity.🔥
+[MSG] "status" from Nandini Rathore: 
+[MSG] "status" from Rajan: 
+[MSG] "+1 (470) 625-0702" from Unknown: *One year ago, 6 Tetr students launched Tafflo*, a dropshipping venture that turned *zero sales into $20K+* in revenue in just 4 weeks. 
+
+They faced obstacles, but made data-driven decisions, and even *won a $5K grant to scale their business.*
+
+This is what learning by doing looks like - solving real challenges and growing in a global market.
+
+Click the *button below* to chat with us and *complete your application*.
+[STATUS] Messages fetched and recorded
+[STATUS] Sending messages to AI...
+[STATUS] Summary generated
+[STATUS] Notification sent: 📋 Réunion!
+
+Navya opens the chat with a surprised “Wah bhai,” prompting Sahil to note that whatever Manraj sent should be checked. Raghav jokes, “Panga lena chahta he koi?” and Samaira bursts in with exaggerated excitement, posting a series of emojis and saying she has no intention of “throwing people” before quickly switching to a cheerful “Happy Holi to all❤️.” Shashank deflates the hype, insisting the mess is just for decoration, that it will “hit himself” and is only a little for others, then mock‑cheers “happpa holoaaaa.” Samaira teases him for being “shareef,” while Raghav shouts “Palekha teraa” and “Happiiii houliiaaaa.” Sahil fires back with fire emojis, and Shashank reveals his earlier sarcasm, adding that his “uni‑laathi” (stick) got charged by the police—a playful, teasing tone that keeps the conversation light and festive, with no serious issues left unresolved.
+[WS] Client connected: 49ycuH-OYGbwjhjyAAAF
+[STATUS] Messages fetched and recorded
+[STATUS] Sending messages to AI...
+[STATUS] Summary generated
+[STATUS] Notification sent: The chat is a study‑group of four college friends—Sunidhisood, Iron Man, Sahil, Shashank and occasional input from Shailesh and Gourish—who are scrambling for PDFs and notes before an upcoming exam. Iron Man repeatedly asks for circuit‑analysis material (2‑ and 3‑watt‑meter methods, star‑delta transformations, Blondel’s theorem) and for a “BEEE 2” PDF; Sahil obliges by sharing several PDFs (python, major/minor, BEEE) and a link to an English‑vocab app. Sunidhisood seeks math past‑year questions and clarifies that a “π‑type 5th” topic isn’t needed. Shashank offers to check the chapter source, while Shailesh jokes about PI types and requests maths example PDFs. The tone stays casual and cooperative, with brief moments of mild frustration (Iron Man’s “😟”) that quickly resolve as files are exchanged. No major disagreements remain; the group has most of the requested resources, leaving only a few pending maths PDFs.
+[YOU → "Sahil Number"]: 2
+[WATCHDOG] Client alive — state: CONNECTED
+[MSG] "Estudiar" from Iron Man: Aww
 [AUTO] "Estudiar" unread: 1/20
-[DEBUG] Message received: "Ghar aakr padhayi nai kri" | fromMe: false
+[MSG] "Estudiar" from Iron Man: Communicational english should be simpler to understand
 [AUTO] "Estudiar" unread: 2/20
-[DEBUG] Message received: "Chl soja fir" | fromMe: true
+[MSG] "Estudiar" from Iron Man: you should try using one or two words that you can slip into your day to day vocab
+[AUTO] "Estudiar" unread: 3/20
+[YOU → "Estudiar"]: yeah true, don't know why they teaching this even tho we not even gonna use that in our life lol
+[MSG] "Estudiar" from Iron Man: ameliorate 😭😭
+[AUTO] "Estudiar" unread: 4/20
+[MSG] "Estudiar" from Iron Man: Wtf
+[AUTO] "Estudiar" unread: 5/20
+[MSG] "Estudiar" from Iron Man: Ye vocab me hai?
+[AUTO] "Estudiar" unread: 6/20
+[WATCHDOG] Client alive — state: CONNECTED
+[YOU → "Estudiar"]: yeah, its really advanced
+[MSG] "Estudiar" from Iron Man: BRUHHHH
+[AUTO] "Estudiar" unread: 7/20
+[MSG] "Estudiar" from Iron Man: I just saw it
+[AUTO] "Estudiar" unread: 8/20
+[MSG] "Estudiar" from Iron Man: Wtf
+[AUTO] "Estudiar" unread: 9/20
+[MSG] "Estudiar" from Iron Man: 
+[AUTO] "Estudiar" unread: 10/20
+[YOU → "Estudiar"]: upto G tak sare :(
+[MSG] "Estudiar" from Iron Man: Dude
+[AUTO] "Estudiar" unread: 11/20
+[MSG] "Estudiar" from Iron Man: Ts impossible
+[AUTO] "Estudiar" unread: 12/20
+[MSG] "Estudiar" from Iron Man: Meaning bhi krne hai?
+[AUTO] "Estudiar" unread: 13/20
+[YOU → "Estudiar"]: yeah obv
+[MSG] "Estudiar" from Iron Man: 
+[AUTO] "Estudiar" unread: 14/20
+[YOU → "Estudiar"]: study group main mene story format main bheji hai vo dekhna
+[MSG] "Estudiar" from Iron Man: 😭😭
+[AUTO] "Estudiar" unread: 15/20
+[WATCHDOG] Client alive — state: CONNECTED
+[WATCHDOG] Client alive — state: CONNECTED
+[YOU → "Estudiar"]: 234 exactly 😭
+[WATCHDOG] Client alive — state: CONNECTED
+[YOU → "Estudiar"]: umm what we can do is we try to learn these words first (by using notebooklm flashcards)
+
+then we communicate with each other using these words on discord
+
+or we can skip altogether (they just worth 5 marks) lol
+[WATCHDOG] Client alive — state: CONNECTED
+[WATCHDOG] Client alive — state: CONNECTED
+[WATCHDOG] Client alive — state: CONNECTED
+[MSG] "Estudiar" from Iron Man: bro??? itn esare hai?
+[AUTO] "Estudiar" unread: 16/20
+[YOU → "Estudiar"]: Yeah
+[WATCHDOG] Client alive — state: CONNECTED
+[YOU → "Manrajdeep Singh"]: ENL-1001
+Unit -1 complete excluding main reading
+Informal letter
+Vocabulary words A to G
+[YOU → "Manrajdeep Singh"]: report writing nahi aayegi?
+[MSG] "Manrajdeep Singh" from Manrajdeep Singh: Ruk puch ke dasada
+[WATCHDOG] Client alive — state: CONNECTED
+[WATCHDOG] Client alive — state: CONNECTED
+[WATCHDOG] Client alive — state: CONNECTED
+[WATCHDOG] Client alive — state: CONNECTED
+[WATCHDOG] Client unresponsive (Attempted to use detached Frame '6B791AB32692CED2ACD8A59FC117E471'.) — restarting...
+[WATCHDOG] Destroying stale client...
+[WATCHDOG] Re-initialising WhatsApp client...
