@@ -1,0 +1,3752 @@
+{
+  "chats": {
+    "120363423642168561@g.us": {
+      "chatName": "Estudiar",
+      "participants": [
+        "Iron Man (918130596403)",
+        "Sahil (918968520989)",
+        "Pritika (916284599398)",
+        "Samaira (916283285856)",
+        "Shashank (919779234350)"
+      ],
+      "summaries": [
+        {
+          "at": "2026-03-13T16:03:57.831Z",
+          "text": "📌 Key Updates  \n- Iron Man replied “Aww”.  \n- Sahil expressed “aaah” and mentioned he’s coding a feature to send summaries automatically.  \n- Sahil reported that the automation hit an error.  \n\n✅ Decisions Made  \n- No new decisions in this segment.  \n\n🧠 Important Context  \n- The automation attempt relates to the GitHub WhatsApp summariser discussed earlier.  \n\n📝 Action Items  \n- [Sahil] Debug the automatic sending code and resolve the error.  \n\n❓ Open Questions  \n- What caused the automation failure?  \n\n⚠️ Unresolved  \n- Automatic summary sender not functional yet."
+        },
+        {
+          "at": "2026-03-13T16:07:18.479Z",
+          "text": "📌 Key Updates  \n- Iron Man replied “Aww”.  \n- Sahil said “aaah” and noted he is coding automation to send summaries automatically.  \n- Sahil reported the automation hit an error.  \n- Iron Man responded “ohkkk”.  \n- Sahil suggested playing Peak and shared the Steam link.  \n- Sahil announced a GitHub‑hosted WhatsApp chat summariser and gave setup steps (clone repo, add Groq API key).  \n- Shashank asked for a summary of the last 200 messages and will work on it Monday.  \n\n✅ Decisions Made  \n- The group will try the game Peak.  \n- They agreed to use Sahil’s GitHub summariser for future chats.  \n\n🧠 Important Context  \n- Iron Man wants to watch the “Priscilla wolven storm” video.  \n\n📝 Action Items  \n- Iron Man → Look up and watch the “Priscilla wolven storm” video.  \n- Sahil → Fix the automation error and finalize the auto‑summary feature.  \n- Sahil → Provide Groq API key instructions (already shared).  \n- Shashank → Clone the repo, add the Groq key to .env, and test the summariser by Monday.  \n- All → Decide on the final game to play (Human Fall Flat, Fall Guys, or Peak).  \n\n❓ Open Questions  \n- Which game will the group finally choose?  \n- How will the Groq API key be obtained for ..."
+        },
+        {
+          "at": "2026-03-13T16:10:01.998Z",
+          "text": "📌 Key Updates\n- Iron Man is active on Discord and shared a game scene image\n- Iron Man mentioned Witcher 3 and wants to watch a video titled Priscilla wolven storm\n- Samaira will make roasted fries and is free tonight for a movie\n- Sahil shared a Steam link for the game Peak and promoted his GitHub WhatsApp summariser\n- Shashank asked for a summary of the last 200 messages and plans to get help on Monday\n\n✅ Decisions Made\n- Group will try the game Peak using the shared Steam link\n- They agreed to use Sahil’s GitHub summariser for WhatsApp chats (setup later)\n\n🧠 Important Context\n- Plans to watch a movie or play games together later\n- Shashank needs assistance with a WhatsApp group he isn’t part of\n\n📝 Action Items\n- Iron Man: Look up and watch the Priscilla wolven storm video\n- Sahil: Share Groq API key details for the summariser (already mentioned)\n- Shashank: Clone the GitHub repo, add the Groq key to the .env file and test the summariser by Monday\n- All: Choose the final game to play (Human Fall Flat, Fall Guys or Peak)\n\n❓ Open Questions\n- Which game will the group finally pick\n- How will the Groq API key be obtained\n- Which WhatsApp group is Shashank referring to\n\n⚠️ Unresol..."
+        },
+        {
+          "at": "2026-03-13T16:13:23.034Z",
+          "text": "📌 Key Updates\n- Sahil suggested playing Human Fall Flat, Fall Guys or Peak and shared the Steam link https://store.steampowered.com/app/3527290/PEAK/\n- Sahil announced a GitHub WhatsApp chat summariser at https://github.com/KingSahil/wa-chat-summariser with setup steps using a Groq API key\n- Iron Man wants to watch the video “Priscilla wolven storm”\n- Shashank asked for a summary of the last 200 messages and plans to work on it Monday\n- Sahil’s automation for auto‑sending summaries hit an error\n\n✅ Decisions Made\n- Group will try the game Peak (link shared)\n\n🧠 Important Context\n- Iron Man mentioned a horror‑movie‑like video he wants to watch\n\n📝 Action Items\n- Iron Man look up and watch “Priscilla wolven storm” video\n- Sahil provide Groq API key instructions and help Shashank set up the summariser\n- Shashank clone the repo, add the Groq key to .env and test the summariser by Monday\n- All members decide on the final game to play (Human Fall Flat, Fall Guys or Peak)\n- Sahil fix the automation bug for auto‑summary\n\n❓ Open Questions\n- Which game will the group finally settle on\n- How will the Groq API key be obtained\n- Which WhatsApp group is Shashank referring to that Sahil isn’t pa..."
+        }
+      ],
+      "updatedAt": "2026-03-13T16:13:23.034Z"
+    },
+    "120363402534167868@g.us": {
+      "chatName": "Study!",
+      "participants": [
+        "Mehakpreet Singh (919417812097)",
+        "Shashank (919779234350)",
+        "Sahil (918968520989)",
+        "Raghav Sharma (919872200652)",
+        "Prabhnoor Singh (919988341071)",
+        "Ridhampreet Singh (917814604415)",
+        "Nimish Suri (919780672156)",
+        "Sawal (917973355460)",
+        "Shagun (919780675642)",
+        "Shailesh (917837031414)",
+        "Rudrksh Sharma (919646658917)",
+        "nitish mahajan (917658805149)",
+        "Shreyansh Bhargav (917508016584)",
+        "Vineet (917888681130)"
+      ],
+      "summaries": [
+        {
+          "at": "2026-03-13T16:22:10.153Z",
+          "text": "*📌 Key Updates*  \n- Sahil shared the revised B.Tech CSE 2nd‑semester timetable.  \n- Shashank confirmed labs stay the same; only some lecture slots have changed.  \n- Vineet noted the overall schedule is largely unchanged.  \n- Ridhampreet uploaded the PDF “ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf”.  \n\n*✅ Decisions Made*  \n- The group will follow the new timetable as posted by Sahil.  \n\n*📝 Action Items*  \n- *All members*: Review the revised timetable and adjust personal schedules.  \n- *Ridhampreet*: Provide a clear picture of the requested Punjabi page (if still needed).  \n- *Shagun*: Confirm receipt of the PDF and let the group know if any further material is required.  \n- *Anyone needing the PDF*: Download “ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf” from the chat.  \n\n*❓ Open Questions*  \n- Is a higher‑resolution image of the Punjabi page still needed?  \n\n*⚠️ Unresolved*  \n- No final confirmation that the PDF content (the “saar”) is satisfactory for all members."
+        },
+        {
+          "at": "2026-03-13T16:29:01.592Z",
+          "text": "*📌 Key Updates*  \n- Sahil posted the revised B.Tech CSE 2nd‑semester timetable.  \n- Shashank confirmed labs stay the same; only some lecture slots have changed.  \n- Vineet observed the overall schedule is largely unchanged.  \n- Punjabi syllabus clarification: chapters 4 and 7 are not in the syllabus (per Sahil).  \n- Ridhampreet shared the PDF “ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf”.\n\n*✅ Decisions Made*  \n- No formal decisions; the group agreed the timetable adjustments are minor.\n\n*📝 Action Items*  \n- Shagun to review the PDF shared by Ridhampreet (if required).\n\n*❓ Open Questions*  \n- None.\n\n*⚠️ Unresolved*  \n- None."
+        }
+      ],
+      "updatedAt": "2026-03-13T16:29:01.592Z",
+      "messageCache": {
+        "cachedAt": "2026-03-13T16:28:59.694Z",
+        "latestMessageId": "false_120363402534167868@g.us_ACB3B00AD6C93A0E3168E8E2FF3A7067_182566476886137@lid",
+        "limit": 100,
+        "contextLines": [
+          "[CONTEXT] Sahil: u'all doing shabad vargikaran?",
+          "[CONTEXT] Sahil: [MEDIA:image] caption=\"u'all doing shabad vargikaran?\" mime=image/jpeg visual=\"The image shows a piece of lined paper with handwritten text in a non-Latin script, likely Gujarati, and some English words.\"",
+          "[CONTEXT] 76240098705624@lid aka Mehakpreet Singh: Ah hai syllabus ch ?",
+          "[CONTEXT] Sahil: No",
+          "[CONTEXT] 76240098705624@lid aka Mehakpreet Singh: [MEDIA:sticker] mime=image/webp",
+          "[CONTEXT] 192663827558628@lid aka Prabhnoor Singh: 🙏hle saar hi ktm nhi hoye",
+          "[CONTEXT] Sahil: Sent by mam",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Yesss",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Sources itne khatarnak haii ki ab mene unse samparak Krna hi bnd kardiya",
+          "[CONTEXT] Sahil: Lol",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Jab bhi kuch puchu kuch na kuch naya hi gyaat hota hai  mujhe 😭",
+          "[CONTEXT] Sahil: Syllabus bhi raat ko hi pta chal raha hai🥀🥀",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Aap kyaa chahte the ki kal subah ptaa chale",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Ki do leekh aur krne haii",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Aur fir wohi aajaye kal",
+          "[CONTEXT] 228819030020254@lid aka Ridhampreet Singh: Koi vadia gall v kr leya kr",
+          "[CONTEXT] 228819030020254@lid aka Ridhampreet Singh: 🙏",
+          "[CONTEXT] 215096273928200@lid aka Nimish Suri: Nhi mereko subha pta chal gya tha",
+          "[CONTEXT] Sahil: Bro bta diya kar study group main",
+          "[CONTEXT] 215096273928200@lid aka Nimish Suri: AI/ML ko btaya tha",
+          "[CONTEXT] 182566476886137@lid aka Shashank: [MEDIA:sticker] mime=image/webp",
+          "[CONTEXT] 228819030020254@lid aka Ridhampreet Singh: [MEDIA:sticker] mime=image/webp",
+          "[CONTEXT] 182566476886137@lid aka Shashank: [MEDIA:sticker] mime=image/webp",
+          "[CONTEXT] 215096273928200@lid aka Nimish Suri: Hr cheez btayi nhi jati",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Mujhe to btaa deta",
+          "[CONTEXT] 228819030020254@lid aka Ridhampreet Singh: Isliye tu CR nhi h",
+          "[CONTEXT] Sahil: Naah Btane wali tun sab btw deta hai",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Mene tujhe saare notes wagera bheje the",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Aur tu ye ladkiyon waale lakshan shod de",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Akele akele padh ke top karne",
+          "[CONTEXT] 182566476886137@lid aka Shashank: Ke"
+        ],
+        "targetLines": [
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: CR nhi hu tabi tu nhi btaya if hota tu bta deta",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: Tuj se hi sikhe he",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Tu pehle loka da dill jitt na fer ee banenga cr , har shayar cr thodi banda",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] Sahil: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Aa gall te kharii kahi",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Ashaa 😂",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Chalo yaar nimish jeeta",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: Kafi logo ka dil jeetne ki koshish kri but vo log bulate nhi he ignore kr dete he",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Veer ede ch v koi 🥲",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: Wah wah .. wah wah",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: Shayad vo log yeh msg padh rahe ho and smaj jaye",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Smjh lo yrr jinnu kehn dya aa cr naa sahi kite te pohonche agla 🥲🙏",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: Yaa",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: ਖੁਸ਼ਾਮਦੀ ਨਾਲ  da saar hga kise kol?",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: Rehndo .. mil gya .. thank u @221899569246445 ❤️",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Haaye oyee !",
+          "[SUMMARY TARGET] 90297744756929@lid aka Shagun: Send krna",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: [MEDIA:document] caption=\"ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf\" mime=application/pdf file=ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf",
+          "[SUMMARY TARGET] 90297744756929@lid aka Shagun: Ye saar nhi h",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Etho ee bana laina saar",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: Ehi padh ke mei saar ape bna lena aw 😂",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: “Ohi te”",
+          "[SUMMARY TARGET] 209160679461089@lid aka Shailesh: Use gemini",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: 😂😂",
+          "[SUMMARY TARGET] 90297744756929@lid aka Shagun: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: 10-10 guruji",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: Shukarana 🙏🙏🙏",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: “If that’s your best bait, you need an upgrade.”",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Prawa tu te ladan hi lag peeya",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: Nhi nhi",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Vaise tujhe ignore kar dena chahiye tha 😅",
+          "[SUMMARY TARGET] 215096273928200@lid aka Nimish Suri: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: [MEDIA:video] mime=video/mp4",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Ladai ladai maaf karo aggo aap syaane je 🙏",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: 😂😂😂😂😂",
+          "[SUMMARY TARGET] 192663827558628@lid aka Prabhnoor Singh: are wah",
+          "[SUMMARY TARGET] Sahil: Okkey guys shanti",
+          "[SUMMARY TARGET] 192663827558628@lid aka Prabhnoor Singh: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Etheee rakhhhhh ajj sahil nu gussa chadeyaa ee",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Oh soon chaleya taan karke keh reha",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: @90985040191717 shanti karde aaj ke liye ?",
+          "[SUMMARY TARGET] Sahil: Yeah",
+          "[SUMMARY TARGET] 192663827558628@lid aka Prabhnoor Singh: lol",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Nimish bhaiii chalo mazzak khataam",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Ab padhne jaao",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Acche bacche ki tarah",
+          "[SUMMARY TARGET] 209160679461089@lid aka Shailesh: Punjabi 1-8 ane hai?",
+          "[SUMMARY TARGET] Sahil: 4 and 7 not in syllabus",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: 4 and 7 bro",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Aap bhi glt bataoge to kaise chalega",
+          "[SUMMARY TARGET] 228819030020254@lid aka Ridhampreet Singh: Happy Birthday @221899569246445 ❤️🙌🙌🥳",
+          "[SUMMARY TARGET] Sahil: Happy birthday @221899569246445 🎉🎈",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Thanks",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Thank u",
+          "[SUMMARY TARGET] 62367689904297@lid aka Rudrksh Sharma: Happy Birthday saawal bhaii jaan",
+          "[SUMMARY TARGET] 62367689904297@lid aka Rudrksh Sharma: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 62367689904297@lid aka Rudrksh Sharma: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Thank you ❤️",
+          "[SUMMARY TARGET] 76240098705624@lid aka Mehakpreet Singh: happy bday @221899569246445 bhaiii",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Thank you shah ji ❤️",
+          "[SUMMARY TARGET] 192663827558628@lid aka Prabhnoor Singh: happy birthday @221899569246445 🥂",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Thank you brdr ❤️",
+          "[SUMMARY TARGET] 252243613900981@lid aka nitish mahajan: Happy birthday Sawal",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Thank you ❤️",
+          "[SUMMARY TARGET] 80617173737692@lid aka Shreyansh Bhargav: Dearest happy birthday to Sawal",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Thank u brdr ❤️",
+          "[SUMMARY TARGET] 62367689904297@lid aka Rudrksh Sharma: Soja",
+          "[SUMMARY TARGET] 62367689904297@lid aka Rudrksh Sharma: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Oh saar krn dya ee 🥲",
+          "[SUMMARY TARGET] 221899569246445@lid aka Sawal: Kala pakh ch ta hai ee ni kukhh",
+          "[SUMMARY TARGET] 62367689904297@lid aka Rudrksh Sharma: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] Sahil: Revised timetable",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] mime=image/jpeg visual=\"This image shows a class schedule for B.Tech (CSE) 2nd semester section B.\"",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Lab to same hi haii",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Lectures hi change haii thode bahout",
+          "[SUMMARY TARGET] 266674771087442@lid aka Vineet: Almost same hi lag reha hai",
+          "[SUMMARY TARGET] 266674771087442@lid aka Vineet: Same hi hai",
+          "[SUMMARY TARGET] 266674771087442@lid aka Vineet: Koi change nhi",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Apne ko kyaa 😂",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Classes fir vaise hi lgni haii",
+          "[SUMMARY TARGET] 182566476886137@lid aka Shashank: Aur humne vaise hi lagani hai"
+        ]
+      }
+    },
+    "918968520989@c.us": {
+      "chatName": "Sahil Number",
+      "participants": [
+        "Sahil (918968520989)"
+      ],
+      "summaries": [
+        {
+          "at": "2026-03-13T16:29:23.314Z",
+          "text": "*📌 Key Updates*  \n- Tried to have the bot read the “studio privato” WhatsApp group; the gateway pull failed.  \n- Shared numerous files for reference:  \n  - Presentation (`Untitled presentation.pptx`)  \n  - Math problem images (Fourier expansion, piece‑wise function, differential equations)  \n  - PDF documents: problem statement, chemistry practical, engineering chemistry book, multiple Punjabi PDFs, B.Tech CSE timetable, etc.  \n  - Video link (Dropbox) and datesheet image.  \n- Posted a “Design Master Prompt” outlining detailed frontend‑design guidelines (typography, color, motion, background).  \n- Re‑sent a self‑written summary block about group activities (game choice → Peak, GitHub WhatsApp summariser repo, “Priscilla wolven storm” video, timetable update).\n\n*✅ Decisions Made*  \n- The group agreed to try the game *Peak* (Steam link shared).  \n- The revised B.Tech CSE 2nd‑semester timetable posted by you will be followed.\n\n*🧠 Important Context*  \n- You are developing an automatic‑send feature for the summariser app; it currently throws an error.  \n- Access to the “studio privato” chat requires a successful gateway connection or a manual export.  \n- Multiple Punjabi PDF files we..."
+        }
+      ],
+      "updatedAt": "2026-03-13T16:29:23.314Z",
+      "messageCache": {
+        "cachedAt": "2026-03-13T16:29:18.206Z",
+        "latestMessageId": "true_918968520989@c.us_AC4B533B5A362E5731D1D9A39F252280_out",
+        "limit": 100,
+        "contextLines": [],
+        "targetLines": [
+          "[SUMMARY TARGET] Sahil: [clawdbot] Thanks — I can read this image. Here's a concise bullet summary of its content:\n\n- Hand-drawn flowchart that compares two numbers a and b.  \n- Start → input a, b.  \n- Decision: \"Is a > b?\"  \n  - If true: output \"a is greater.\"  \n  - If false: output \"b is greater.\"  \n- Both branches converge to Stop.\n\nWant this converted to pseudocode, a neat diagram file (PNG/SVG), or a short explanation you can paste into class?",
+          "[SUMMARY TARGET] Sahil: Summarize studio privato",
+          "[SUMMARY TARGET] Sahil: [clawdbot] I can summarize the \"studio privato\" chat — I don’t yet have its messages. Pick one and I’ll do it right away:\n\n- Paste or forward the group messages here (quickest).  \n- Upload an exported chat file (.txt or .zip) from WhatsApp (Export Chat → With/Without Media).  \n- Let me read it via the WhatsApp gateway: say “read via gateway” and I’ll try to pull the group (I can also relink/refresh the gateway if needed).\n\nIf you want a default scope, I’ll summarize the last 7 days; say “last 24h” or “all” to change that. Which option?",
+          "[SUMMARY TARGET] Sahil: Summarize studio privato read via gateaway",
+          "[SUMMARY TARGET] Sahil: [clawdbot] I can read the \"studio privato\" group via the WhatsApp gateway — I just need your confirmation before I access that group's messages.\n\nQuick confirmation (reply with one):  \n- Yes — read \"studio privato\" now via the gateway.  \n- No — I won't read it; instead I'll ask you to paste or upload the messages.\n\nIf you choose \"Yes\", I'll attempt to pull the group's recent messages. If the gateway can't access them (session disconnected or permission issue), I'll tell you what to do next (relink/refresh or export & upload).",
+          "[SUMMARY TARGET] Sahil: Yes",
+          "[SUMMARY TARGET] Sahil: [clawdbot] Thanks — starting to read the \"studio privato\" group now. I’ll pull the recent messages and return a concise bullet-point summary in one message. If the gateway can’t access the group I’ll tell you what went wrong and give two fast alternatives (export & upload, or forward messages). Give me up to 30 seconds.",
+          "[SUMMARY TARGET] Sahil: Did you do it?",
+          "[SUMMARY TARGET] Sahil: [clawdbot] I tried but I couldn't fetch the group's messages just now — sorry about that.\n\nQuick options so we can finish this immediately (pick one):\n1. I retry reading “studio privato” now (I’ll attempt one more pull).  \n2. You export the chat and upload the .txt/.zip here (fast and reliable).  \n3. I guide you through a quick gateway-check (verify Linked Devices on your phone and/or restart the gateway). I can restart the gateway here if you say “restart gateway”.\n\nWhich would you like me to do now?",
+          "[SUMMARY TARGET] Sahil: Noice",
+          "[SUMMARY TARGET] Sahil: Untitled presentation.pptx",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"Untitled presentation.pptx\" mime=application/vnd.openxmlformats-officedocument.presentationml.presentation file=Untitled presentation.pptx",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] mime=image/jpeg visual=\"The image shows a mathematical problem written in blue ink on lined paper. \n\nThe problem is: \n\"Ques: Obtain the Fourier expansion of $x \\sin x$ as a cosine series in the interval ...\"",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] mime=image/jpeg visual=\"The image shows a mathematical problem written in blue ink on lined paper, which reads: \"Expand $f(x) = \\begin{cases} \\frac{1-x}{4}, & 0<x<\\frac{1}{2} \\\\ \\frac{x-3}{4}, & \\frac{1}...\"",
+          "[SUMMARY TARGET] Sahil: Hi",
+          "[SUMMARY TARGET] Sahil: Title Page Problem Statement_20260209_172946_0000.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"Title Page Problem Statement_20260209_172946_0000.pdf\" mime=application/pdf file=Title Page Problem Statement_20260209_172946_0000.pdf",
+          "[SUMMARY TARGET] Sahil: # Design Master Prompt\n\n<frontend_aesthetics>\n\nYou tend to converge toward generic, \"on distribution\" outputs. In frontend design, this creates what users call the \"AI slop\" aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight. \n\nFocus on:\n\nTypography: Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics.\n\nColor & Theme: Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes. Draw from IDE themes and cultural aesthetics for inspiration.\n\nMotion: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions.\n\nBackgrounds: Create atmosphere and depth rather than defaulting to solid colors. Layer CSS gradients, use geometric patterns, or add contextual effects that match the overall aesthetic.\n\nAvoid generic AI-generated aesthetics:\n\n- Overused font families (Inter, Roboto, Arial, system fonts)\n- Clichéd color schemes (particularly purple gradients on white backgrounds)\n- Predictable layouts and component patterns\n- Cookie-cutter design that lacks context-specific character\nInterpret creatively and make unexpected choices that feel genuinely designed for the context. Vary between light and dark themes, different fonts, different aesthetics. You still tend to converge on common choices (Space Grotesk, for example) across generations. Avoid this: it is critical that you think outside the box!\n\n</frontend_aesthetics>",
+          "[SUMMARY TARGET] Sahil: Hello bro",
+          "[SUMMARY TARGET] Sahil: https://www.dropbox.com/scl/fi/e5jih7mftblw9xvfj7f78/Kunal-and-Aanchal-Documentary-Video.mp4?rlkey=tpnx89pg01oowol5b8l9e0ycd&e=1&st=25ky2odj&dl=0",
+          "[SUMMARY TARGET] Sahil: Chemistry practical .pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"Chemistry practical .pdf\"",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] mime=image/jpeg visual=\"The image shows a table with exam dates and timings for Guru Nanak Dev University, Amritsar.\"",
+          "[SUMMARY TARGET] Sahil: Datesheet 2nd",
+          "[SUMMARY TARGET] Sahil: https://photos.app.goo.gl/6yxnEsZVMhyY2xXh6",
+          "[SUMMARY TARGET] Sahil: Chemistry book",
+          "[SUMMARY TARGET] Sahil: Engineering Chemistry Fundamentals and Application_260211_095226.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"Engineering Chemistry Fundamentals and Application_260211_095226.pdf\"",
+          "[SUMMARY TARGET] Sahil: https://g.co/gemini/share/146e17a15c84",
+          "[SUMMARY TARGET] Sahil: Acetic acid titration",
+          "[SUMMARY TARGET] Sahil: Ss",
+          "[SUMMARY TARGET] Sahil: Lol",
+          "[SUMMARY TARGET] Sahil: [openclaw] 😄 What's up?",
+          "[SUMMARY TARGET] Sahil: Summarize message",
+          "[SUMMARY TARGET] Sahil: [openclaw] It’s just a playful and amused “LOL”! 😄 Nothing too deep.",
+          "[SUMMARY TARGET] Sahil: Summarize all my messages",
+          "[SUMMARY TARGET] Sahil: [openclaw] So far, your messages include:\n\n1. A playful \"Lol\".\n2. A request to summarize the \"Lol\".\n3. A request to summarize all your messages.\n\nPlayful and concise!",
+          "[SUMMARY TARGET] Sahil: Summarize all my messages in WhatsApp in all groups etc",
+          "[SUMMARY TARGET] Sahil: [openclaw] I currently don't have access to your WhatsApp groups, private chats, or entire message history outside of this conversation. If you'd like me to analyze or summarize a specific chat, you'd need to share the content or grant specific access for me to process it. Let me know how you'd like to proceed!",
+          "[SUMMARY TARGET] Sahil: How do I give you access what to install",
+          "[SUMMARY TARGET] Sahil: [openclaw] I can't access your entire WhatsApp message history due to privacy and app limitations. However, if you want me to work with specific chats, here's how:\n\n1. *Export Chat:* On WhatsApp, export the chat (group or personal) as a text file (with or without media). You can then share that file here for me to summarize or analyze.\n\n2. *Direct Integration:* If you're seeking something more automated or broader:\n   - *Use WhatsApp Business API.* This requires advanced setup to enable bots to interact directly with messages. It likely involves registering a business account.\n   - Apps like WhatsApp monitors/loggers could provide limited insights but require manual effort and caution around your privacy.\n\nIf you're looking to grant me complete analytics responsibly ensure it'd require extreme caution (and you'd like Aud-/!)",
+          "[SUMMARY TARGET] Sahil: summarize my today whatsapp messages",
+          "[SUMMARY TARGET] Sahil: summarize",
+          "[SUMMARY TARGET] Sahil: [openclaw] You can share WhatsApp chats by exporting them as text files or set up advanced tools like WhatsApp API for automated access. Always prioritize your privacy!",
+          "[SUMMARY TARGET] Sahil: summarize hacktropica group",
+          "[SUMMARY TARGET] Sahil: [openclaw] I currently don’t have access to any WhatsApp groups or messages unless you share the chat history with me. You can export the Hacktropica group chat as a text file, send it here, and I'll summarize it for you!",
+          "[SUMMARY TARGET] Sahil: summarize what i have just sent you",
+          "[SUMMARY TARGET] Sahil: [openclaw] So far, you've not sent me any specific content or chat transcript to summarize. If you're referring to your earlier messages, they’re about playful comments like \"Lol\" and discussing ways to give me access or summarize a WhatsApp group. Let me know if you'd like to follow up with a specific file or text!",
+          "[SUMMARY TARGET] Sahil: summarize 10",
+          "[SUMMARY TARGET] Sahil: Summarize 10",
+          "[SUMMARY TARGET] Sahil: lol",
+          "[SUMMARY TARGET] Sahil: dsad",
+          "[SUMMARY TARGET] Sahil: ds",
+          "[SUMMARY TARGET] Sahil: dsa",
+          "[SUMMARY TARGET] Sahil: dasfasf",
+          "[SUMMARY TARGET] Sahil: Lol",
+          "[SUMMARY TARGET] Sahil: a",
+          "[SUMMARY TARGET] Sahil: --summarize 10",
+          "[SUMMARY TARGET] Sahil: --summarize",
+          "[SUMMARY TARGET] Sahil: -- summarize 10",
+          "[SUMMARY TARGET] Sahil: --summarize 8",
+          "[SUMMARY TARGET] Sahil: Hm",
+          "[SUMMARY TARGET] Sahil: ! summarize",
+          "[SUMMARY TARGET] Sahil: ! summarize node - general  10",
+          "[SUMMARY TARGET] Sahil: as",
+          "[SUMMARY TARGET] Sahil: huh",
+          "[SUMMARY TARGET] Sahil: dasd",
+          "[SUMMARY TARGET] Sahil: 1",
+          "[SUMMARY TARGET] Sahil: 2",
+          "[SUMMARY TARGET] Sahil: 3",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] mime=image/jpeg visual=\"To solve the differential equation \\((2y^2 + 4x^2y) dx + (4xy + 3x^3) dy = 0\\), we first need to determine if it is exact, linear, separable, or none of these, and then apply the ...\"",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] mime=image/jpeg visual=\"The image shows a mathematical equation written in white on a black background. The equation is:\n\nEx - 35: Solve (1 + xy)ydx + (1 - xy)xdy = 0\n\nThe equation is a differential equa...\"",
+          "[SUMMARY TARGET] Sahil: hehe",
+          "[SUMMARY TARGET] Sahil: Sahil Gupta.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"Sahil Gupta.pdf\" mime=application/pdf file=Sahil Gupta.pdf",
+          "[SUMMARY TARGET] Sahil: Bhed chaal.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"Bhed chaal.pdf\" mime=application/pdf file=Bhed chaal.pdf",
+          "[SUMMARY TARGET] Sahil: ਸੜਕ ਪਾਰ ਕਰਦਾ ਬੁਢੇਪਾ.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਸੜਕ ਪਾਰ ਕਰਦਾ ਬੁਢੇਪਾ.pdf\" mime=application/pdf file=ਸੜਕ ਪਾਰ ਕਰਦਾ ਬੁਢੇਪਾ.pdf",
+          "[SUMMARY TARGET] Sahil: ਕਿਰਤ ਕਲਾ ਪੱਖ.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਕਿਰਤ ਕਲਾ ਪੱਖ.pdf\" mime=application/pdf file=ਕਿਰਤ ਕਲਾ ਪੱਖ.pdf",
+          "[SUMMARY TARGET] Sahil: ਕਲਾ ਪੱਖ ਬੋਲ ਚਾਲ ਦਾ ਹੁਨਰ.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਕਲਾ ਪੱਖ ਬੋਲ ਚਾਲ ਦਾ ਹੁਨਰ.pdf\" mime=application/pdf file=ਕਲਾ ਪੱਖ ਬੋਲ ਚਾਲ ਦਾ ਹੁਨਰ.pdf",
+          "[SUMMARY TARGET] Sahil: ਕਲਾ ਪੱਖ ਬੋਲ ਚਾਲ ਦਾ ਹੁਨਰ.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਕਲਾ ਪੱਖ ਬੋਲ ਚਾਲ ਦਾ ਹੁਨਰ.pdf\" mime=application/pdf file=ਕਲਾ ਪੱਖ ਬੋਲ ਚਾਲ ਦਾ ਹੁਨਰ.pdf",
+          "[SUMMARY TARGET] Sahil: ਯੁੱਗ ਬਦਲੀ ( ਕਲਾ ਪੱਖ ).pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਯੁੱਗ ਬਦਲੀ ( ਕਲਾ ਪੱਖ ).pdf\" mime=application/pdf file=ਯੁੱਗ ਬਦਲੀ ( ਕਲਾ ਪੱਖ ).pdf",
+          "[SUMMARY TARGET] Sahil: ਕਲਾ ਪਖ ਨਿਬੰਧ 8.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਕਲਾ ਪਖ ਨਿਬੰਧ 8.pdf\" mime=application/pdf file=ਕਲਾ ਪਖ ਨਿਬੰਧ 8.pdf",
+          "[SUMMARY TARGET] Sahil: New Doc 2025-03-04 20.53.52.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"New Doc 2025-03-04 20.53.52.pdf\" mime=application/pdf file=New Doc 2025-03-04 20.53.52.pdf",
+          "[SUMMARY TARGET] Sahil: New Doc 2025-03-04 20.56.40.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"New Doc 2025-03-04 20.56.40.pdf\" mime=application/pdf file=New Doc 2025-03-04 20.56.40.pdf",
+          "[SUMMARY TARGET] Sahil: Feb 13, 2025 at 14437 PM.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"Feb 13, 2025 at 14437 PM.pdf\" mime=application/pdf file=Feb 13, 2025 at 14437 PM.pdf",
+          "[SUMMARY TARGET] Sahil: ਕਲਾ ਪਖ ਨਿਬੰਧ 8.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਕਲਾ ਪਖ ਨਿਬੰਧ 8.pdf\" mime=application/pdf file=ਕਲਾ ਪਖ ਨਿਬੰਧ 8.pdf",
+          "[SUMMARY TARGET] Sahil: New Doc 2025-03-04 20.56.40.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"New Doc 2025-03-04 20.56.40.pdf\" mime=application/pdf file=New Doc 2025-03-04 20.56.40.pdf",
+          "[SUMMARY TARGET] Sahil: ਕਲਾ-ਪੱਖ = ਘਰ ਦਾ ਪਿਆਰ.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਕਲਾ-ਪੱਖ = ਘਰ ਦਾ ਪਿਆਰ.pdf\" mime=application/pdf file=ਕਲਾ-ਪੱਖ = ਘਰ ਦਾ ਪਿਆਰ.pdf",
+          "[SUMMARY TARGET] Sahil: ਯੁੱਗ ਬਦਲੀ ( ਕਲਾ ਪੱਖ ).pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਯੁੱਗ ਬਦਲੀ ( ਕਲਾ ਪੱਖ ).pdf\" mime=application/pdf file=ਯੁੱਗ ਬਦਲੀ ( ਕਲਾ ਪੱਖ ).pdf",
+          "[SUMMARY TARGET] Sahil: ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:document] caption=\"ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf\" mime=application/pdf file=ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] mime=image/jpeg visual=\"The image shows a lined notebook page with handwritten notes in a non-English language, likely Gujarati, and some numerical scores.\"",
+          "[SUMMARY TARGET] Sahil: 📌 Key Updates  \n- Iron Man wants to look up and watch the “Priscilla wolven storm” video.  \n- Sahil suggested playing Human Fall Flat, Fall Guys or Peak, and shared the Steam link for Peak.  \n- Sahil published a GitHub repo (KingSahil/wa‑chat‑summariser) with setup steps using a Groq API key; he’s also coding an auto‑send feature that hit an error.  \n\n✅ Decisions Made  \n- The group will try **Peak** and will use Sahil’s summariser app (setup to be done later).  \n\n🧠 Important Context  \n- Video “Priscilla wolven storm” is mentioned as something Iron Man wants to watch.  \n\n📝 Action Items  \n- **[Iron Man]** Look up and watch the “Priscilla wolven storm” video.  \n- **[Sahil]** Debug the auto‑send bug and share final setup instructions for the summariser.  \n- **[Shashank]** Clone the repo, add the Groq API key to .env, and test the summariser by Monday.  \n- **[All]** Agree on the final game to play (Human Fall Flat, Fall Guys, or Peak).  \n\n❓ Open Questions  \n- Which game will the group finally choose, and how will the Groq API key be obtained/configured?  \n- Which WhatsApp group is Shashank referring to that Sahil isn’t part of?  \n\n⚠️ Unresolved  \n- Game selection still pending and the auto‑send issue in the summariser remains unresolved.",
+          "[SUMMARY TARGET] Sahil: 📌 Key Updates\n- Sahil is coding an automatic send feature for the summariser but hit a snag.\n\n✅ Decisions Made\n- Try playing Peak (Steam link shared).  \n- Use Sahil’s GitHub WhatsApp summariser app later.\n\n🧠 Important Context\n- Iron Man mentioned the “Priscilla wolven storm” video to watch.  \n- Witcher 3 described as a beautiful, sad‑setting game.\n\n📝 Action Items\n- Iron Man : Look up and watch the “Priscilla wolven storm” video.  \n- Sahil : Debug the automatic send code for the summariser.  \n- Shashank : Clone the repo, add Groq API key to .env, and test by Monday.  \n- All : Decide on the final game to play (Human Fall Flat, Fall Guys, or Peak).\n\n❓ Open Questions\n- What caused the automation failure?  \n- When will the auto‑send feature be functional?  \n\n⚠️ Unresolved\n- Automation still not working.  \n- Game selection pending.",
+          "[SUMMARY TARGET] Sahil: 📌 Key Updates  \n- Iron Man replied “Aww”.  \n- Sahil expressed “aaah” and mentioned he’s coding a feature to send summaries automatically.  \n- Sahil reported that the automation hit an error.  \n\n✅ Decisions Made  \n- No new decisions in this segment.  \n\n🧠 Important Context  \n- The automation attempt relates to the GitHub WhatsApp summariser discussed earlier.  \n\n📝 Action Items  \n- [Sahil] Debug the automatic sending code and resolve the error.  \n\n❓ Open Questions  \n- What caused the automation failure?  \n\n⚠️ Unresolved  \n- Automatic summary sender not functional yet.",
+          "[SUMMARY TARGET] Sahil: 📌 Key Updates  \n- Iron Man replied “Aww”.  \n- Sahil said “aaah” and noted he is coding automation to send summaries automatically.  \n- Sahil reported the automation hit an error.  \n- Iron Man responded “ohkkk”.  \n- Sahil suggested playing Peak and shared the Steam link.  \n- Sahil announced a GitHub‑hosted WhatsApp chat summariser and gave setup steps (clone repo, add Groq API key).  \n- Shashank asked for a summary of the last 200 messages and will work on it Monday.  \n\n✅ Decisions Made  \n- The group will try the game Peak.  \n- They agreed to use Sahil’s GitHub summariser for future chats.  \n\n🧠 Important Context  \n- Iron Man wants to watch the “Priscilla wolven storm” video.  \n\n📝 Action Items  \n- Iron Man → Look up and watch the “Priscilla wolven storm” video.  \n- Sahil → Fix the automation error and finalize the auto‑summary feature.  \n- Sahil → Provide Groq API key instructions (already shared).  \n- Shashank → Clone the repo, add the Groq key to .env, and test the summariser by Monday.  \n- All → Decide on the final game to play (Human Fall Flat, Fall Guys, or Peak).  \n\n❓ Open Questions  \n- Which game will the group finally choose?  \n- How will the Groq API key be obtained for the summariser?  \n- Which WhatsApp group is Shashank referring to that Sahil isn’t part of?  \n\n⚠️ Unresolved  \n- Game selection still pending.  \n- Summariser not yet installed or tested.",
+          "[SUMMARY TARGET] Sahil: 📌 Key Updates\n- Iron Man is active on Discord and shared a game scene image\n- Iron Man mentioned Witcher 3 and wants to watch a video titled Priscilla wolven storm\n- Samaira will make roasted fries and is free tonight for a movie\n- Sahil shared a Steam link for the game Peak and promoted his GitHub WhatsApp summariser\n- Shashank asked for a summary of the last 200 messages and plans to get help on Monday\n\n✅ Decisions Made\n- Group will try the game Peak using the shared Steam link\n- They agreed to use Sahil’s GitHub summariser for WhatsApp chats (setup later)\n\n🧠 Important Context\n- Plans to watch a movie or play games together later\n- Shashank needs assistance with a WhatsApp group he isn’t part of\n\n📝 Action Items\n- Iron Man: Look up and watch the Priscilla wolven storm video\n- Sahil: Share Groq API key details for the summariser (already mentioned)\n- Shashank: Clone the GitHub repo, add the Groq key to the .env file and test the summariser by Monday\n- All: Choose the final game to play (Human Fall Flat, Fall Guys or Peak)\n\n❓ Open Questions\n- Which game will the group finally pick\n- How will the Groq API key be obtained\n- Which WhatsApp group is Shashank referring to\n\n⚠️ Unresolved\n- Game selection still pending\n- Summariser not yet installed or tested",
+          "[SUMMARY TARGET] Sahil: 📌 Key Updates\n- Sahil suggested playing Human Fall Flat, Fall Guys or Peak and shared the Steam link https://store.steampowered.com/app/3527290/PEAK/\n- Sahil announced a GitHub WhatsApp chat summariser at https://github.com/KingSahil/wa-chat-summariser with setup steps using a Groq API key\n- Iron Man wants to watch the video “Priscilla wolven storm”\n- Shashank asked for a summary of the last 200 messages and plans to work on it Monday\n- Sahil’s automation for auto‑sending summaries hit an error\n\n✅ Decisions Made\n- Group will try the game Peak (link shared)\n\n🧠 Important Context\n- Iron Man mentioned a horror‑movie‑like video he wants to watch\n\n📝 Action Items\n- Iron Man look up and watch “Priscilla wolven storm” video\n- Sahil provide Groq API key instructions and help Shashank set up the summariser\n- Shashank clone the repo, add the Groq key to .env and test the summariser by Monday\n- All members decide on the final game to play (Human Fall Flat, Fall Guys or Peak)\n- Sahil fix the automation bug for auto‑summary\n\n❓ Open Questions\n- Which game will the group finally settle on\n- How will the Groq API key be obtained\n- Which WhatsApp group is Shashank referring to that Sahil isn’t part of\n\n⚠️ Unresolved\n- Game selection still pending\n- Summariser not yet installed or tested\n- Automation error not resolved",
+          "[SUMMARY TARGET] Sahil: *📌 Key Updates*  \n- Sahil shared the revised B.Tech CSE 2nd‑semester timetable.  \n- Shashank confirmed labs stay the same; only some lecture slots have changed.  \n- Vineet noted the overall schedule is largely unchanged.  \n- Ridhampreet uploaded the PDF “ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf”.  \n\n*✅ Decisions Made*  \n- The group will follow the new timetable as posted by Sahil.  \n\n*📝 Action Items*  \n- *All members*: Review the revised timetable and adjust personal schedules.  \n- *Ridhampreet*: Provide a clear picture of the requested Punjabi page (if still needed).  \n- *Shagun*: Confirm receipt of the PDF and let the group know if any further material is required.  \n- *Anyone needing the PDF*: Download “ਕਲਾ ਪੱਖ ਖੁਸ਼ਾਮਦੀ ਨਾਲ.pdf” from the chat.  \n\n*❓ Open Questions*  \n- Is a higher‑resolution image of the Punjabi page still needed?  \n\n*⚠️ Unresolved*  \n- No final confirmation that the PDF content (the “saar”) is satisfactory for all members."
+        ]
+      }
+    },
+    "120363401615752356@g.us": {
+      "chatName": "Node",
+      "participants": [],
+      "summaries": [
+        {
+          "at": "2026-03-13T16:31:54.028Z",
+          "text": "- No important updates in this chat window."
+        }
+      ],
+      "updatedAt": "2026-03-13T16:31:54.028Z",
+      "messageCache": {
+        "cachedAt": "2026-03-13T16:31:53.586Z",
+        "latestMessageId": "",
+        "limit": 1000,
+        "contextLines": [],
+        "targetLines": []
+      }
+    },
+    "120363401071935983@g.us": {
+      "chatName": "Node - General Chat",
+      "participants": [
+        "Sahil (918968520989)",
+        "Khanna Sparsh (Тужды) (917009518347)",
+        "Sanica dhawan (919779335269)",
+        "Sehaj Bhatia (917814740530)",
+        "Arunya (Kate) (917719617500)",
+        "Akshat Mehta (919877918214)",
+        "Harnoor Singh Arora (917087925713)",
+        "Shailesh (917837031414)",
+        "Shaurya Khosla (917986039274)",
+        "Jiya (919465863565)",
+        "Sukhjit Singh Bajwa (917814261486)",
+        "Jivesh (917527918284)",
+        "Swayam Bhalotia (919832900366)",
+        "Gourish (FeV) (917740060616)",
+        "ﾒ𝟶 (916280269002)",
+        "Sanchita✨ (919501012675)",
+        "Ashwath Soni (917009023965)",
+        "Sehaj (919417070675)",
+        "Iron Man (918130596403)"
+      ],
+      "summaries": [
+        {
+          "at": "2026-03-13T16:35:01.338Z",
+          "text": "*📌 Key Updates*  \n- Khanna Sparsh raised a technical question: how to create a single shared “resource bucket” for Windows 11 that both Windows and WSL can access, avoiding repetitive `export` commands.  \n- Jiya shared the IAAC international space‑science competition (registration link provided).  \n- Jivesh announced HackMol 7.0 hackathon – registration open until 24 Mar 2026 (link provided).  \n- Sahil asked the group about experiences with Codex vs. Antigravity vs. Opus AI tools; Swayam noted Codex works best for architectural docs, Opus for coding.  \n- Gourish clarified Antigravity AI’s usage limit: *1 account per day*.  \n\n*✅ Decisions Made*  \n- None recorded in this window.  \n\n*🧠 Important Context*  \n- GitHub Copilot premium models are being phased out for students (as shown in Ashwath’s screenshot).  \n- Khanna mentioned a possible way to obtain a GitHub Student Pack for ~₹1 000.  \n\n*📝 Action Items*  \n- *Sahil* – DM Harnoor (exact content not specified).  \n- *Interested members* – Register for IAAC competition (link: https://iaac.space/en/submission?amb=77368853.1769670275.8999.50447434).  \n- *Interested members* – Register for HackMol 7.0 before 24 Mar 2026 (link: https://h..."
+        }
+      ],
+      "updatedAt": "2026-03-13T16:35:01.338Z",
+      "messageCache": {
+        "cachedAt": "2026-03-13T16:34:56.177Z",
+        "latestMessageId": "false_120363401071935983@g.us_ACFA3A3D610FB4B6004BEE5CD1AF10E0_259948667789549@lid",
+        "limit": 100,
+        "contextLines": [
+          "[CONTEXT] Sahil: So we tech guys cooked\nAthletes still in business 🥀",
+          "[CONTEXT] 259948667789549@lid aka Khanna Sparsh (Тужды): 💔🥀",
+          "[CONTEXT] 140291147362479@lid aka Sanica dhawan: 2 sem ke bhi bhej do koi🥲",
+          "[CONTEXT] Sahil: Yelo!",
+          "[CONTEXT] Sahil: sem 2yqs.pdf",
+          "[CONTEXT] Sahil: [MEDIA:document] caption=\"sem 2yqs.pdf\"",
+          "[CONTEXT] 275526581260404@lid aka Sehaj Bhatia: https://www.instagram.com/reel/DVIrM5skkjQ/?igsh=bHl2Y2o3MHd1cDBp",
+          "[CONTEXT] 140291147362479@lid aka Sanica dhawan: Thankss",
+          "[CONTEXT] 259948667789549@lid aka Khanna Sparsh (Тужды): *FinSpark 2026*",
+          "[CONTEXT] 259948667789549@lid aka Khanna Sparsh (Тужды): [MEDIA:document] caption=\"*FinSpark 2026*\"",
+          "[CONTEXT] Sahil: gonna hack university wifi using Kali linux lol",
+          "[CONTEXT] Sahil: [MEDIA:image] caption=\"gonna hack university wifi using Kali linux lol\"",
+          "[CONTEXT] 255086815109251@lid aka Arunya (Kate): wowwwww",
+          "[CONTEXT] 259948667789549@lid aka Khanna Sparsh (Тужды): [MEDIA:sticker]",
+          "[CONTEXT] 247605015609376@lid aka Akshat Mehta: For that, you need a wifi first...\nThey never recharged the one in the library ✨",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: Genuine",
+          "[CONTEXT] 259948667789549@lid aka Khanna Sparsh (Тужды): 4D chess move 😂😂😂",
+          "[CONTEXT] Sahil: [MEDIA:sticker]",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: U don't get it man, they are one step ahead of you. \nNo Wifi No Hacking 🌞",
+          "[CONTEXT] 259948667789549@lid aka Khanna Sparsh (Тужды): Koi na nayi website toh kr hi skte hack",
+          "[CONTEXT] 209160679461089@lid aka Shailesh: Yeh hostel ka krdo",
+          "[CONTEXT] Sahil: no laptop no coding\nno teaching no placement",
+          "[CONTEXT] 172443138281585@lid aka Shaurya Khosla: Bhai vo aga nhi chl rhi",
+          "[CONTEXT] 259948667789549@lid aka Khanna Sparsh (Тужды): Sedlyf 😢",
+          "[CONTEXT] 247605015609376@lid aka Akshat Mehta: *No laaparwaahi No Re-appear  ☠️",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: 🌞",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: Mushkil smei me apne hi aadmi pr pathar fenkte hai",
+          "[CONTEXT] 247605015609376@lid aka Akshat Mehta: [MEDIA:sticker]",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: 🌞",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: Nigga thinks yeh dm hai",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: Iss grp ka admin hu lala, masti nahi 🌞",
+          "[CONTEXT] 178138197839937@lid aka Harnoor Singh Arora: Koini lala quality > quantity"
+        ],
+        "targetLines": [
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: 🌞",
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: Sahil dm pr bhej",
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: 🌞",
+          "[SUMMARY TARGET] 247605015609376@lid aka Akshat Mehta: <Bro's subscription for emojis has officially ended>",
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: I believe in 🌞 superiority",
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: One for all",
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: 🌞",
+          "[SUMMARY TARGET] 247605015609376@lid aka Akshat Mehta: 🌞",
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: 🌞",
+          "[SUMMARY TARGET] Sahil: <bro forget to cancel his subscription>",
+          "[SUMMARY TARGET] 178138197839937@lid aka Harnoor Singh Arora: 🌞",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): 🪬",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): *Has anyone figured out to create a single resource bucket for WSL and windows in windows11.* \n\nInstead of downloading software within the wsl itself such as python, both the windows and wsl can actually refer to a resource bucket, which shall contain the software/resource. \n\nOne way is to set VARIABLES for each program within *WSL* using the EXPORT command but again repetitive.",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Resource bucket as i define is a shared memory space which both the windows and WSL within windows can access. Eventually leading to effective memory usage",
+          "[SUMMARY TARGET] 175999438327954@lid aka Jiya: 🚀 THE PERIGEE: February 2026 Space Recap! 🌌\n\nAPOGEE presents Volume 2 of our cosmic briefing! This February was defined by a massive \"Planetary Parade\" in the sky and a strategic alignment of ambitions on the ground. \n\nFrom the AI-driven tracks of Perseverance to ISRO’s 18-mission roadmap and Europe’s heavy-lift comeback with Ariane 64, we’ve curated the most prominent events that shaped the month. Inside, you'll also find updates on the Artemis launch window and the first \"Space Tomato\" harvest at Tiangong. \n\nThe universe doesn't wait—stop scrolling and start exploring! ☄️✨\n\nFollow us on Instagram to access the full version:\nhttps://www.instagram.com/apogee_nitj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+          "[SUMMARY TARGET] 175999438327954@lid aka Jiya: [MEDIA:image] caption=\"🚀 THE PERIGEE: February 2026 Space Recap! 🌌\n\nAPOGEE presents Volume 2 of our cosmic briefing! This February was defin...\" mime=image/jpeg visual=\"The image shows a rocket launching into space with the words \"APOGEE presents PERIGEE\" superimposed over it.\"",
+          "[SUMMARY TARGET] 175999438327954@lid aka Jiya: https://www.instagram.com/p/DVVT_0siYpC/?igsh=MTdsamF4eWRmOWJpZw==",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Jack Dorsey's Block layed off 4000 employees....(Approx 40% workforce) Citing productivity gains through AI",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): 💀",
+          "[SUMMARY TARGET] Sahil: What how ?",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Samsung s26 ultra ka feature ha new.....very trending rn",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Its called horizon locking....! Apple might take a decade or two to discover it and claim it as their own making",
+          "[SUMMARY TARGET] Sahil: Ohh that's cool",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Ts is crazy!",
+          "[SUMMARY TARGET] 244589931806889@lid aka Sukhjit Singh Bajwa: https://www.hello.cv/?via=sukjitsingh",
+          "[SUMMARY TARGET] 175999438327954@lid aka Jiya: Hey everyone! 🚀\n\nIf you’re interested in space, astronomy, physics, or just love solving challenging problems, this competition (IAAC)  is an amazing opportunity to test your skills at an international level. It’s open to students from all grades and countries — and you can participate online!\n\nIAAC is not just another competition — it’s a chance to:\n• Compete globally 🌎\n• Strengthen your concepts in astronomy & astrophysics\n• Add an international achievement to your profile\n• Win certificates, awards & recognition 🏅\n\nIf you’re even remotely interested in space science, I strongly recommend participating.\n\nYou can register here:\nhttps://iaac.space/en/submission?amb=77368853.1769670275.8999.50447434\n\nFeel free to message me if you have any doubts about the competition. Let’s represent strongly this year! 💫🚀",
+          "[SUMMARY TARGET] 178477466681398@lid aka Jivesh: *HACKMOL 7.0 - Registrations Live*\n\nThe wait is over.\nGDG on Campus NIT Jalandhar brings back the 7th edition of our flagship hackathon, HackMol 7.0\n\n*What’s inside :*\n• 24 hours of non-stop building\n• ₹1 Lakh+ prize pool\n• Tracks for everyone:\n– Main Track\n– Freshers’ Track\n– Women’s Track\n\n*Registration Deadline:*\nMarch 24, 2026\n\nReady to step into the arena?\n\nRegister now:\nhttps://hackmol-7.devfolio.co/\n\nExplore more:\nhttps://hackmol.com\n\nCode like a god. Leave a legacy.",
+          "[SUMMARY TARGET] 244589931806889@lid aka Sukhjit Singh Bajwa: https://meet.google.com/zvz-qfdg-cah",
+          "[SUMMARY TARGET] Sahil: anybody tried CODEX (by chatgpt)?",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] caption=\"anybody tried CODEX (by chatgpt)?\" mime=image/jpeg visual=\"The image shows a screenshot of a computer program called Codex with a black interface and white text that reads \"Let's build Playground\".\"",
+          "[SUMMARY TARGET] 228908905554160@lid aka Swayam Bhalotia: Ha it's good",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Better than antigravity?!",
+          "[SUMMARY TARGET] 228908905554160@lid aka Swayam Bhalotia: Not really. But like once u hit the limit for those u can try codex. They are all pretty equal for most stuff except opus ig. Also i have tried to made architectural docs on all (codex, antigravity+gemini, antigravity+ opus) and codex was the best for me. For coding opus is superior while i belive gemini and codex are equal",
+          "[SUMMARY TARGET] 34244311126079@lid aka Gourish (FeV): What limits?",
+          "[SUMMARY TARGET] Sahil: antigravity ai limits",
+          "[SUMMARY TARGET] 34244311126079@lid aka Gourish (FeV): 1 account per day policy",
+          "[SUMMARY TARGET] 34244311126079@lid aka Gourish (FeV): [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] Sahil: there must be github bypass script",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Back in 1984 open ai was a thing??",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Idk if it even existed or nah",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Nah",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Yeah though so",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): It was founded in 2014 i dunno.... \nBut the video imagined how the logo wud look like",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Sochre sare dost re-mst de dete",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Kal ka exam dene ka mann ni hai",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Like 10 bnde hai",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: i got comp arch. it sucks frr",
+          "[SUMMARY TARGET] Sahil: So cool",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Cse 😂",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Lol",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Hell naw....",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Juniors kitna bolte hai",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Chup krke",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Chem aur beee pdho",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Aaye bde",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): 😂😂 💀",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Tumhara konsa lcs?",
+          "[SUMMARY TARGET] Sahil: Punjabi last paper yehh",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Yep",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Wo bhi numericals hi hai",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: Umm yeah",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Computer architecture is so complex man",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: Kyu hai",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: But not much of a big deal tho",
+          "[SUMMARY TARGET] 247596325068801@lid aka Sanchita✨: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 262813444493522@lid aka Ashwath Soni: Khel khatam dosto",
+          "[SUMMARY TARGET] 262813444493522@lid aka Ashwath Soni: [MEDIA:image] caption=\"Khel khatam dosto\" mime=image/jpeg visual=\"The image shows a message from GitHub about changes to their Copilot service for students, specifically that some premium models will no longer be available for self-selection und...\"",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Abh free mein claude use kaise krenge 😂😂",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): 😭🥀💔",
+          "[SUMMARY TARGET] 262813444493522@lid aka Ashwath Soni: not even sonnet man smh",
+          "[SUMMARY TARGET] 256878168821986@lid aka Sehaj: use antigravity man",
+          "[SUMMARY TARGET] Sahil: Has lot of token limits",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Mera toh auto logout ho jaata harr baar 🫠",
+          "[SUMMARY TARGET] 256878168821986@lid aka Sehaj: agree, but  still a option",
+          "[SUMMARY TARGET] Sahil: Oh yeah same",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): I have heard china is developing a new model like deepseek but it wid be based upon claude",
+          "[SUMMARY TARGET] Sahil: Kimi?",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Ya maybe...",
+          "[SUMMARY TARGET] Sahil: Already available free as nvidia is giving it",
+          "[SUMMARY TARGET] 122076174241818@lid aka Iron Man: um",
+          "[SUMMARY TARGET] 122076174241818@lid aka Iron Man: sorry my bad",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): 🤔",
+          "[SUMMARY TARGET] 122076174241818@lid aka Iron Man: woh kuch voice chat on hogya tha",
+          "[SUMMARY TARGET] 122076174241818@lid aka Iron Man: idk...",
+          "[SUMMARY TARGET] 34244311126079@lid aka Gourish (FeV): 😭😭😭",
+          "[SUMMARY TARGET] 34244311126079@lid aka Gourish (FeV): Mai TOH USE BHI NAHI KAR PAAYA",
+          "[SUMMARY TARGET] 34244311126079@lid aka Gourish (FeV): [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): I m flagged 😂",
+          "[SUMMARY TARGET] 34244311126079@lid aka Gourish (FeV): Oh yeah, abhi tak???",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): Lol ya 😂😂 but u can purchase github student pack online for 1K inr",
+          "[SUMMARY TARGET] Sahil: Dukh dard pidaa 🥀💔",
+          "[SUMMARY TARGET] Sahil: [MEDIA:image] caption=\"Dukh dard pidaa 🥀💔\" mime=image/jpeg visual=\"The image shows a computer screen with a pop-up window. The pop-up window is titled \"Search models\" and has four options: \"Auto\", \"GPT-5.3-Codex\", \"GPT-5.4\", and \"Other Models\". T...\"",
+          "[SUMMARY TARGET] 176579024044137@lid aka ﾒ𝟶: [MEDIA:sticker] mime=image/webp",
+          "[SUMMARY TARGET] 259948667789549@lid aka Khanna Sparsh (Тужды): [MEDIA:sticker]"
+        ]
+      }
+    }
+  },
+  "chatDirectory": {
+    "120363402534167868@g.us": {
+      "chatId": "120363402534167868@g.us",
+      "chatName": "Study!",
+      "isGroup": true,
+      "phones": [
+        "919417812097",
+        "919779234350",
+        "918968520989",
+        "919872200652",
+        "919988341071",
+        "917814604415",
+        "919780672156",
+        "917973355460",
+        "919780675642",
+        "917837031414",
+        "919646658917",
+        "917658805149",
+        "917508016584",
+        "917888681130"
+      ],
+      "updatedAt": "2026-03-13T16:32:29.132Z"
+    },
+    "120363421888534231@g.us": {
+      "chatId": "120363421888534231@g.us",
+      "chatName": "Btech cse notes",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.138Z"
+    },
+    "120363400990374973@g.us": {
+      "chatId": "120363400990374973@g.us",
+      "chatName": "1st year sec b (Unofficial)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.144Z"
+    },
+    "918968520989@c.us": {
+      "chatId": "918968520989@c.us",
+      "chatName": "Sahil Number",
+      "isGroup": false,
+      "phones": [
+        "918968520989"
+      ],
+      "updatedAt": "2026-03-13T16:32:29.149Z"
+    },
+    "120363403812032319@g.us": {
+      "chatId": "120363403812032319@g.us",
+      "chatName": "PEC Hacks : Community 6",
+      "isGroup": true,
+      "phones": [
+        "919363083216"
+      ],
+      "updatedAt": "2026-03-13T16:37:48.004Z"
+    },
+    "120363422502997244@g.us": {
+      "chatId": "120363422502997244@g.us",
+      "chatName": "Réunion!",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.171Z"
+    },
+    "120363401071935983@g.us": {
+      "chatId": "120363401071935983@g.us",
+      "chatName": "Node - General Chat",
+      "isGroup": true,
+      "phones": [
+        "918968520989",
+        "917009518347",
+        "919779335269",
+        "917814740530",
+        "917719617500",
+        "919877918214",
+        "917087925713",
+        "917837031414",
+        "917986039274",
+        "919465863565",
+        "917814261486",
+        "917527918284",
+        "919832900366",
+        "917740060616",
+        "916280269002",
+        "919501012675",
+        "917009023965",
+        "919417070675",
+        "918130596403"
+      ],
+      "updatedAt": "2026-03-13T16:36:55.223Z"
+    },
+    "120363423642168561@g.us": {
+      "chatId": "120363423642168561@g.us",
+      "chatName": "Estudiar",
+      "isGroup": true,
+      "phones": [
+        "918130596403",
+        "918968520989",
+        "916284599398",
+        "916283285856",
+        "919779234350"
+      ],
+      "updatedAt": "2026-03-13T16:32:29.181Z"
+    },
+    "120363423576395789@g.us": {
+      "chatId": "120363423576395789@g.us",
+      "chatName": "Electrothon 8.0",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.187Z"
+    },
+    "918130596403@c.us": {
+      "chatId": "918130596403@c.us",
+      "chatName": "Iron Man",
+      "isGroup": false,
+      "phones": [
+        "918130596403"
+      ],
+      "updatedAt": "2026-03-13T16:32:29.156Z"
+    },
+    "120363408661714404@g.us": {
+      "chatId": "120363408661714404@g.us",
+      "chatName": "Nit jalandhar hackathon",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.193Z"
+    },
+    "120363422341306641@g.us": {
+      "chatId": "120363422341306641@g.us",
+      "chatName": "🫓🫓ਘਰ ਦੀ ਰੋਟੀ 2 🫓🫓",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.199Z"
+    },
+    "120363428003715778@g.us": {
+      "chatId": "120363428003715778@g.us",
+      "chatName": "CET CREATIVE 2026",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.204Z"
+    },
+    "120363421794871362@g.us": {
+      "chatId": "120363421794871362@g.us",
+      "chatName": "General",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.209Z"
+    },
+    "13529801302092@lid": {
+      "chatId": "13529801302092@lid",
+      "chatName": "+1 (470) 625-0702",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.214Z"
+    },
+    "120363048388649800@g.us": {
+      "chatId": "120363048388649800@g.us",
+      "chatName": "CET-GNDU",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.219Z"
+    },
+    "110780376711322@lid": {
+      "chatId": "110780376711322@lid",
+      "chatName": "+91 81470 20267",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.223Z"
+    },
+    "120363408837481948@g.us": {
+      "chatId": "120363408837481948@g.us",
+      "chatName": "Startup brainstorm hub",
+      "isGroup": true,
+      "phones": [
+        "918101740609"
+      ],
+      "updatedAt": "2026-03-13T16:32:29.161Z"
+    },
+    "919779234350@c.us": {
+      "chatId": "919779234350@c.us",
+      "chatName": "Shashank",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.228Z"
+    },
+    "120363422299979812@g.us": {
+      "chatId": "120363422299979812@g.us",
+      "chatName": "HackMol 7.0 | Find Teammate",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.232Z"
+    },
+    "120363402693547780@g.us": {
+      "chatId": "120363402693547780@g.us",
+      "chatName": "GNDU TECH CLUB",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.237Z"
+    },
+    "918264564060@c.us": {
+      "chatId": "918264564060@c.us",
+      "chatName": "Manrajdeep Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.243Z"
+    },
+    "120363402536055782@g.us": {
+      "chatId": "120363402536055782@g.us",
+      "chatName": "Eventopia Alerts & Updates 2",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.248Z"
+    },
+    "120363420095977860@g.us": {
+      "chatId": "120363420095977860@g.us",
+      "chatName": "studio privato",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.252Z"
+    },
+    "917973355460@c.us": {
+      "chatId": "917973355460@c.us",
+      "chatName": "Sawal",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.257Z"
+    },
+    "919988704107@c.us": {
+      "chatId": "919988704107@c.us",
+      "chatName": "Rahul Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.262Z"
+    },
+    "120363405891124965@g.us": {
+      "chatId": "120363405891124965@g.us",
+      "chatName": "General #1",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.267Z"
+    },
+    "918591510145@c.us": {
+      "chatId": "918591510145@c.us",
+      "chatName": "Roopanshi Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.272Z"
+    },
+    "919872200652@c.us": {
+      "chatId": "919872200652@c.us",
+      "chatName": "Raghav Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.277Z"
+    },
+    "919417812097@c.us": {
+      "chatId": "919417812097@c.us",
+      "chatName": "Mehakpreet Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.282Z"
+    },
+    "137134598004901@lid": {
+      "chatId": "137134598004901@lid",
+      "chatName": "+91 7428 262 731",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.287Z"
+    },
+    "919988341071@c.us": {
+      "chatId": "919988341071@c.us",
+      "chatName": "Prabhnoor Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.291Z"
+    },
+    "917837031414@c.us": {
+      "chatId": "917837031414@c.us",
+      "chatName": "Shailesh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.295Z"
+    },
+    "0@c.us": {
+      "chatId": "0@c.us",
+      "chatName": "WhatsApp",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.298Z"
+    },
+    "120363402941948900@g.us": {
+      "chatId": "120363402941948900@g.us",
+      "chatName": "Tech Nerds",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.301Z"
+    },
+    "120363403003816269@g.us": {
+      "chatId": "120363403003816269@g.us",
+      "chatName": "Liquid 🫟",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.304Z"
+    },
+    "98848689123351@lid": {
+      "chatId": "98848689123351@lid",
+      "chatName": "+91 90226 90226",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.308Z"
+    },
+    "120363424911173247@g.us": {
+      "chatId": "120363424911173247@g.us",
+      "chatName": "Just Chill Chill Just Chill",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.310Z"
+    },
+    "919780675642@c.us": {
+      "chatId": "919780675642@c.us",
+      "chatName": "Shagun",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.315Z"
+    },
+    "120363405969731784@g.us": {
+      "chatId": "120363405969731784@g.us",
+      "chatName": "GNDU x IIT Roorkee Cogni'26",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.331Z"
+    },
+    "120363320521516295@g.us": {
+      "chatId": "120363320521516295@g.us",
+      "chatName": "Sports DCET 2026",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.338Z"
+    },
+    "120363420322355233@g.us": {
+      "chatId": "120363420322355233@g.us",
+      "chatName": "B. Tech 1st year A Sec CSE",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.342Z"
+    },
+    "120363403445146557@g.us": {
+      "chatId": "120363403445146557@g.us",
+      "chatName": "B.Tech 1st year B CSE",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.349Z"
+    },
+    "918894099912@c.us": {
+      "chatId": "918894099912@c.us",
+      "chatName": "Rudraksh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.354Z"
+    },
+    "120363423351624395@g.us": {
+      "chatId": "120363423351624395@g.us",
+      "chatName": "HackBytes",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.358Z"
+    },
+    "120363408719050517@g.us": {
+      "chatId": "120363408719050517@g.us",
+      "chatName": "HackMol 7.0",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.363Z"
+    },
+    "919780079771@c.us": {
+      "chatId": "919780079771@c.us",
+      "chatName": "RASHMITA",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.369Z"
+    },
+    "120363406388551896@g.us": {
+      "chatId": "120363406388551896@g.us",
+      "chatName": "English (cse-B)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.373Z"
+    },
+    "916284101183@c.us": {
+      "chatId": "916284101183@c.us",
+      "chatName": "Sundram",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.387Z"
+    },
+    "120363420776204289@g.us": {
+      "chatId": "120363420776204289@g.us",
+      "chatName": "General",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.392Z"
+    },
+    "918288944627@c.us": {
+      "chatId": "918288944627@c.us",
+      "chatName": "Kanwarpal Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.399Z"
+    },
+    "916284599398@c.us": {
+      "chatId": "916284599398@c.us",
+      "chatName": "Pritika",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.404Z"
+    },
+    "120363424991756700@g.us": {
+      "chatId": "120363424991756700@g.us",
+      "chatName": "CET THEATRE 2026🎭",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.410Z"
+    },
+    "919501367627@c.us": {
+      "chatId": "919501367627@c.us",
+      "chatName": "Sahaj",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.416Z"
+    },
+    "120363405208037820@g.us": {
+      "chatId": "120363405208037820@g.us",
+      "chatName": "Find Your Team !",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.421Z"
+    },
+    "120363324043021993@g.us": {
+      "chatId": "120363324043021993@g.us",
+      "chatName": "The Fusion ( Dance Club )",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.426Z"
+    },
+    "120363321614460716@g.us": {
+      "chatId": "120363321614460716@g.us",
+      "chatName": "The Cinematics Club",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.431Z"
+    },
+    "120363304473745029@g.us": {
+      "chatId": "120363304473745029@g.us",
+      "chatName": "The Literary Club",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.436Z"
+    },
+    "120363320210910838@g.us": {
+      "chatId": "120363320210910838@g.us",
+      "chatName": "CESS’25",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.440Z"
+    },
+    "916283285856@c.us": {
+      "chatId": "916283285856@c.us",
+      "chatName": "Samaira",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.445Z"
+    },
+    "120363323031799939@g.us": {
+      "chatId": "120363323031799939@g.us",
+      "chatName": "Tech Titans (Tech Club)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.451Z"
+    },
+    "120363403874035668@g.us": {
+      "chatId": "120363403874035668@g.us",
+      "chatName": "Btech cse first year (Pbi) 25-26",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.456Z"
+    },
+    "917009518347@c.us": {
+      "chatId": "917009518347@c.us",
+      "chatName": "Khanna Sparsh (Тужды)",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.461Z"
+    },
+    "917814261486@c.us": {
+      "chatId": "917814261486@c.us",
+      "chatName": "Sukhjit Singh Bajwa",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.466Z"
+    },
+    "208542757830696@lid": {
+      "chatId": "208542757830696@lid",
+      "chatName": "WizCoderr (sayam)",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.471Z"
+    },
+    "919999041935@c.us": {
+      "chatId": "919999041935@c.us",
+      "chatName": "+91 99990 41935",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.481Z"
+    },
+    "120363425535987690@g.us": {
+      "chatId": "120363425535987690@g.us",
+      "chatName": "HackMol 7.0 | Support 1.0",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.487Z"
+    },
+    "917814524135@c.us": {
+      "chatId": "917814524135@c.us",
+      "chatName": "Dipali",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.494Z"
+    },
+    "917986547697@c.us": {
+      "chatId": "917986547697@c.us",
+      "chatName": "Saksham Gupta",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.499Z"
+    },
+    "120363405150139428@g.us": {
+      "chatId": "120363405150139428@g.us",
+      "chatName": "HackTu Queries Group 1",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.504Z"
+    },
+    "120363166199710009@g.us": {
+      "chatId": "120363166199710009@g.us",
+      "chatName": "CosmoGen Students Society ",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.508Z"
+    },
+    "120363321712722079@g.us": {
+      "chatId": "120363321712722079@g.us",
+      "chatName": "CESS’25",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.512Z"
+    },
+    "61421220682@c.us": {
+      "chatId": "61421220682@c.us",
+      "chatName": "Kush",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.518Z"
+    },
+    "919780672156@c.us": {
+      "chatId": "919780672156@c.us",
+      "chatName": "Nimish Suri",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.523Z"
+    },
+    "918360054278@c.us": {
+      "chatId": "918360054278@c.us",
+      "chatName": "Vicky Gupta",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.528Z"
+    },
+    "919464681638@c.us": {
+      "chatId": "919464681638@c.us",
+      "chatName": "Raji Bhua",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.533Z"
+    },
+    "87565793239255@lid": {
+      "chatId": "87565793239255@lid",
+      "chatName": "+91 79911 38780",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.537Z"
+    },
+    "120363422060904758@g.us": {
+      "chatId": "120363422060904758@g.us",
+      "chatName": "Carrom 2025-2026 CET",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.541Z"
+    },
+    "146170689130567@lid": {
+      "chatId": "146170689130567@lid",
+      "chatName": "+1 (415) 523-8886",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.545Z"
+    },
+    "272542099107876@lid": {
+      "chatId": "272542099107876@lid",
+      "chatName": "Mummy",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.550Z"
+    },
+    "916283500082@c.us": {
+      "chatId": "916283500082@c.us",
+      "chatName": "karam sandhu",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.555Z"
+    },
+    "120363419809783508@g.us": {
+      "chatId": "120363419809783508@g.us",
+      "chatName": "ALL CORE TEAMS CESS’25",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.562Z"
+    },
+    "120363408315921903@g.us": {
+      "chatId": "120363408315921903@g.us",
+      "chatName": "hacktropica",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.568Z"
+    },
+    "917740060616@c.us": {
+      "chatId": "917740060616@c.us",
+      "chatName": "Gourish (FeV)",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.573Z"
+    },
+    "919779553372@c.us": {
+      "chatId": "919779553372@c.us",
+      "chatName": "Rayan Chandel",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.577Z"
+    },
+    "120363423009310693@g.us": {
+      "chatId": "120363423009310693@g.us",
+      "chatName": "GFG(CAMPUS BODY)- GNDU",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.587Z"
+    },
+    "120363400849001833@g.us": {
+      "chatId": "120363400849001833@g.us",
+      "chatName": "GNDU DSA & Competitive Programming Group",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.592Z"
+    },
+    "120363426210434578@g.us": {
+      "chatId": "120363426210434578@g.us",
+      "chatName": "Electrothon",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.597Z"
+    },
+    "917087925713@c.us": {
+      "chatId": "917087925713@c.us",
+      "chatName": "Harnoor Singh Arora",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.604Z"
+    },
+    "918894262412@c.us": {
+      "chatId": "918894262412@c.us",
+      "chatName": "Mohit Salwan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.609Z"
+    },
+    "120363328810276577@g.us": {
+      "chatId": "120363328810276577@g.us",
+      "chatName": "GNDU STUDENTS' COMMUNITY--Extended",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.614Z"
+    },
+    "120363420963841203@g.us": {
+      "chatId": "120363420963841203@g.us",
+      "chatName": "BTech CSE SecB Mathematics",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.619Z"
+    },
+    "916283178397@c.us": {
+      "chatId": "916283178397@c.us",
+      "chatName": "Mohit",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.624Z"
+    },
+    "120363406617103019@g.us": {
+      "chatId": "120363406617103019@g.us",
+      "chatName": "Python (cse B)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.629Z"
+    },
+    "917710389098@c.us": {
+      "chatId": "917710389098@c.us",
+      "chatName": "Sunidhisood",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.633Z"
+    },
+    "919592178007@c.us": {
+      "chatId": "919592178007@c.us",
+      "chatName": "Sukhleen",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.638Z"
+    },
+    "120363305164732306@g.us": {
+      "chatId": "120363305164732306@g.us",
+      "chatName": "Arts and Crafts Club",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.642Z"
+    },
+    "120363323806856648@g.us": {
+      "chatId": "120363323806856648@g.us",
+      "chatName": "The Sargam ( Music Club )",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.645Z"
+    },
+    "5153977561091@lid": {
+      "chatId": "5153977561091@lid",
+      "chatName": "+91 88725 65758",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.649Z"
+    },
+    "916283182363@c.us": {
+      "chatId": "916283182363@c.us",
+      "chatName": "Sawni Mehta",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.652Z"
+    },
+    "112154497781803@lid": {
+      "chatId": "112154497781803@lid",
+      "chatName": "Vansh Sikka",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.656Z"
+    },
+    "120363422300641808@g.us": {
+      "chatId": "120363422300641808@g.us",
+      "chatName": "HACKERWRATH 2.0",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.659Z"
+    },
+    "61450794232@c.us": {
+      "chatId": "61450794232@c.us",
+      "chatName": "+61 450 794 232",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.664Z"
+    },
+    "1117362642964@lid": {
+      "chatId": "1117362642964@lid",
+      "chatName": "+91 80 6252 7095",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.669Z"
+    },
+    "117244185079924@lid": {
+      "chatId": "117244185079924@lid",
+      "chatName": "+91 70181 33694",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.673Z"
+    },
+    "120363404034439349@g.us": {
+      "chatId": "120363404034439349@g.us",
+      "chatName": "ARMSS",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.677Z"
+    },
+    "88854954545294@lid": {
+      "chatId": "88854954545294@lid",
+      "chatName": "+91 92178 44518",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.681Z"
+    },
+    "919988006999@c.us": {
+      "chatId": "919988006999@c.us",
+      "chatName": "+91 99880 06999",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.685Z"
+    },
+    "919646658917@c.us": {
+      "chatId": "919646658917@c.us",
+      "chatName": "Rudrksh Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.689Z"
+    },
+    "74419133222934@lid": {
+      "chatId": "74419133222934@lid",
+      "chatName": "Dhruv Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.695Z"
+    },
+    "120363423832106637@g.us": {
+      "chatId": "120363423832106637@g.us",
+      "chatName": "Robotics workshop (IIT Bombay X GNDU) ",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.702Z"
+    },
+    "918196936710@c.us": {
+      "chatId": "918196936710@c.us",
+      "chatName": "Navya",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.706Z"
+    },
+    "919877693265@c.us": {
+      "chatId": "919877693265@c.us",
+      "chatName": "+91 98776 93265",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.711Z"
+    },
+    "20504324874434@lid": {
+      "chatId": "20504324874434@lid",
+      "chatName": "Parth Thakkar",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.735Z"
+    },
+    "919876980831@c.us": {
+      "chatId": "919876980831@c.us",
+      "chatName": "Sarthak Mittal",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.739Z"
+    },
+    "917888681130@c.us": {
+      "chatId": "917888681130@c.us",
+      "chatName": "Vineet",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.743Z"
+    },
+    "120363422018549580@g.us": {
+      "chatId": "120363422018549580@g.us",
+      "chatName": "GDG GNDU",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.747Z"
+    },
+    "120363420926954521@g.us": {
+      "chatId": "120363420926954521@g.us",
+      "chatName": "PEC Hacks 3.0 Finalists",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.751Z"
+    },
+    "917719647562@c.us": {
+      "chatId": "917719647562@c.us",
+      "chatName": "Mehak Gupta",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.755Z"
+    },
+    "47004122112006@lid": {
+      "chatId": "47004122112006@lid",
+      "chatName": "Harsh Verma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.757Z"
+    },
+    "917009023965@c.us": {
+      "chatId": "917009023965@c.us",
+      "chatName": "Ashwath Soni",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.759Z"
+    },
+    "59871961587874@lid": {
+      "chatId": "59871961587874@lid",
+      "chatName": "+91 70554 22111",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.761Z"
+    },
+    "918437169233@c.us": {
+      "chatId": "918437169233@c.us",
+      "chatName": "Bunny🧑‍💻",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.764Z"
+    },
+    "120363406677002750@g.us": {
+      "chatId": "120363406677002750@g.us",
+      "chatName": "Stranger hacks",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.767Z"
+    },
+    "120363424817127926@g.us": {
+      "chatId": "120363424817127926@g.us",
+      "chatName": "MDG Space",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.784Z"
+    },
+    "917051876400@c.us": {
+      "chatId": "917051876400@c.us",
+      "chatName": "Ranvir Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.788Z"
+    },
+    "182622160449536@lid": {
+      "chatId": "182622160449536@lid",
+      "chatName": "+91 93548 15486",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.792Z"
+    },
+    "120363422427076400@g.us": {
+      "chatId": "120363422427076400@g.us",
+      "chatName": "StrangerHacks",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.814Z"
+    },
+    "13135550002@c.us": {
+      "chatId": "13135550002@c.us",
+      "chatName": "Meta AI",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.817Z"
+    },
+    "447723442693@c.us": {
+      "chatId": "447723442693@c.us",
+      "chatName": "+44 7723 442693",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.827Z"
+    },
+    "120363422912752058@g.us": {
+      "chatId": "120363422912752058@g.us",
+      "chatName": "Placement ready",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.835Z"
+    },
+    "919041180340@c.us": {
+      "chatId": "919041180340@c.us",
+      "chatName": "Mishthi Khanna 🦋🌻",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.839Z"
+    },
+    "120363405367106032@g.us": {
+      "chatId": "120363405367106032@g.us",
+      "chatName": "INDIA AI IMPACT SUMMIT - HCL GUVI",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.843Z"
+    },
+    "919463955915@c.us": {
+      "chatId": "919463955915@c.us",
+      "chatName": "Rishima Mahajan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.847Z"
+    },
+    "120363423239568474@g.us": {
+      "chatId": "120363423239568474@g.us",
+      "chatName": "General",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.853Z"
+    },
+    "120363406553025405@g.us": {
+      "chatId": "120363406553025405@g.us",
+      "chatName": "HackTu 7.0 Queries Group",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.860Z"
+    },
+    "120363407044852118@g.us": {
+      "chatId": "120363407044852118@g.us",
+      "chatName": "Jigyāsa - Department of Physics, GNDU",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.865Z"
+    },
+    "207215210303537@lid": {
+      "chatId": "207215210303537@lid",
+      "chatName": "+91 73021 65711",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.871Z"
+    },
+    "120363423171358501@g.us": {
+      "chatId": "120363423171358501@g.us",
+      "chatName": "HackTu 7.0 (Hackathon)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.877Z"
+    },
+    "132590187110428@lid": {
+      "chatId": "132590187110428@lid",
+      "chatName": "+91 97911 90808",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.883Z"
+    },
+    "120363421646176883@g.us": {
+      "chatId": "120363421646176883@g.us",
+      "chatName": "ECL BTECH CSE SEC B",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.887Z"
+    },
+    "120363406218465919@g.us": {
+      "chatId": "120363406218465919@g.us",
+      "chatName": "India AI Impact Buildathon 2026",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.892Z"
+    },
+    "918847242013@c.us": {
+      "chatId": "918847242013@c.us",
+      "chatName": "Jashanpreet Singh Dingra",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.897Z"
+    },
+    "120363365346705347@g.us": {
+      "chatId": "120363365346705347@g.us",
+      "chatName": "CET Voice (GSC)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.902Z"
+    },
+    "918766221392@c.us": {
+      "chatId": "918766221392@c.us",
+      "chatName": "Manasvi",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.908Z"
+    },
+    "917986105932@c.us": {
+      "chatId": "917986105932@c.us",
+      "chatName": "Reetish",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.911Z"
+    },
+    "120363403423433866@g.us": {
+      "chatId": "120363403423433866@g.us",
+      "chatName": "Tech Nerds",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.914Z"
+    },
+    "31843323801760@lid": {
+      "chatId": "31843323801760@lid",
+      "chatName": "+91 82967 00576",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.916Z"
+    },
+    "120363424451863486@g.us": {
+      "chatId": "120363424451863486@g.us",
+      "chatName": "Teammate Search",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.919Z"
+    },
+    "24520052220023@lid": {
+      "chatId": "24520052220023@lid",
+      "chatName": "Siddharth Chopra",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.922Z"
+    },
+    "122531860234468@lid": {
+      "chatId": "122531860234468@lid",
+      "chatName": "+91 836 005 3156",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.925Z"
+    },
+    "120363405508691007@g.us": {
+      "chatId": "120363405508691007@g.us",
+      "chatName": "Runanywhere community discussion",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.928Z"
+    },
+    "120363423973126791@g.us": {
+      "chatId": "120363423973126791@g.us",
+      "chatName": "RunAnywhere on-device AI",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.931Z"
+    },
+    "120363046352856926@g.us": {
+      "chatId": "120363046352856926@g.us",
+      "chatName": "Dingrastro Club | DAC",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.933Z"
+    },
+    "214534170095626@lid": {
+      "chatId": "214534170095626@lid",
+      "chatName": "+55 31 7503-8350",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.935Z"
+    },
+    "30722505109681@lid": {
+      "chatId": "30722505109681@lid",
+      "chatName": "+1 (800) 242-8478",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.938Z"
+    },
+    "120363423195924185@g.us": {
+      "chatId": "120363423195924185@g.us",
+      "chatName": "Google Hackathon",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.940Z"
+    },
+    "917658805149@c.us": {
+      "chatId": "917658805149@c.us",
+      "chatName": "nitish mahajan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.942Z"
+    },
+    "918289091818@c.us": {
+      "chatId": "918289091818@c.us",
+      "chatName": "Krishna",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.945Z"
+    },
+    "56921201635441@lid": {
+      "chatId": "56921201635441@lid",
+      "chatName": "+91 99153 39443",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.948Z"
+    },
+    "120363407303097061@g.us": {
+      "chatId": "120363407303097061@g.us",
+      "chatName": "GfG Campus – General Discussion",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.950Z"
+    },
+    "131172646568045@lid": {
+      "chatId": "131172646568045@lid",
+      "chatName": "Akshat",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.952Z"
+    },
+    "120363106788799659@g.us": {
+      "chatId": "120363106788799659@g.us",
+      "chatName": "Class 12th non medical 2024-2025",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.955Z"
+    },
+    "225223890739409@lid": {
+      "chatId": "225223890739409@lid",
+      "chatName": "+91 73559 19927",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.958Z"
+    },
+    "187067401244678@lid": {
+      "chatId": "187067401244678@lid",
+      "chatName": "Aayush",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.962Z"
+    },
+    "120363403785132149@g.us": {
+      "chatId": "120363403785132149@g.us",
+      "chatName": "I AM ENGINEER 2025",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.966Z"
+    },
+    "265360913776828@lid": {
+      "chatId": "265360913776828@lid",
+      "chatName": "Karan Jeet Mits",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.969Z"
+    },
+    "120363423892862579@g.us": {
+      "chatId": "120363423892862579@g.us",
+      "chatName": "Da vinci",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.972Z"
+    },
+    "919922041218@c.us": {
+      "chatId": "919922041218@c.us",
+      "chatName": "Harshit Nikam",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.975Z"
+    },
+    "120363403032822855@g.us": {
+      "chatId": "120363403032822855@g.us",
+      "chatName": "GDG Buildfest",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.979Z"
+    },
+    "120363422007730102@g.us": {
+      "chatId": "120363422007730102@g.us",
+      "chatName": "Tech-Titans- secondary-logistics",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.982Z"
+    },
+    "120363402364995719@g.us": {
+      "chatId": "120363402364995719@g.us",
+      "chatName": "Techie",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.985Z"
+    },
+    "144942982803577@lid": {
+      "chatId": "144942982803577@lid",
+      "chatName": "+91 92175 89261",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.990Z"
+    },
+    "143091298267191@lid": {
+      "chatId": "143091298267191@lid",
+      "chatName": "+91 97795 69462",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.993Z"
+    },
+    "163032999157956@lid": {
+      "chatId": "163032999157956@lid",
+      "chatName": "Hardik Sachan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.996Z"
+    },
+    "917837780040@c.us": {
+      "chatId": "917837780040@c.us",
+      "chatName": "Manpreet",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:29.999Z"
+    },
+    "255292990312595@lid": {
+      "chatId": "255292990312595@lid",
+      "chatName": "+91 92895 72040",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.002Z"
+    },
+    "113735783948521@lid": {
+      "chatId": "113735783948521@lid",
+      "chatName": "Test Number",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.006Z"
+    },
+    "918438748988@c.us": {
+      "chatId": "918438748988@c.us",
+      "chatName": "+91 84387 48988",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.011Z"
+    },
+    "199076280832146@lid": {
+      "chatId": "199076280832146@lid",
+      "chatName": "+1 (646) 589-4168",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.018Z"
+    },
+    "919463367887@c.us": {
+      "chatId": "919463367887@c.us",
+      "chatName": "Prabhpuran",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.023Z"
+    },
+    "917528929126@c.us": {
+      "chatId": "917528929126@c.us",
+      "chatName": "Meharwan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.028Z"
+    },
+    "918146450504@c.us": {
+      "chatId": "918146450504@c.us",
+      "chatName": "Mukul",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.033Z"
+    },
+    "918360018723@c.us": {
+      "chatId": "918360018723@c.us",
+      "chatName": "Rajan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.038Z"
+    },
+    "4149542391926@lid": {
+      "chatId": "4149542391926@lid",
+      "chatName": "Rajansekhri Photostate",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.043Z"
+    },
+    "120363423711823610@g.us": {
+      "chatId": "120363423711823610@g.us",
+      "chatName": "LangChain Agents Session",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.047Z"
+    },
+    "120363421800346811@g.us": {
+      "chatId": "120363421800346811@g.us",
+      "chatName": "Team Prabhpuran",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.053Z"
+    },
+    "175763416469709@lid": {
+      "chatId": "175763416469709@lid",
+      "chatName": "+91 97407 76953",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.056Z"
+    },
+    "120363405308050594@g.us": {
+      "chatId": "120363405308050594@g.us",
+      "chatName": "Ms",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.060Z"
+    },
+    "120363404982428997@g.us": {
+      "chatId": "120363404982428997@g.us",
+      "chatName": "Pec Hacks",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.064Z"
+    },
+    "120363420965891828@g.us": {
+      "chatId": "120363420965891828@g.us",
+      "chatName": "Interactive Session By Mick Walvisch",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.067Z"
+    },
+    "140291147362479@lid": {
+      "chatId": "140291147362479@lid",
+      "chatName": "Sanica dhawan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.070Z"
+    },
+    "919530717348@c.us": {
+      "chatId": "919530717348@c.us",
+      "chatName": "Paapi",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.073Z"
+    },
+    "120363405560986665@g.us": {
+      "chatId": "120363405560986665@g.us",
+      "chatName": "Hack01 - all builders, no excuses",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.076Z"
+    },
+    "120363407476933236@g.us": {
+      "chatId": "120363407476933236@g.us",
+      "chatName": "HackTU 7",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.080Z"
+    },
+    "120363403735199521@g.us": {
+      "chatId": "120363403735199521@g.us",
+      "chatName": "Tech Titans’25 CORE TEAM",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.083Z"
+    },
+    "918544850544@c.us": {
+      "chatId": "918544850544@c.us",
+      "chatName": "+91 85448 50544",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.086Z"
+    },
+    "919872088879@c.us": {
+      "chatId": "919872088879@c.us",
+      "chatName": "Vaishali",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.089Z"
+    },
+    "120363403435789290@g.us": {
+      "chatId": "120363403435789290@g.us",
+      "chatName": "Tech Titans Mentorship Cohort",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.092Z"
+    },
+    "120363424466963626@g.us": {
+      "chatId": "120363424466963626@g.us",
+      "chatName": "Cohort General Chat",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.095Z"
+    },
+    "158222988116019@lid": {
+      "chatId": "158222988116019@lid",
+      "chatName": "Ak",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.117Z"
+    },
+    "159759965659380@lid": {
+      "chatId": "159759965659380@lid",
+      "chatName": "Kalyan Uncle Raju Bhai (Train)  Chennai",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.125Z"
+    },
+    "120363419647673838@g.us": {
+      "chatId": "120363419647673838@g.us",
+      "chatName": "Node",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.128Z"
+    },
+    "267186207764564@lid": {
+      "chatId": "267186207764564@lid",
+      "chatName": "+91 98682 00445",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.131Z"
+    },
+    "7061446348963@lid": {
+      "chatId": "7061446348963@lid",
+      "chatName": "+91 90280 56395",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.134Z"
+    },
+    "120363407125187751@g.us": {
+      "chatId": "120363407125187751@g.us",
+      "chatName": "Core Team",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.137Z"
+    },
+    "916283140489@c.us": {
+      "chatId": "916283140489@c.us",
+      "chatName": "Avnoor Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.140Z"
+    },
+    "916382774587@c.us": {
+      "chatId": "916382774587@c.us",
+      "chatName": "Vignesh (Pec Hacks)",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.143Z"
+    },
+    "918422051436@c.us": {
+      "chatId": "918422051436@c.us",
+      "chatName": "+91 84220 51436",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.146Z"
+    },
+    "919342549643@c.us": {
+      "chatId": "919342549643@c.us",
+      "chatName": "+91 93425 49643",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.149Z"
+    },
+    "919345404933@c.us": {
+      "chatId": "919345404933@c.us",
+      "chatName": "Bharanivelan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.152Z"
+    },
+    "120363420948076950@g.us": {
+      "chatId": "120363420948076950@g.us",
+      "chatName": "Aqua...",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.156Z"
+    },
+    "120363415795250765@g.us": {
+      "chatId": "120363415795250765@g.us",
+      "chatName": "I'm engineer hackathon",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.159Z"
+    },
+    "120363405531668928@g.us": {
+      "chatId": "120363405531668928@g.us",
+      "chatName": "EMC revenue generated Team-CET",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.162Z"
+    },
+    "229231481065561@lid": {
+      "chatId": "229231481065561@lid",
+      "chatName": "Kashish Gupta (Doctor)",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.165Z"
+    },
+    "919815330137@c.us": {
+      "chatId": "919815330137@c.us",
+      "chatName": "Sukhmanjeet Cse B",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.168Z"
+    },
+    "120363420499395238@g.us": {
+      "chatId": "120363420499395238@g.us",
+      "chatName": "SIH",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.174Z"
+    },
+    "918283859800@c.us": {
+      "chatId": "918283859800@c.us",
+      "chatName": "sandeep cse",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.178Z"
+    },
+    "918544855996@c.us": {
+      "chatId": "918544855996@c.us",
+      "chatName": "Saurav",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.181Z"
+    },
+    "120363422389493480@g.us": {
+      "chatId": "120363422389493480@g.us",
+      "chatName": "CosmoHacks'25",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.184Z"
+    },
+    "916239709216@c.us": {
+      "chatId": "916239709216@c.us",
+      "chatName": "+91 62397 09216",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.188Z"
+    },
+    "919988001737@c.us": {
+      "chatId": "919988001737@c.us",
+      "chatName": "+91 99880 01737",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.191Z"
+    },
+    "919682139385@c.us": {
+      "chatId": "919682139385@c.us",
+      "chatName": "Sahil Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.195Z"
+    },
+    "120363402095942561@g.us": {
+      "chatId": "120363402095942561@g.us",
+      "chatName": "NSpD - 2025🚀",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.198Z"
+    },
+    "917814700599@c.us": {
+      "chatId": "917814700599@c.us",
+      "chatName": "Yogita",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.201Z"
+    },
+    "917814207625@c.us": {
+      "chatId": "917814207625@c.us",
+      "chatName": "shreyaan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.205Z"
+    },
+    "120363425292703934@g.us": {
+      "chatId": "120363425292703934@g.us",
+      "chatName": "INTERNSHIP BOOTCAMP 2025",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.208Z"
+    },
+    "919871052675@c.us": {
+      "chatId": "919871052675@c.us",
+      "chatName": "+91 98710 52675",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.211Z"
+    },
+    "919350103149@c.us": {
+      "chatId": "919350103149@c.us",
+      "chatName": "Navu",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.214Z"
+    },
+    "918712414237@c.us": {
+      "chatId": "918712414237@c.us",
+      "chatName": "+91 87124 14237",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.217Z"
+    },
+    "120363403168769714@g.us": {
+      "chatId": "120363403168769714@g.us",
+      "chatName": "MSME DRIVE@NOV🎓",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.222Z"
+    },
+    "918688210391@c.us": {
+      "chatId": "918688210391@c.us",
+      "chatName": "+91 86882 10391",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.226Z"
+    },
+    "918500173803@c.us": {
+      "chatId": "918500173803@c.us",
+      "chatName": "+91 85001 73803",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.229Z"
+    },
+    "918837724440@c.us": {
+      "chatId": "918837724440@c.us",
+      "chatName": "Jatin",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.232Z"
+    },
+    "917087436951@c.us": {
+      "chatId": "917087436951@c.us",
+      "chatName": "Ravdeep Kaur",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.235Z"
+    },
+    "917508016584@c.us": {
+      "chatId": "917508016584@c.us",
+      "chatName": "Shreyansh Bhargav",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.238Z"
+    },
+    "120363305382100629@g.us": {
+      "chatId": "120363305382100629@g.us",
+      "chatName": "Information regarding Placement Activities",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.241Z"
+    },
+    "120363421903739013@g.us": {
+      "chatId": "120363421903739013@g.us",
+      "chatName": "CosmoHacks25 X GSC",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.244Z"
+    },
+    "918847614127@c.us": {
+      "chatId": "918847614127@c.us",
+      "chatName": "ujwal Btech",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.247Z"
+    },
+    "919872344708@c.us": {
+      "chatId": "919872344708@c.us",
+      "chatName": "Vaibhav",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.250Z"
+    },
+    "917814604415@c.us": {
+      "chatId": "917814604415@c.us",
+      "chatName": "Ridhampreet Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.254Z"
+    },
+    "120363403935775711@g.us": {
+      "chatId": "120363403935775711@g.us",
+      "chatName": "Tech-EC-Punjab Startups",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.257Z"
+    },
+    "919445117165@c.us": {
+      "chatId": "919445117165@c.us",
+      "chatName": "+91 94451 17165",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.260Z"
+    },
+    "918870456475@c.us": {
+      "chatId": "918870456475@c.us",
+      "chatName": "+91 88704 56475",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.263Z"
+    },
+    "120363421746909458@g.us": {
+      "chatId": "120363421746909458@g.us",
+      "chatName": "Neptune Deal",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.266Z"
+    },
+    "120363403970692289@g.us": {
+      "chatId": "120363403970692289@g.us",
+      "chatName": "HypeNest",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.271Z"
+    },
+    "120363404065739807@g.us": {
+      "chatId": "120363404065739807@g.us",
+      "chatName": "General",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.273Z"
+    },
+    "919417564888@c.us": {
+      "chatId": "919417564888@c.us",
+      "chatName": "nooriee❄️",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.275Z"
+    },
+    "120363295698373186@g.us": {
+      "chatId": "120363295698373186@g.us",
+      "chatName": "Class Decoration Group(+2)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.277Z"
+    },
+    "120363403684416872@g.us": {
+      "chatId": "120363403684416872@g.us",
+      "chatName": "hackerwrath (tech nerds)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.279Z"
+    },
+    "919814536074@c.us": {
+      "chatId": "919814536074@c.us",
+      "chatName": "SahilChabra",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.281Z"
+    },
+    "120363404649660157@g.us": {
+      "chatId": "120363404649660157@g.us",
+      "chatName": "SPECTRA 2.0 - TECHFEST OF THE YEAR",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.283Z"
+    },
+    "120363420363660395@g.us": {
+      "chatId": "120363420363660395@g.us",
+      "chatName": "The knowledge Nation ",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.286Z"
+    },
+    "120363408163714711@g.us": {
+      "chatId": "120363408163714711@g.us",
+      "chatName": "Core",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.288Z"
+    },
+    "919501012675@c.us": {
+      "chatId": "919501012675@c.us",
+      "chatName": "Sanchita✨",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.290Z"
+    },
+    "120363406184517131@g.us": {
+      "chatId": "120363406184517131@g.us",
+      "chatName": "College Vibes",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.292Z"
+    },
+    "120363409438799076@g.us": {
+      "chatId": "120363409438799076@g.us",
+      "chatName": "CESS’25 [Core Teams]",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.295Z"
+    },
+    "120363424852226203@g.us": {
+      "chatId": "120363424852226203@g.us",
+      "chatName": "HackerWrath 2.0 - Official",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.298Z"
+    },
+    "918894466036@c.us": {
+      "chatId": "918894466036@c.us",
+      "chatName": "+91 88944 66036",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.301Z"
+    },
+    "120363403477603383@g.us": {
+      "chatId": "120363403477603383@g.us",
+      "chatName": "T.E.D SPECTRA",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.304Z"
+    },
+    "120363401783124591@g.us": {
+      "chatId": "120363401783124591@g.us",
+      "chatName": "Graphic Design Team CESS’25",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.307Z"
+    },
+    "917508930013@c.us": {
+      "chatId": "917508930013@c.us",
+      "chatName": "Gurshabad",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.309Z"
+    },
+    "120363167172769453@g.us": {
+      "chatId": "120363167172769453@g.us",
+      "chatName": "CosmoGen Students Society",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.312Z"
+    },
+    "919872853113@c.us": {
+      "chatId": "919872853113@c.us",
+      "chatName": "Sahibpreet Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.314Z"
+    },
+    "120363422417630366@g.us": {
+      "chatId": "120363422417630366@g.us",
+      "chatName": "Coding Club",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.317Z"
+    },
+    "917986467371@c.us": {
+      "chatId": "917986467371@c.us",
+      "chatName": "Vaishali (physics mam)",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.319Z"
+    },
+    "120363422389401075@g.us": {
+      "chatId": "120363422389401075@g.us",
+      "chatName": "General",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.322Z"
+    },
+    "120363403360561822@g.us": {
+      "chatId": "120363403360561822@g.us",
+      "chatName": "Sitee. - Beta Test 3.0",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.325Z"
+    },
+    "917696763029@c.us": {
+      "chatId": "917696763029@c.us",
+      "chatName": "Tushaaar",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.328Z"
+    },
+    "120363419807403083@g.us": {
+      "chatId": "120363419807403083@g.us",
+      "chatName": "GRAPHICS TEAM",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.338Z"
+    },
+    "918360103038@c.us": {
+      "chatId": "918360103038@c.us",
+      "chatName": "Agampreet Singh✨",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.342Z"
+    },
+    "919017390908@c.us": {
+      "chatId": "919017390908@c.us",
+      "chatName": "Aameen Sethi",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.347Z"
+    },
+    "120363344338547981@g.us": {
+      "chatId": "120363344338547981@g.us",
+      "chatName": "General",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.350Z"
+    },
+    "120363422020226778@g.us": {
+      "chatId": "120363422020226778@g.us",
+      "chatName": "Events And Collaborations Team",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.354Z"
+    },
+    "120363371477169224@g.us": {
+      "chatId": "120363371477169224@g.us",
+      "chatName": "GSC Social Media Team",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.360Z"
+    },
+    "918566885665@c.us": {
+      "chatId": "918566885665@c.us",
+      "chatName": "Kaustavya",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.366Z"
+    },
+    "120363319829125197@g.us": {
+      "chatId": "120363319829125197@g.us",
+      "chatName": "The Boosters(Public Relations Club)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.370Z"
+    },
+    "916284111088@c.us": {
+      "chatId": "916284111088@c.us",
+      "chatName": "Rakshit",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.374Z"
+    },
+    "916230541071@c.us": {
+      "chatId": "916230541071@c.us",
+      "chatName": "sanyam",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.378Z"
+    },
+    "120363360930783894@g.us": {
+      "chatId": "120363360930783894@g.us",
+      "chatName": "GSC TEAMS",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.384Z"
+    },
+    "919465863565@c.us": {
+      "chatId": "919465863565@c.us",
+      "chatName": "+91 94658 63565",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.392Z"
+    },
+    "120363402199898330@g.us": {
+      "chatId": "120363402199898330@g.us",
+      "chatName": "Promotions Team",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.395Z"
+    },
+    "917717699647@c.us": {
+      "chatId": "917717699647@c.us",
+      "chatName": "Mehak Thakur",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.398Z"
+    },
+    "917973360906@c.us": {
+      "chatId": "917973360906@c.us",
+      "chatName": "Priyambda",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.401Z"
+    },
+    "120363402358928249@g.us": {
+      "chatId": "120363402358928249@g.us",
+      "chatName": "GSC INTERVIEWS",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.404Z"
+    },
+    "918360962727@c.us": {
+      "chatId": "918360962727@c.us",
+      "chatName": "Luckshay Kalra",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.409Z"
+    },
+    "919980699550@c.us": {
+      "chatId": "919980699550@c.us",
+      "chatName": "+91 99806 99550",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.412Z"
+    },
+    "120363419642440275@g.us": {
+      "chatId": "120363419642440275@g.us",
+      "chatName": "Punjab Startup",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.415Z"
+    },
+    "917075316622@c.us": {
+      "chatId": "917075316622@c.us",
+      "chatName": "+91 70753 16622",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.420Z"
+    },
+    "120363421318687123@g.us": {
+      "chatId": "120363421318687123@g.us",
+      "chatName": "New booming technologies-06",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.424Z"
+    },
+    "917009038909@c.us": {
+      "chatId": "917009038909@c.us",
+      "chatName": "Ritik",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.427Z"
+    },
+    "919489957468@c.us": {
+      "chatId": "919489957468@c.us",
+      "chatName": "Shubham Mahajan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.430Z"
+    },
+    "918699719128@c.us": {
+      "chatId": "918699719128@c.us",
+      "chatName": "shubam",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.433Z"
+    },
+    "916379816951@c.us": {
+      "chatId": "916379816951@c.us",
+      "chatName": "+91 63798 16951",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.436Z"
+    },
+    "918838481751@c.us": {
+      "chatId": "918838481751@c.us",
+      "chatName": "+91 883 848 1751",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.440Z"
+    },
+    "917717664520@c.us": {
+      "chatId": "917717664520@c.us",
+      "chatName": "Pavneet Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.443Z"
+    },
+    "919880708370@c.us": {
+      "chatId": "919880708370@c.us",
+      "chatName": "+91 98807 08370",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.455Z"
+    },
+    "917550266232@c.us": {
+      "chatId": "917550266232@c.us",
+      "chatName": "+91 755 026 6232",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.458Z"
+    },
+    "917303761676@c.us": {
+      "chatId": "917303761676@c.us",
+      "chatName": "+91 73037 61676",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.462Z"
+    },
+    "120363405000859028@g.us": {
+      "chatId": "120363405000859028@g.us",
+      "chatName": "Selected ",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.465Z"
+    },
+    "916239540728@c.us": {
+      "chatId": "916239540728@c.us",
+      "chatName": "Kashvi Taneja",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.471Z"
+    },
+    "120363420556275947@g.us": {
+      "chatId": "120363420556275947@g.us",
+      "chatName": "GNDU × Thosmo'25",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.475Z"
+    },
+    "917527072000@c.us": {
+      "chatId": "917527072000@c.us",
+      "chatName": "+91 7527 072 000",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.478Z"
+    },
+    "919996890415@c.us": {
+      "chatId": "919996890415@c.us",
+      "chatName": "+91 99968 90415",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.483Z"
+    },
+    "917795052385@c.us": {
+      "chatId": "917795052385@c.us",
+      "chatName": "+91 77950 52385",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.487Z"
+    },
+    "120363401705883140@g.us": {
+      "chatId": "120363401705883140@g.us",
+      "chatName": "Cinematics CESS’25 CORE TEAM",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.490Z"
+    },
+    "918360255087@c.us": {
+      "chatId": "918360255087@c.us",
+      "chatName": "Rachit",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.493Z"
+    },
+    "918219192861@c.us": {
+      "chatId": "918219192861@c.us",
+      "chatName": "Nandini Rathore",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.497Z"
+    },
+    "917528058889@c.us": {
+      "chatId": "917528058889@c.us",
+      "chatName": "Amitoj",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.509Z"
+    },
+    "917087079170@c.us": {
+      "chatId": "917087079170@c.us",
+      "chatName": "Priyanshi",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.535Z"
+    },
+    "120363419948140991@g.us": {
+      "chatId": "120363419948140991@g.us",
+      "chatName": "SIH : 2025",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.541Z"
+    },
+    "919988285687@c.us": {
+      "chatId": "919988285687@c.us",
+      "chatName": "Dr. Saini",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.544Z"
+    },
+    "917973891329@c.us": {
+      "chatId": "917973891329@c.us",
+      "chatName": "Sahejveer Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.556Z"
+    },
+    "918448684032@c.us": {
+      "chatId": "918448684032@c.us",
+      "chatName": "+91 84486 84032",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.560Z"
+    },
+    "120363419858858435@g.us": {
+      "chatId": "120363419858858435@g.us",
+      "chatName": "Ideathon",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.564Z"
+    },
+    "120363418012586780@g.us": {
+      "chatId": "120363418012586780@g.us",
+      "chatName": "SIH (IMP STUFF)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.567Z"
+    },
+    "919115550109@c.us": {
+      "chatId": "919115550109@c.us",
+      "chatName": "_Mridula",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.570Z"
+    },
+    "120363422367252540@g.us": {
+      "chatId": "120363422367252540@g.us",
+      "chatName": "General",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.575Z"
+    },
+    "917814622995@c.us": {
+      "chatId": "917814622995@c.us",
+      "chatName": "Samridhi Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.579Z"
+    },
+    "120363402657440675@g.us": {
+      "chatId": "120363402657440675@g.us",
+      "chatName": "Attendance section B ",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.584Z"
+    },
+    "918264773001@c.us": {
+      "chatId": "918264773001@c.us",
+      "chatName": "Satyak",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.587Z"
+    },
+    "919458897047@c.us": {
+      "chatId": "919458897047@c.us",
+      "chatName": "+91 94588 97047",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.591Z"
+    },
+    "919501502668@c.us": {
+      "chatId": "919501502668@c.us",
+      "chatName": "Ridhima Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.596Z"
+    },
+    "918558050544@c.us": {
+      "chatId": "918558050544@c.us",
+      "chatName": "+91 85580 50544",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.599Z"
+    },
+    "916239184869@c.us": {
+      "chatId": "916239184869@c.us",
+      "chatName": "+91 62391 84869",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.603Z"
+    },
+    "919888455798@c.us": {
+      "chatId": "919888455798@c.us",
+      "chatName": "Kartik Sharma",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.606Z"
+    },
+    "18334363285@c.us": {
+      "chatId": "18334363285@c.us",
+      "chatName": "+1 (833) 436-3285",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.609Z"
+    },
+    "919877918214@c.us": {
+      "chatId": "919877918214@c.us",
+      "chatName": "Akshat Mehta",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.641Z"
+    },
+    "919988635799@c.us": {
+      "chatId": "919988635799@c.us",
+      "chatName": "Gurpreet Sir University Sahil",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.646Z"
+    },
+    "916006148706@c.us": {
+      "chatId": "916006148706@c.us",
+      "chatName": "Aniket Singh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.650Z"
+    },
+    "917837176700@c.us": {
+      "chatId": "917837176700@c.us",
+      "chatName": "Sunaina Kamboj",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.653Z"
+    },
+    "919643705878@c.us": {
+      "chatId": "919643705878@c.us",
+      "chatName": "Satish Delhi",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.659Z"
+    },
+    "917009602368@c.us": {
+      "chatId": "917009602368@c.us",
+      "chatName": "Sachin",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.667Z"
+    },
+    "919876032007@c.us": {
+      "chatId": "919876032007@c.us",
+      "chatName": "Deepika Narang",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.672Z"
+    },
+    "919654574301@c.us": {
+      "chatId": "919654574301@c.us",
+      "chatName": "+91 96545 74301",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.678Z"
+    },
+    "85292843372@c.us": {
+      "chatId": "85292843372@c.us",
+      "chatName": "+852 9284 3372",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.712Z"
+    },
+    "918497017853@c.us": {
+      "chatId": "918497017853@c.us",
+      "chatName": "+91 84970 17853",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.720Z"
+    },
+    "919916980535@c.us": {
+      "chatId": "919916980535@c.us",
+      "chatName": "+91 99169 80535",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.725Z"
+    },
+    "919803152010@c.us": {
+      "chatId": "919803152010@c.us",
+      "chatName": "Nandika",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.728Z"
+    },
+    "917087249135@c.us": {
+      "chatId": "917087249135@c.us",
+      "chatName": "Mankirat",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.731Z"
+    },
+    "919855501076@c.us": {
+      "chatId": "919855501076@c.us",
+      "chatName": "+91 98555 01076",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.736Z"
+    },
+    "919504050400@c.us": {
+      "chatId": "919504050400@c.us",
+      "chatName": "+91 95040 50400",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.739Z"
+    },
+    "918826978461@c.us": {
+      "chatId": "918826978461@c.us",
+      "chatName": "+91 88269 78461",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.746Z"
+    },
+    "919115402000@c.us": {
+      "chatId": "919115402000@c.us",
+      "chatName": "+91 91154 02000",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.752Z"
+    },
+    "120363140391653024@g.us": {
+      "chatId": "120363140391653024@g.us",
+      "chatName": "XII IP Group(2024-25)",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.756Z"
+    },
+    "919134394790@c.us": {
+      "chatId": "919134394790@c.us",
+      "chatName": "+91 91343 94790",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.759Z"
+    },
+    "917837345785@c.us": {
+      "chatId": "917837345785@c.us",
+      "chatName": "Armaan",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.771Z"
+    },
+    "919858302000@c.us": {
+      "chatId": "919858302000@c.us",
+      "chatName": "+91 98583 02000",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.774Z"
+    },
+    "919569640100@c.us": {
+      "chatId": "919569640100@c.us",
+      "chatName": "Abhay",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.789Z"
+    },
+    "918374505766@c.us": {
+      "chatId": "918374505766@c.us",
+      "chatName": "Tanvi",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.793Z"
+    },
+    "917809202000@c.us": {
+      "chatId": "917809202000@c.us",
+      "chatName": "+91 78092 02000",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.801Z"
+    },
+    "911835002217@c.us": {
+      "chatId": "911835002217@c.us",
+      "chatName": "+91 183 500 2217",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.805Z"
+    },
+    "919803334153@c.us": {
+      "chatId": "919803334153@c.us",
+      "chatName": "Harsh",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.813Z"
+    },
+    "918283088774@c.us": {
+      "chatId": "918283088774@c.us",
+      "chatName": "Shweta Mam",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.821Z"
+    },
+    "918264886998@c.us": {
+      "chatId": "918264886998@c.us",
+      "chatName": "Hunny",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.824Z"
+    },
+    "917009127354@c.us": {
+      "chatId": "917009127354@c.us",
+      "chatName": "+91 70091 27354",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.844Z"
+    },
+    "917719559578@c.us": {
+      "chatId": "917719559578@c.us",
+      "chatName": "Nitin",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.848Z"
+    },
+    "916283629038@c.us": {
+      "chatId": "916283629038@c.us",
+      "chatName": "+91 6283 629 038",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.851Z"
+    },
+    "917009481528@c.us": {
+      "chatId": "917009481528@c.us",
+      "chatName": "Zenia",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.882Z"
+    },
+    "919779903417@c.us": {
+      "chatId": "919779903417@c.us",
+      "chatName": "Nidhi",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.887Z"
+    },
+    "919779911041@c.us": {
+      "chatId": "919779911041@c.us",
+      "chatName": "English Teacher +2",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.890Z"
+    },
+    "917986773347@c.us": {
+      "chatId": "917986773347@c.us",
+      "chatName": "Gurleen",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.895Z"
+    },
+    "919501008475@c.us": {
+      "chatId": "919501008475@c.us",
+      "chatName": "+91 95010 08475",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.898Z"
+    },
+    "918433888777@c.us": {
+      "chatId": "918433888777@c.us",
+      "chatName": "+91 84338 88777",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.900Z"
+    },
+    "919821937148@c.us": {
+      "chatId": "919821937148@c.us",
+      "chatName": "+91 98219 37148",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.901Z"
+    },
+    "918800066888@c.us": {
+      "chatId": "918800066888@c.us",
+      "chatName": "+91 88000 66888",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.903Z"
+    },
+    "918928250427@c.us": {
+      "chatId": "918928250427@c.us",
+      "chatName": "+91 89282 50427",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.905Z"
+    },
+    "918978333632@c.us": {
+      "chatId": "918978333632@c.us",
+      "chatName": "+91 89783 33632",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.907Z"
+    },
+    "919888060016@c.us": {
+      "chatId": "919888060016@c.us",
+      "chatName": "+91 98880 60016",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.909Z"
+    },
+    "919744149067@c.us": {
+      "chatId": "919744149067@c.us",
+      "chatName": "+91 97441 49067",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.911Z"
+    },
+    "8801515274199@c.us": {
+      "chatId": "8801515274199@c.us",
+      "chatName": "+880 1515-274199",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.913Z"
+    },
+    "46763250696@c.us": {
+      "chatId": "46763250696@c.us",
+      "chatName": "+46 76 325 06 96",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.915Z"
+    },
+    "919512040070@c.us": {
+      "chatId": "919512040070@c.us",
+      "chatName": "+91 95120 40070",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.917Z"
+    },
+    "447876137368@c.us": {
+      "chatId": "447876137368@c.us",
+      "chatName": "+44 7876 137368",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.919Z"
+    },
+    "918968505039@c.us": {
+      "chatId": "918968505039@c.us",
+      "chatName": "+91 89685 05039",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.921Z"
+    },
+    "919355586890@c.us": {
+      "chatId": "919355586890@c.us",
+      "chatName": "+91 93555 86890",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.924Z"
+    },
+    "917303937895@c.us": {
+      "chatId": "917303937895@c.us",
+      "chatName": "+91 73039 37895",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.927Z"
+    },
+    "120363149075224572@g.us": {
+      "chatId": "120363149075224572@g.us",
+      "chatName": "K.C.P.S Scientists",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.929Z"
+    },
+    "120363047957328598@g.us": {
+      "chatId": "120363047957328598@g.us",
+      "chatName": "CET-GNDU",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.931Z"
+    },
+    "120363150994403042@g.us": {
+      "chatId": "120363150994403042@g.us",
+      "chatName": "CosmoGen Students Society",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.933Z"
+    },
+    "120363302386720731@g.us": {
+      "chatId": "120363302386720731@g.us",
+      "chatName": "CESS’25",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.937Z"
+    },
+    "120363347185358652@g.us": {
+      "chatId": "120363347185358652@g.us",
+      "chatName": "GNDU STUDENTS' COMMUNITY--Extended",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.941Z"
+    },
+    "120363360281771097@g.us": {
+      "chatId": "120363360281771097@g.us",
+      "chatName": "GSC TEAMS",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.945Z"
+    },
+    "120363401615752356@g.us": {
+      "chatId": "120363401615752356@g.us",
+      "chatName": "Node",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.949Z"
+    },
+    "120363403146226904@g.us": {
+      "chatId": "120363403146226904@g.us",
+      "chatName": "CESS’25 [Core Teams]",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.954Z"
+    },
+    "120363404983052333@g.us": {
+      "chatId": "120363404983052333@g.us",
+      "chatName": "INDIA AI IMPACT SUMMIT - HCL GUVI",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.957Z"
+    },
+    "120363405954649993@g.us": {
+      "chatId": "120363405954649993@g.us",
+      "chatName": "Liquid 🫟",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.961Z"
+    },
+    "120363406175153279@g.us": {
+      "chatId": "120363406175153279@g.us",
+      "chatName": "StrangerHacks",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.965Z"
+    },
+    "120363420532729677@g.us": {
+      "chatId": "120363420532729677@g.us",
+      "chatName": "Tech Nerds",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.970Z"
+    },
+    "120363421690806067@g.us": {
+      "chatId": "120363421690806067@g.us",
+      "chatName": "GDG GNDU",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.974Z"
+    },
+    "120363421830307563@g.us": {
+      "chatId": "120363421830307563@g.us",
+      "chatName": "Punjab Startup",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.979Z"
+    },
+    "120363422277116199@g.us": {
+      "chatId": "120363422277116199@g.us",
+      "chatName": "RunAnywhere on-device AI",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.983Z"
+    },
+    "120363422564037322@g.us": {
+      "chatId": "120363422564037322@g.us",
+      "chatName": "ARMSS",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.987Z"
+    },
+    "120363424122770472@g.us": {
+      "chatId": "120363424122770472@g.us",
+      "chatName": "GFG(CAMPUS BODY)- GNDU",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.991Z"
+    },
+    "120363424203319787@g.us": {
+      "chatId": "120363424203319787@g.us",
+      "chatName": "SPECTRA 2.0 - TECHFEST OF THE YEAR",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.994Z"
+    },
+    "120363424321738725@g.us": {
+      "chatId": "120363424321738725@g.us",
+      "chatName": "HackMol 7.0",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:30.997Z"
+    },
+    "120363424394547692@g.us": {
+      "chatId": "120363424394547692@g.us",
+      "chatName": "Tech Titans Mentorship Cohort",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:31.002Z"
+    },
+    "120363424585918884@g.us": {
+      "chatId": "120363424585918884@g.us",
+      "chatName": "MDG Space",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:31.005Z"
+    },
+    "120363424745034454@g.us": {
+      "chatId": "120363424745034454@g.us",
+      "chatName": "HackTu 7.0 Queries Group",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:31.009Z"
+    },
+    "120363425736623331@g.us": {
+      "chatId": "120363425736623331@g.us",
+      "chatName": "Electrothon 8.0",
+      "isGroup": true,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:31.012Z"
+    },
+    "917837477108@c.us": {
+      "chatId": "917837477108@c.us",
+      "chatName": "+91 78374 77108",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:31.016Z"
+    },
+    "status@broadcast": {
+      "chatId": "status@broadcast",
+      "chatName": "status",
+      "isGroup": false,
+      "phones": [],
+      "updatedAt": "2026-03-13T16:32:31.020Z"
+    }
+  },
+  "chatNames": {
+    "study!": "120363402534167868@g.us",
+    "btech cse notes": "120363421888534231@g.us",
+    "1st year sec b (unofficial)": "120363400990374973@g.us",
+    "sahil number": "918968520989@c.us",
+    "pec hacks : community 6": "120363403812032319@g.us",
+    "réunion!": "120363422502997244@g.us",
+    "node - general chat": "120363401071935983@g.us",
+    "estudiar": "120363423642168561@g.us",
+    "electrothon 8.0": "120363425736623331@g.us",
+    "iron man": "918130596403@c.us",
+    "nit jalandhar hackathon": "120363408661714404@g.us",
+    "🫓🫓ਘਰ ਦੀ ਰੋਟੀ 2 🫓🫓": "120363422341306641@g.us",
+    "cet creative 2026": "120363428003715778@g.us",
+    "general": "120363422367252540@g.us",
+    "+1 (470) 625-0702": "13529801302092@lid",
+    "cet-gndu": "120363047957328598@g.us",
+    "+91 81470 20267": "110780376711322@lid",
+    "startup brainstorm hub": "120363408837481948@g.us",
+    "shashank": "919779234350@c.us",
+    "hackmol 7.0 | find teammate": "120363422299979812@g.us",
+    "gndu tech club": "120363402693547780@g.us",
+    "manrajdeep singh": "918264564060@c.us",
+    "eventopia alerts & updates 2": "120363402536055782@g.us",
+    "studio privato": "120363420095977860@g.us",
+    "sawal": "917973355460@c.us",
+    "rahul sharma": "919988704107@c.us",
+    "general #1": "120363405891124965@g.us",
+    "roopanshi sharma": "918591510145@c.us",
+    "raghav sharma": "919872200652@c.us",
+    "mehakpreet singh": "919417812097@c.us",
+    "+91 7428 262 731": "137134598004901@lid",
+    "prabhnoor singh": "919988341071@c.us",
+    "shailesh": "917837031414@c.us",
+    "whatsapp": "0@c.us",
+    "tech nerds": "120363420532729677@g.us",
+    "liquid 🫟": "120363405954649993@g.us",
+    "+91 90226 90226": "98848689123351@lid",
+    "just chill chill just chill": "120363424911173247@g.us",
+    "shagun": "919780675642@c.us",
+    "gndu x iit roorkee cogni'26": "120363405969731784@g.us",
+    "sports dcet 2026": "120363320521516295@g.us",
+    "b. tech 1st year a sec cse": "120363420322355233@g.us",
+    "b.tech 1st year b cse": "120363403445146557@g.us",
+    "rudraksh": "918894099912@c.us",
+    "hackbytes": "120363423351624395@g.us",
+    "hackmol 7.0": "120363424321738725@g.us",
+    "rashmita": "919780079771@c.us",
+    "english (cse-b)": "120363406388551896@g.us",
+    "sundram": "916284101183@c.us",
+    "kanwarpal singh": "918288944627@c.us",
+    "pritika": "916284599398@c.us",
+    "cet theatre 2026🎭": "120363424991756700@g.us",
+    "sahaj": "919501367627@c.us",
+    "find your team !": "120363405208037820@g.us",
+    "the fusion ( dance club )": "120363324043021993@g.us",
+    "the cinematics club": "120363321614460716@g.us",
+    "the literary club": "120363304473745029@g.us",
+    "cess’25": "120363302386720731@g.us",
+    "samaira": "916283285856@c.us",
+    "tech titans (tech club)": "120363323031799939@g.us",
+    "btech cse first year (pbi) 25-26": "120363403874035668@g.us",
+    "khanna sparsh (тужды)": "917009518347@c.us",
+    "sukhjit singh bajwa": "917814261486@c.us",
+    "wizcoderr (sayam)": "208542757830696@lid",
+    "+91 99990 41935": "919999041935@c.us",
+    "hackmol 7.0 | support 1.0": "120363425535987690@g.us",
+    "dipali": "917814524135@c.us",
+    "saksham gupta": "917986547697@c.us",
+    "hacktu queries group 1": "120363405150139428@g.us",
+    "cosmogen students society": "120363150994403042@g.us",
+    "kush": "61421220682@c.us",
+    "nimish suri": "919780672156@c.us",
+    "vicky gupta": "918360054278@c.us",
+    "raji bhua": "919464681638@c.us",
+    "+91 79911 38780": "87565793239255@lid",
+    "carrom 2025-2026 cet": "120363422060904758@g.us",
+    "+1 (415) 523-8886": "146170689130567@lid",
+    "mummy": "272542099107876@lid",
+    "karam sandhu": "916283500082@c.us",
+    "all core teams cess’25": "120363419809783508@g.us",
+    "hacktropica": "120363408315921903@g.us",
+    "gourish (fev)": "917740060616@c.us",
+    "rayan chandel": "919779553372@c.us",
+    "gfg(campus body)- gndu": "120363424122770472@g.us",
+    "gndu dsa & competitive programming group": "120363400849001833@g.us",
+    "electrothon": "120363426210434578@g.us",
+    "harnoor singh arora": "917087925713@c.us",
+    "mohit salwan": "918894262412@c.us",
+    "gndu students' community--extended": "120363347185358652@g.us",
+    "btech cse secb mathematics": "120363420963841203@g.us",
+    "mohit": "916283178397@c.us",
+    "python (cse b)": "120363406617103019@g.us",
+    "sunidhisood": "917710389098@c.us",
+    "sukhleen": "919592178007@c.us",
+    "arts and crafts club": "120363305164732306@g.us",
+    "the sargam ( music club )": "120363323806856648@g.us",
+    "+91 88725 65758": "5153977561091@lid",
+    "sawni mehta": "916283182363@c.us",
+    "vansh sikka": "112154497781803@lid",
+    "hackerwrath 2.0": "120363422300641808@g.us",
+    "+61 450 794 232": "61450794232@c.us",
+    "+91 80 6252 7095": "1117362642964@lid",
+    "+91 70181 33694": "117244185079924@lid",
+    "armss": "120363422564037322@g.us",
+    "+91 92178 44518": "88854954545294@lid",
+    "+91 99880 06999": "919988006999@c.us",
+    "rudrksh sharma": "919646658917@c.us",
+    "dhruv sharma": "74419133222934@lid",
+    "robotics workshop (iit bombay x gndu)": "120363423832106637@g.us",
+    "navya": "918196936710@c.us",
+    "+91 98776 93265": "919877693265@c.us",
+    "parth thakkar": "20504324874434@lid",
+    "sarthak mittal": "919876980831@c.us",
+    "vineet": "917888681130@c.us",
+    "gdg gndu": "120363421690806067@g.us",
+    "pec hacks 3.0 finalists": "120363420926954521@g.us",
+    "mehak gupta": "917719647562@c.us",
+    "harsh verma": "47004122112006@lid",
+    "ashwath soni": "917009023965@c.us",
+    "+91 70554 22111": "59871961587874@lid",
+    "bunny🧑‍💻": "918437169233@c.us",
+    "stranger hacks": "120363406677002750@g.us",
+    "mdg space": "120363424585918884@g.us",
+    "ranvir singh": "917051876400@c.us",
+    "+91 93548 15486": "182622160449536@lid",
+    "strangerhacks": "120363406175153279@g.us",
+    "meta ai": "13135550002@c.us",
+    "+44 7723 442693": "447723442693@c.us",
+    "placement ready": "120363422912752058@g.us",
+    "mishthi khanna 🦋🌻": "919041180340@c.us",
+    "india ai impact summit - hcl guvi": "120363404983052333@g.us",
+    "rishima mahajan": "919463955915@c.us",
+    "hacktu 7.0 queries group": "120363424745034454@g.us",
+    "jigyāsa - department of physics, gndu": "120363407044852118@g.us",
+    "+91 73021 65711": "207215210303537@lid",
+    "hacktu 7.0 (hackathon)": "120363423171358501@g.us",
+    "+91 97911 90808": "132590187110428@lid",
+    "ecl btech cse sec b": "120363421646176883@g.us",
+    "india ai impact buildathon 2026": "120363406218465919@g.us",
+    "jashanpreet singh dingra": "918847242013@c.us",
+    "cet voice (gsc)": "120363365346705347@g.us",
+    "manasvi": "918766221392@c.us",
+    "reetish": "917986105932@c.us",
+    "+91 82967 00576": "31843323801760@lid",
+    "teammate search": "120363424451863486@g.us",
+    "siddharth chopra": "24520052220023@lid",
+    "+91 836 005 3156": "122531860234468@lid",
+    "runanywhere community discussion": "120363405508691007@g.us",
+    "runanywhere on-device ai": "120363422277116199@g.us",
+    "dingrastro club | dac": "120363046352856926@g.us",
+    "+55 31 7503-8350": "214534170095626@lid",
+    "+1 (800) 242-8478": "30722505109681@lid",
+    "google hackathon": "120363423195924185@g.us",
+    "nitish mahajan": "917658805149@c.us",
+    "krishna": "918289091818@c.us",
+    "+91 99153 39443": "56921201635441@lid",
+    "gfg campus – general discussion": "120363407303097061@g.us",
+    "akshat": "131172646568045@lid",
+    "class 12th non medical 2024-2025": "120363106788799659@g.us",
+    "+91 73559 19927": "225223890739409@lid",
+    "aayush": "187067401244678@lid",
+    "i am engineer 2025": "120363403785132149@g.us",
+    "karan jeet mits": "265360913776828@lid",
+    "da vinci": "120363423892862579@g.us",
+    "harshit nikam": "919922041218@c.us",
+    "gdg buildfest": "120363403032822855@g.us",
+    "tech-titans- secondary-logistics": "120363422007730102@g.us",
+    "techie": "120363402364995719@g.us",
+    "+91 92175 89261": "144942982803577@lid",
+    "+91 97795 69462": "143091298267191@lid",
+    "hardik sachan": "163032999157956@lid",
+    "manpreet": "917837780040@c.us",
+    "+91 92895 72040": "255292990312595@lid",
+    "test number": "113735783948521@lid",
+    "+91 84387 48988": "918438748988@c.us",
+    "+1 (646) 589-4168": "199076280832146@lid",
+    "prabhpuran": "919463367887@c.us",
+    "meharwan": "917528929126@c.us",
+    "mukul": "918146450504@c.us",
+    "rajan": "918360018723@c.us",
+    "rajansekhri photostate": "4149542391926@lid",
+    "langchain agents session": "120363423711823610@g.us",
+    "team prabhpuran": "120363421800346811@g.us",
+    "+91 97407 76953": "175763416469709@lid",
+    "ms": "120363405308050594@g.us",
+    "pec hacks": "120363404982428997@g.us",
+    "interactive session by mick walvisch": "120363420965891828@g.us",
+    "sanica dhawan": "140291147362479@lid",
+    "paapi": "919530717348@c.us",
+    "hack01 - all builders, no excuses": "120363405560986665@g.us",
+    "hacktu 7": "120363407476933236@g.us",
+    "tech titans’25 core team": "120363403735199521@g.us",
+    "+91 85448 50544": "918544850544@c.us",
+    "vaishali": "919872088879@c.us",
+    "tech titans mentorship cohort": "120363424394547692@g.us",
+    "cohort general chat": "120363424466963626@g.us",
+    "ak": "158222988116019@lid",
+    "kalyan uncle raju bhai (train) chennai": "159759965659380@lid",
+    "node": "120363401615752356@g.us",
+    "+91 98682 00445": "267186207764564@lid",
+    "+91 90280 56395": "7061446348963@lid",
+    "core team": "120363407125187751@g.us",
+    "avnoor singh": "916283140489@c.us",
+    "vignesh (pec hacks)": "916382774587@c.us",
+    "+91 84220 51436": "918422051436@c.us",
+    "+91 93425 49643": "919342549643@c.us",
+    "bharanivelan": "919345404933@c.us",
+    "aqua...": "120363420948076950@g.us",
+    "i'm engineer hackathon": "120363415795250765@g.us",
+    "emc revenue generated team-cet": "120363405531668928@g.us",
+    "kashish gupta (doctor)": "229231481065561@lid",
+    "sukhmanjeet cse b": "919815330137@c.us",
+    "sih": "120363420499395238@g.us",
+    "sandeep cse": "918283859800@c.us",
+    "saurav": "918544855996@c.us",
+    "cosmohacks'25": "120363422389493480@g.us",
+    "+91 62397 09216": "916239709216@c.us",
+    "+91 99880 01737": "919988001737@c.us",
+    "sahil sharma": "919682139385@c.us",
+    "nspd - 2025🚀": "120363402095942561@g.us",
+    "yogita": "917814700599@c.us",
+    "shreyaan": "917814207625@c.us",
+    "internship bootcamp 2025": "120363425292703934@g.us",
+    "+91 98710 52675": "919871052675@c.us",
+    "navu": "919350103149@c.us",
+    "+91 87124 14237": "918712414237@c.us",
+    "msme drive@nov🎓": "120363403168769714@g.us",
+    "+91 86882 10391": "918688210391@c.us",
+    "+91 85001 73803": "918500173803@c.us",
+    "jatin": "918837724440@c.us",
+    "ravdeep kaur": "917087436951@c.us",
+    "shreyansh bhargav": "917508016584@c.us",
+    "information regarding placement activities": "120363305382100629@g.us",
+    "cosmohacks25 x gsc": "120363421903739013@g.us",
+    "ujwal btech": "918847614127@c.us",
+    "vaibhav": "919872344708@c.us",
+    "ridhampreet singh": "917814604415@c.us",
+    "tech-ec-punjab startups": "120363403935775711@g.us",
+    "+91 94451 17165": "919445117165@c.us",
+    "+91 88704 56475": "918870456475@c.us",
+    "neptune deal": "120363421746909458@g.us",
+    "hypenest": "120363403970692289@g.us",
+    "nooriee❄️": "919417564888@c.us",
+    "class decoration group(+2)": "120363295698373186@g.us",
+    "hackerwrath (tech nerds)": "120363403684416872@g.us",
+    "sahilchabra": "919814536074@c.us",
+    "spectra 2.0 - techfest of the year": "120363424203319787@g.us",
+    "the knowledge nation": "120363420363660395@g.us",
+    "core": "120363408163714711@g.us",
+    "sanchita✨": "919501012675@c.us",
+    "college vibes": "120363406184517131@g.us",
+    "cess’25 [core teams]": "120363403146226904@g.us",
+    "hackerwrath 2.0 - official": "120363424852226203@g.us",
+    "+91 88944 66036": "918894466036@c.us",
+    "t.e.d spectra": "120363403477603383@g.us",
+    "graphic design team cess’25": "120363401783124591@g.us",
+    "gurshabad": "917508930013@c.us",
+    "sahibpreet singh": "919872853113@c.us",
+    "coding club": "120363422417630366@g.us",
+    "vaishali (physics mam)": "917986467371@c.us",
+    "sitee. - beta test 3.0": "120363403360561822@g.us",
+    "tushaaar": "917696763029@c.us",
+    "graphics team": "120363419807403083@g.us",
+    "agampreet singh✨": "918360103038@c.us",
+    "aameen sethi": "919017390908@c.us",
+    "events and collaborations team": "120363422020226778@g.us",
+    "gsc social media team": "120363371477169224@g.us",
+    "kaustavya": "918566885665@c.us",
+    "the boosters(public relations club)": "120363319829125197@g.us",
+    "rakshit": "916284111088@c.us",
+    "sanyam": "916230541071@c.us",
+    "gsc teams": "120363360281771097@g.us",
+    "+91 94658 63565": "919465863565@c.us",
+    "promotions team": "120363402199898330@g.us",
+    "mehak thakur": "917717699647@c.us",
+    "priyambda": "917973360906@c.us",
+    "gsc interviews": "120363402358928249@g.us",
+    "luckshay kalra": "918360962727@c.us",
+    "+91 99806 99550": "919980699550@c.us",
+    "punjab startup": "120363421830307563@g.us",
+    "+91 70753 16622": "917075316622@c.us",
+    "new booming technologies-06": "120363421318687123@g.us",
+    "ritik": "917009038909@c.us",
+    "shubham mahajan": "919489957468@c.us",
+    "shubam": "918699719128@c.us",
+    "+91 63798 16951": "916379816951@c.us",
+    "+91 883 848 1751": "918838481751@c.us",
+    "pavneet singh": "917717664520@c.us",
+    "+91 98807 08370": "919880708370@c.us",
+    "+91 755 026 6232": "917550266232@c.us",
+    "+91 73037 61676": "917303761676@c.us",
+    "selected": "120363405000859028@g.us",
+    "kashvi taneja": "916239540728@c.us",
+    "gndu × thosmo'25": "120363420556275947@g.us",
+    "+91 7527 072 000": "917527072000@c.us",
+    "+91 99968 90415": "919996890415@c.us",
+    "+91 77950 52385": "917795052385@c.us",
+    "cinematics cess’25 core team": "120363401705883140@g.us",
+    "rachit": "918360255087@c.us",
+    "nandini rathore": "918219192861@c.us",
+    "amitoj": "917528058889@c.us",
+    "priyanshi": "917087079170@c.us",
+    "sih : 2025": "120363419948140991@g.us",
+    "dr. saini": "919988285687@c.us",
+    "sahejveer singh": "917973891329@c.us",
+    "+91 84486 84032": "918448684032@c.us",
+    "ideathon": "120363419858858435@g.us",
+    "sih (imp stuff)": "120363418012586780@g.us",
+    "_mridula": "919115550109@c.us",
+    "samridhi sharma": "917814622995@c.us",
+    "attendance section b": "120363402657440675@g.us",
+    "satyak": "918264773001@c.us",
+    "+91 94588 97047": "919458897047@c.us",
+    "ridhima sharma": "919501502668@c.us",
+    "+91 85580 50544": "918558050544@c.us",
+    "+91 62391 84869": "916239184869@c.us",
+    "kartik sharma": "919888455798@c.us",
+    "+1 (833) 436-3285": "18334363285@c.us",
+    "akshat mehta": "919877918214@c.us",
+    "gurpreet sir university sahil": "919988635799@c.us",
+    "aniket singh": "916006148706@c.us",
+    "sunaina kamboj": "917837176700@c.us",
+    "satish delhi": "919643705878@c.us",
+    "sachin": "917009602368@c.us",
+    "deepika narang": "919876032007@c.us",
+    "+91 96545 74301": "919654574301@c.us",
+    "+852 9284 3372": "85292843372@c.us",
+    "+91 84970 17853": "918497017853@c.us",
+    "+91 99169 80535": "919916980535@c.us",
+    "nandika": "919803152010@c.us",
+    "mankirat": "917087249135@c.us",
+    "+91 98555 01076": "919855501076@c.us",
+    "+91 95040 50400": "919504050400@c.us",
+    "+91 88269 78461": "918826978461@c.us",
+    "+91 91154 02000": "919115402000@c.us",
+    "xii ip group(2024-25)": "120363140391653024@g.us",
+    "+91 91343 94790": "919134394790@c.us",
+    "armaan": "917837345785@c.us",
+    "+91 98583 02000": "919858302000@c.us",
+    "abhay": "919569640100@c.us",
+    "tanvi": "918374505766@c.us",
+    "+91 78092 02000": "917809202000@c.us",
+    "+91 183 500 2217": "911835002217@c.us",
+    "harsh": "919803334153@c.us",
+    "shweta mam": "918283088774@c.us",
+    "hunny": "918264886998@c.us",
+    "+91 70091 27354": "917009127354@c.us",
+    "nitin": "917719559578@c.us",
+    "+91 6283 629 038": "916283629038@c.us",
+    "zenia": "917009481528@c.us",
+    "nidhi": "919779903417@c.us",
+    "english teacher +2": "919779911041@c.us",
+    "gurleen": "917986773347@c.us",
+    "+91 95010 08475": "919501008475@c.us",
+    "+91 84338 88777": "918433888777@c.us",
+    "+91 98219 37148": "919821937148@c.us",
+    "+91 88000 66888": "918800066888@c.us",
+    "+91 89282 50427": "918928250427@c.us",
+    "+91 89783 33632": "918978333632@c.us",
+    "+91 98880 60016": "919888060016@c.us",
+    "+91 97441 49067": "919744149067@c.us",
+    "+880 1515-274199": "8801515274199@c.us",
+    "+46 76 325 06 96": "46763250696@c.us",
+    "+91 95120 40070": "919512040070@c.us",
+    "+44 7876 137368": "447876137368@c.us",
+    "+91 89685 05039": "918968505039@c.us",
+    "+91 93555 86890": "919355586890@c.us",
+    "+91 73039 37895": "917303937895@c.us",
+    "k.c.p.s scientists": "120363149075224572@g.us",
+    "+91 78374 77108": "917837477108@c.us",
+    "status": "status@broadcast"
+  }
+}

@@ -1,13 +1,12 @@
-[SERVER] Running at http://localhost:3000
-[STATUS] WhatsApp client is ready
-[YOU → "Sahil Number"]: !summarize node - general chat 100
-[STATUS] Searching for chat: "node - general chat"
-[STATUS] Found chat: "Node - General Chat"
-[STATUS] Messages fetched — requested target=100, resolved target=98, context=32
-[STATUS] Target message stats — rawFetched=142, afterCommandFilter=142, selectedTargetMessages=100
-[STATUS] Sending messages to AI...
-[STATUS] Summary generated
-[YOU → "Sahil Number"]: *📌 Key Updates*  
+2026-03-13T16:34:42.144Z [SUCCESS] [STATUS] WhatsApp client is ready
+2026-03-13T16:34:44.165Z [INFO] [YOU → "Sahil Number"]: !summarize node - general chat 100
+2026-03-13T16:34:44.224Z [INFO] [STATUS] Searching for chat: "node - general chat"
+2026-03-13T16:34:44.425Z [INFO] [STATUS] Found chat: "Node - General Chat"
+2026-03-13T16:34:56.182Z [INFO] [STATUS] Messages fetched — requested target=100, resolved target=98, context=32
+2026-03-13T16:34:56.183Z [INFO] [STATUS] Target message stats — rawFetched=142, afterCommandFilter=142, selectedTargetMessages=100
+2026-03-13T16:34:56.183Z [INFO] [STATUS] Sending messages to AI...
+2026-03-13T16:35:01.360Z [SUCCESS] [STATUS] Summary generated
+2026-03-13T16:35:04.021Z [INFO] [YOU → "Sahil Number"]: *📌 Key Updates*  
 - Khanna Sparsh raised a technical question: how to create a single shared “resource bucket” for Windows 11 that both Windows and WSL can access, avoiding repetitive `export` commands.  
 - Jiya shared the IAAC international space‑science competition (registration link provided).  
 - Jivesh announced HackMol 7.0 hackathon – registration open until 24 Mar 2026 (link provided).  
@@ -34,7 +33,7 @@
 *⚠️ Unresolved*  
 - Emoji subscription for Akshat’s account has ended – may need renewal.  
 - Token/usage limits for Codex and Antigravity AI remain a pain point for several users.
-[YOU → "Node - General Chat"]: *📌 Key Updates*  
+2026-03-13T16:36:02.215Z [INFO] [YOU → "Node - General Chat"]: *📌 Key Updates*  
 - Khanna Sparsh raised a technical question: how to create a single shared “resource bucket” for Windows 11 that both Windows and WSL can access, avoiding repetitive `export` commands.  
 - Jiya shared the IAAC international space‑science competition (registration link provided).  
 - Jivesh announced HackMol 7.0 hackathon – registration open until 24 Mar 2026 (link provided).  
@@ -61,15 +60,15 @@
 *⚠️ Unresolved*  
 - Emoji subscription for Akshat’s account has ended – may need renewal.  
 - Token/usage limits for Codex and Antigravity AI remain a pain point for several users.
-[YOU → "Node - General Chat"]: I'm making a software which provide whatsapp summaries like this (how's it?)
-[YOU → "Node - General Chat"]: It can even read stickers and images and videos
-[YOU → "Node - General Chat"]: Have full context
-[WATCHDOG] Client alive — state: CONNECTED
-[MSG] "Node - General Chat" from Gourish (FeV): Bery kool (I'm biased)
-[AUTO] "Node - General Chat" unreadCount: 1/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: 
-[AUTO] "PEC Hacks : Community 6" unreadCount: 1/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: 🚀 NextGen AI & Tech Quiz Challenge by PERSYNTRA
+2026-03-13T16:36:02.889Z [INFO] [YOU → "Node - General Chat"]: I'm making a software which provide whatsapp summaries like this (how's it?)
+2026-03-13T16:36:11.164Z [INFO] [YOU → "Node - General Chat"]: It can even read stickers and images and videos
+2026-03-13T16:36:15.823Z [INFO] [YOU → "Node - General Chat"]: Have full context
+2026-03-13T16:36:42.153Z [INFO] [WATCHDOG] Client alive — state: CONNECTED
+2026-03-13T16:36:55.222Z [INFO] [MSG] "Node - General Chat" from Gourish (FeV): Bery kool (I'm biased)
+2026-03-13T16:36:55.243Z [INFO] [AUTO] "Node - General Chat" unreadCount: 1/100
+2026-03-13T16:37:35.847Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: 
+2026-03-13T16:37:35.877Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 1/100
+2026-03-13T16:37:37.364Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: 🚀 NextGen AI & Tech Quiz Challenge by PERSYNTRA
 
 Are you ready to test your knowledge in Artificial Intelligence, Technology, and Career Skills?
 Join the NextGen AI & Tech Quiz Challenge, organized by PERSYNTRA in partnership with Unstop, and compete with students from different places.
@@ -104,19 +103,19 @@ Ruban M
 ✨ Let’s learn, compete, and grow together through this exciting tech quiz!
 
 #Persyntra #Unstop #AIQuiz #TechQuiz #StudentCommunity #OnlineQuiz #FutureSkills #Technology
-[AUTO] "PEC Hacks : Community 6" unreadCount: 2/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: 
-[AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: 
-[AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: 
-[AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: 
-[AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: 
-[AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
-[MSG] "PEC Hacks : Community 6" from Pavitra: Registered members kindly post your names guys
-[AUTO] "PEC Hacks : Community 6" unreadCount: 4/100
-[YOU → "Node - General Chat"]: It's a summary of the first 100 messages of this group
-[WATCHDOG] Client alive — state: CONNECTED
-[WATCHDOG] Client alive — state: CONNECTED
+2026-03-13T16:37:37.390Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 2/100
+2026-03-13T16:37:39.027Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: 
+2026-03-13T16:37:39.050Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
+2026-03-13T16:37:40.787Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: 
+2026-03-13T16:37:40.801Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
+2026-03-13T16:37:42.717Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: 
+2026-03-13T16:37:42.743Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
+2026-03-13T16:37:44.434Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: 
+2026-03-13T16:37:44.449Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
+2026-03-13T16:37:46.168Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: 
+2026-03-13T16:37:46.185Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 3/100
+2026-03-13T16:37:48.003Z [INFO] [MSG] "PEC Hacks : Community 6" from Pavitra: Registered members kindly post your names guys
+2026-03-13T16:37:48.029Z [INFO] [AUTO] "PEC Hacks : Community 6" unreadCount: 4/100
+2026-03-13T16:38:05.610Z [INFO] [YOU → "Node - General Chat"]: It's a summary of the first 100 messages of this group
+2026-03-13T16:38:42.163Z [INFO] [WATCHDOG] Client alive — state: CONNECTED
+2026-03-13T16:40:42.174Z [INFO] [WATCHDOG] Client alive — state: CONNECTED
