@@ -85,9 +85,36 @@ function trimTo(str, max = 240) {
     return str.length > max ? `${str.slice(0, max - 1)}...` : str;
 }
 
+function getWordCount(text) {
+    return String(text || '').trim().split(/\s+/).filter(Boolean).length;
+}
+
+function extractRequestedWordCount(question) {
+    const q = String(question || '');
+    const match = q.match(/(?:exactly|in|with|use)?\s*(\d+)\s+words?\b/i);
+    if (!match) return null;
+    const parsed = parseInt(match[1], 10);
+    if (!Number.isFinite(parsed) || parsed <= 0 || parsed > 1000) return null;
+    return parsed;
+}
+
+function forceWordCount(text, targetWords) {
+    const words = String(text || '').trim().split(/\s+/).filter(Boolean);
+    if (words.length === targetWords) return words.join(' ');
+    if (words.length > targetWords) return words.slice(0, targetWords).join(' ');
+
+    const padded = [...words];
+    while (padded.length < targetWords) padded.push('...');
+    return padded.join(' ');
+}
+
 function isSummarizeCommand(text) {
     const body = String(text || '').trim().toLowerCase();
     return body.startsWith('!summarise') || body.startsWith('!summarize');
+}
+
+function isGeneralCommand(text) {
+    return String(text || '').trim().toLowerCase().startsWith('!general');
 }
 
 function messageIdOf(message) {
@@ -728,6 +755,75 @@ async function sendNtfy(summary) {
     }
 }
 
+async function answerGeneralQuestion(question) {
+    const prompt = String(question || '').trim();
+    if (!prompt) return 'Usage: !general <your question>';
+
+    const targetWordCount = extractRequestedWordCount(prompt);
+
+    const ai_response = await withTimeout(
+        groq.chat.completions.create({
+            model: process.env.GROQ_MODEL,
+            messages: [
+                {
+                    role: 'system',
+                    content: 'Answer the user question directly. Output only the answer text with no preamble, no labels, and no extra commentary.',
+                },
+                { role: 'user', content: prompt },
+            ],
+            temperature: 0.2,
+        }),
+        90_000,
+        'Groq API general'
+    );
+
+    let answer = sanitizeForWhatsApp(
+        String(ai_response?.choices?.[0]?.message?.content || '')
+            .replace(/<think>.*?<\/think>/gs, '')
+            .trim()
+    );
+
+    if (targetWordCount) {
+        const currentCount = getWordCount(answer);
+        if (currentCount !== targetWordCount) {
+            try {
+                const rewrite = await withTimeout(
+                    groq.chat.completions.create({
+                        model: process.env.GROQ_MODEL,
+                        messages: [
+                            {
+                                role: 'system',
+                                content: `Rewrite the answer so it contains exactly ${targetWordCount} words. Return only the rewritten answer text.`,
+                            },
+                            {
+                                role: 'user',
+                                content: answer,
+                            },
+                        ],
+                        temperature: 0,
+                    }),
+                    60_000,
+                    'Groq API general rewrite'
+                );
+
+                answer = sanitizeForWhatsApp(
+                    String(rewrite?.choices?.[0]?.message?.content || '')
+                        .replace(/<think>.*?<\/think>/gs, '')
+                        .trim()
+                );
+            } catch {
+                // Fall back to deterministic enforcement below.
+            }
+
+            if (getWordCount(answer) !== targetWordCount) {
+                answer = forceWordCount(answer, targetWordCount);
+            }
+        }
+    }
+
+    return answer;
+}
+
 function _attachMessageCreate(c) {
     c.on('message_create', async (msg) => {
         // Auto-summary: count incoming group messages (not from me)
@@ -813,6 +909,18 @@ function _attachMessageCreate(c) {
                 const chat = await withTimeout(msg.getChat(), 15_000, 'getChat fromMe');
                 emit('info', `[YOU → "${chat.name || chat.id.user}"]: ${msg.body}`);
             } catch { /* ignore */ }
+        }
+
+        if (isGeneralCommand(msg.body)) {
+            try {
+                const replyChat = await withTimeout(msg.getChat(), 15_000, 'getChat general reply');
+                const question = String(msg.body || '').trim().slice('!general'.length).trim();
+                const answer = await answerGeneralQuestion(question);
+                await withTimeout(replyChat.sendMessage(answer), 20_000, 'sendMessage general');
+            } catch (err) {
+                emit('error', '[GENERAL ERROR] ' + err.message);
+            }
+            return;
         }
 
         if ((msg.body.startsWith("!summarise") || msg.body.startsWith("!summarize")) && msg.fromMe) {
