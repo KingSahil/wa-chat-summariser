@@ -8,13 +8,30 @@ import SettingsModal from './components/SettingsModal';
 import ApiKeySetupModal from './components/ApiKeySetupModal';
 import TutorialModal from './components/TutorialModal';
 
+function generateSessionId() {
+    const c = globalThis.crypto;
+    if (c?.randomUUID) return c.randomUUID();
+
+    // Fallback for non-secure contexts (http) or older browsers.
+    // Format: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx
+    const bytes = c?.getRandomValues
+        ? c.getRandomValues(new Uint8Array(16))
+        : Array.from({ length: 16 }, () => Math.floor(Math.random() * 256));
+
+    bytes[6] = (bytes[6] & 0x0f) | 0x40;
+    bytes[8] = (bytes[8] & 0x3f) | 0x80;
+
+    const hex = [...bytes].map((b) => b.toString(16).padStart(2, '0')).join('');
+    return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+}
+
 export default function App() {
     // Initialise session ID synchronously so api.js and useSocket can use it
     // immediately without waiting for an async effect.
     const [sessionId] = useState(() => {
         let id = localStorage.getItem('wa_session_id');
         if (!id) {
-            id = crypto.randomUUID();
+            id = generateSessionId();
             localStorage.setItem('wa_session_id', id);
         }
         return id;
