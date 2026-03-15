@@ -3,7 +3,7 @@ import { X, Save, Eye, EyeOff } from 'lucide-react';
 import { api } from '../api';
 
 const FIELDS = [
-    { key: 'GROQ_API_KEY', label: 'Groq API Key', type: 'password' },
+    { key: 'GROQ_API_KEY', label: 'Groq API Key', type: 'text', sensitive: true },
     { key: 'GROQ_MODEL', label: 'Groq Model', type: 'text', placeholder: 'e.g. deepseek-r1-distill-llama-70b' },
     { key: 'NTFY_TOPIC', label: 'ntfy Topic URL', type: 'text', placeholder: 'https://ntfy.sh/your-topic' },
     { key: 'NTFY_TITLE', label: 'Notification Title', type: 'text' },
@@ -56,14 +56,23 @@ export default function SettingsModal({ onClose }) {
                             ) : (
                                 <div className="relative">
                                     <input
-                                        type={f.type === 'password' && !showKey ? 'password' : 'text'}
+                                        type={f.type}
+                                        name={f.key === 'GROQ_API_KEY' ? 'groq-api-key' : f.key.toLowerCase()}
                                         value={values[f.key] || ''}
                                         onChange={e => setValues(v => ({ ...v, [f.key]: e.target.value }))}
                                         placeholder={f.placeholder || ''}
+                                        autoComplete={f.key === 'GROQ_API_KEY' ? 'off' : undefined}
+                                        autoCorrect={f.key === 'GROQ_API_KEY' ? 'off' : undefined}
+                                        autoCapitalize={f.key === 'GROQ_API_KEY' ? 'none' : undefined}
+                                        spellCheck={f.key === 'GROQ_API_KEY' ? false : undefined}
+                                        data-lpignore={f.key === 'GROQ_API_KEY' ? 'true' : undefined}
+                                        data-1p-ignore={f.key === 'GROQ_API_KEY' ? 'true' : undefined}
+                                        style={f.sensitive && !showKey ? { WebkitTextSecurity: 'disc' } : undefined}
                                         className="w-full bg-[#2a3942] text-[#e9edef] text-sm rounded-lg px-3 py-2 outline-none border border-transparent focus:border-[#00a884] pr-8"
                                     />
-                                    {f.type === 'password' && (
+                                    {f.sensitive && (
                                         <button
+                                            type="button"
                                             onClick={() => setShowKey(s => !s)}
                                             className="absolute right-2 top-1/2 -translate-y-1/2 text-[#8696a0] hover:text-[#e9edef]"
                                         >

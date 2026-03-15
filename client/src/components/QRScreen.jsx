@@ -1,9 +1,9 @@
-import { QRCodeSVG } from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react';
 import { Smartphone, Wifi } from 'lucide-react';
 
 export default function QRScreen({ qr, status }) {
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-[#111b21] gap-8">
+        <div className="flex flex-col items-center justify-center h-screen bg-[#111b21] gap-8 px-4">
             {/* Header */}
             <div className="flex flex-col items-center gap-3">
                 <div className="w-16 h-16 rounded-full bg-[#00a884] flex items-center justify-center shadow-lg shadow-[#00a884]/30">
@@ -16,11 +16,17 @@ export default function QRScreen({ qr, status }) {
             </div>
 
             {/* QR Box */}
-            <div className="bg-white p-5 rounded-2xl shadow-2xl qr-fade">
+            <div className="bg-white p-5 rounded-2xl shadow-2xl qr-fade w-90 max-w-full flex flex-col items-center gap-3">
                 {qr ? (
-                    <QRCodeSVG value={qr} size={220} level="M" />
+                    <QRCodeCanvas
+                        value={qr}
+                        size={300}
+                        level="L"
+                        includeMargin
+                        className="w-75 h-75 [image-rendering:pixelated]"
+                    />
                 ) : (
-                    <div className="w-[220px] h-[220px] flex flex-col items-center justify-center gap-3 text-gray-400">
+                    <div className="w-75 h-75 flex flex-col items-center justify-center gap-3 text-gray-400">
                         <Wifi size={40} className="animate-pulse text-[#00a884]" />
                         <span className="text-sm text-gray-500">
                             {status === 'loading' ? 'Connecting...' : 'Waiting for QR...'}

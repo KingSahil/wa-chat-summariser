@@ -91,12 +91,13 @@ app.post('/api/summarise', async (req, res) => {
 
 app.post('/api/settings', async (req, res) => {
     try {
-        const allowed = ['GROQ_API_KEY', 'GROQ_MODEL', 'NTFY_TOPIC', 'NTFY_TITLE', 'NTFY_PRIORITY', 'DEFAULT_MESSAGE_LIMIT'];
+        const allowed = ['GROQ_API_KEY', 'GROQ_MODEL', 'NTFY_TOPIC', 'NTFY_TITLE', 'NTFY_PRIORITY', 'DEFAULT_MESSAGE_LIMIT', 'TUTORIAL_SEEN'];
         const envPath = path.join(__dirname, '.env');
         let content = await readFile(envPath, 'utf-8');
 
         for (const key of allowed) {
             if (req.body[key] !== undefined) {
+                if (key === 'GROQ_API_KEY' && String(req.body[key]).trim() === '***') continue;
                 const regex = new RegExp(`^${key}=.*$`, 'm');
                 const line = `${key}=${req.body[key]}`;
                 if (regex.test(content)) {
@@ -118,8 +119,11 @@ app.post('/api/settings', async (req, res) => {
 app.get('/api/settings', async (req, res) => {
     res.json({
         GROQ_API_KEY: process.env.GROQ_API_KEY ? '***' : '',
+        GROQ_API_KEY_SET: Boolean(process.env.GROQ_API_KEY),
         GROQ_MODEL: process.env.GROQ_MODEL || '',
         NTFY_TOPIC: process.env.NTFY_TOPIC || '',
+        NTFY_TOPIC_SET: Boolean(process.env.NTFY_TOPIC),
+        TUTORIAL_SEEN: process.env.TUTORIAL_SEEN === 'true',
         NTFY_TITLE: process.env.NTFY_TITLE || '',
         NTFY_PRIORITY: process.env.NTFY_PRIORITY || '',
         DEFAULT_MESSAGE_LIMIT: process.env.DEFAULT_MESSAGE_LIMIT || '50',

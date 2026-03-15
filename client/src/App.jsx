@@ -5,23 +5,60 @@ import QRScreen from './components/QRScreen';
 import Sidebar from './components/Sidebar';
 import ChatPanel from './components/ChatPanel';
 import SettingsModal from './components/SettingsModal';
+import ApiKeySetupModal from './components/ApiKeySetupModal';
+import TutorialModal from './components/TutorialModal';
 
 export default function App() {
     const { status, qr, logs, summary, setSummary } = useSocket();
     const [chats, setChats] = useState([]);
     const [selectedChat, setSelectedChat] = useState(null);
     const [showSettings, setShowSettings] = useState(false);
+    const [isCheckingApiKey, setIsCheckingApiKey] = useState(true);
+    const [hasApiKey, setHasApiKey] = useState(false);
+    const [hasNtfyTopic, setHasNtfyTopic] = useState(false);
+    const [hasSeenTutorial, setHasSeenTutorial] = useState(true);
+    const [showTutorial, setShowTutorial] = useState(false);
 
     useEffect(() => {
         if (status === 'connected') {
             api.get('/api/chats')
                 .then(data => setChats(Array.isArray(data) ? data : []))
                 .catch(() => {});
+
+            api.get('/api/settings')
+                .then(data => {
+                    setHasApiKey(Boolean(data?.GROQ_API_KEY_SET));
+                    setHasNtfyTopic(Boolean(data?.NTFY_TOPIC_SET));
+                    const seen = Boolean(data?.TUTORIAL_SEEN);
+                    setHasSeenTutorial(seen);
+                    if (Boolean(data?.GROQ_API_KEY_SET) && Boolean(data?.NTFY_TOPIC_SET) && !seen) {
+                        setShowTutorial(true);
+                    }
+                })
+                .catch(() => {
+                    setHasApiKey(false);
+                    setHasNtfyTopic(false);
+                })
+                .finally(() => {
+                    setIsCheckingApiKey(false);
+                });
+        } else {
+            setIsCheckingApiKey(true);
+            setHasApiKey(false);
+            setHasNtfyTopic(false);
         }
     }, [status]);
 
     if (status !== 'connected') {
         return <QRScreen qr={qr} status={status} />;
+    }
+
+    if (isCheckingApiKey) {
+        return (
+            <div className="flex items-center justify-center h-screen bg-[#0b141a] text-[#8696a0] text-sm">
+                Checking configuration...
+            </div>
+        );
     }
 
     function handleSelectChat(chat) {
@@ -48,6 +85,19 @@ export default function App() {
                 setSummary={setSummary}
             />
             {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
+            {(!hasApiKey || !hasNtfyTopic) && <ApiKeySetupModal onSaved={() => {
+                setHasApiKey(true);
+                setHasNtfyTopic(true);
+                if (!hasSeenTutorial) {
+                    setShowTutorial(true);
+                }
+            }} />
+            }
+            {showTutorial && <TutorialModal onClose={() => {
+                api.post('/api/settings', { TUTORIAL_SEEN: 'true' }).catch(() => {});
+                setHasSeenTutorial(true);
+                setShowTutorial(false);
+            }} />}
         </div>
     );
 }

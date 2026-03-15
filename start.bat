@@ -7,11 +7,20 @@ echo   WA Chat Summariser - Starting...
 echo ==========================================
 echo.
 
+:: Build frontend so server serves latest client/dist
+echo [0/3] Building frontend...
+call npm run build >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] Frontend build failed. Run "npm run build" manually to inspect errors.
+    pause
+    exit /b 1
+)
+
 :: Add cloudflared to PATH
 set PATH=%PATH%;C:\Program Files (x86)\cloudflared
 
 :: Kill any existing node/chrome and free port 3000
-echo [1/3] Freeing port 3000 and cleaning up...
+echo [1/4] Freeing port 3000 and cleaning up...
 taskkill /IM node.exe /F >nul 2>&1
 taskkill /IM chrome.exe /F >nul 2>&1
 for /f "tokens=5" %%a in ('netstat -aon ^| findstr ":3000 " ^| findstr "LISTENING"') do (
@@ -23,12 +32,12 @@ del /f /q "%~dp0.wwebjs_auth\session\SingletonSocket" >nul 2>&1
 timeout /t 1 /nobreak >nul
 
 :: Start backend silently in background (no new window)
-echo [2/3] Starting backend server...
+echo [2/4] Starting backend server...
 powershell -NoProfile -Command "Start-Process -FilePath 'node' -ArgumentList 'server.js' -WorkingDirectory '%~dp0' -NoNewWindow"
 timeout /t 3 /nobreak >nul
 
 :: Start quick tunnel, log stdout/stderr to separate temp files
-echo [3/3] Starting Cloudflare tunnel...
+echo [3/4] Starting Cloudflare tunnel...
 set CFOUT=%TEMP%\cf_out.log
 set CFERR=%TEMP%\cf_err.log
 if exist "%CFOUT%" del "%CFOUT%"

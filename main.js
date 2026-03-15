@@ -10,7 +10,22 @@ import systemPrompt from './generated-prompt.cjs';
 
 const { Client, LocalAuth } = pkg;
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+let groq = null;
+let groqKey = '';
+
+function getGroqClient() {
+    const apiKey = String(process.env.GROQ_API_KEY || '').trim();
+    if (!apiKey) {
+        throw new Error('GROQ_API_KEY is missing. Open Settings in the frontend and save your Groq API key.');
+    }
+
+    if (!groq || groqKey !== apiKey) {
+        groq = new Groq({ apiKey });
+        groqKey = apiKey;
+    }
+
+    return groq;
+}
 
 let _io = null;
 let _status = 'loading'; // 'loading' | 'qr' | 'connected'
@@ -329,7 +344,7 @@ async function describeImageForContext(media) {
 
     try {
         const response = await withTimeout(
-            groq.chat.completions.create({
+            getGroqClient().chat.completions.create({
                 model: VISION_MODEL,
                 messages: [
                     {
@@ -706,7 +721,7 @@ async function summariseChat(chat, limit, detailed = false) {
         : '';
 
     const ai_response = await withTimeout(
-        groq.chat.completions.create({
+        getGroqClient().chat.completions.create({
             model: process.env.GROQ_MODEL,
             messages: [
                 { role: 'system', content: detailPrefix + systemPrompt.trim() },
@@ -762,7 +777,7 @@ async function answerGeneralQuestion(question) {
     const targetWordCount = extractRequestedWordCount(prompt);
 
     const ai_response = await withTimeout(
-        groq.chat.completions.create({
+        getGroqClient().chat.completions.create({
             model: process.env.GROQ_MODEL,
             messages: [
                 {
@@ -788,7 +803,7 @@ async function answerGeneralQuestion(question) {
         if (currentCount !== targetWordCount) {
             try {
                 const rewrite = await withTimeout(
-                    groq.chat.completions.create({
+                    getGroqClient().chat.completions.create({
                         model: process.env.GROQ_MODEL,
                         messages: [
                             {
@@ -911,7 +926,7 @@ function _attachMessageCreate(c) {
             } catch { /* ignore */ }
         }
 
-        if (isGeneralCommand(msg.body)) {
+        if (isGeneralCommand(msg.body) && msg.fromMe) {
             try {
                 const replyChat = await withTimeout(msg.getChat(), 15_000, 'getChat general reply');
                 const question = String(msg.body || '').trim().slice('!general'.length).trim();
