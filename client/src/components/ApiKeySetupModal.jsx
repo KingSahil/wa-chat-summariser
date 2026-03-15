@@ -2,8 +2,12 @@ import { useState } from 'react';
 import { KeyRound, Bell, Eye, EyeOff, Save, ArrowRight } from 'lucide-react';
 import { api } from '../api';
 
-export default function ApiKeySetupModal({ onSaved }) {
-    const [step, setStep] = useState(1);
+export default function ApiKeySetupModal({ hasApiKey, hasNtfyTopic, onSaved }) {
+    const [step, setStep] = useState(() => {
+        if (!hasApiKey) return 1;
+        if (!hasNtfyTopic) return 2;
+        return 1;
+    });
 
     // Step 1 – Groq API key
     const [apiKey, setApiKey] = useState('');
@@ -24,9 +28,8 @@ export default function ApiKeySetupModal({ onSaved }) {
         setSaving(true);
         setError('');
         try {
-            const res = await api.post('/api/settings', { GROQ_API_KEY: trimmed });
-            const data = await res.json();
-            if (!res.ok) throw new Error(data.error || 'Failed to save API key');
+            const data = await api.post('/api/settings', { GROQ_API_KEY: trimmed });
+            if (data?.error) throw new Error(data.error || 'Failed to save API key');
             setStep(2);
         } catch (err) {
             setError(err.message || 'Failed to save API key');
@@ -45,9 +48,8 @@ export default function ApiKeySetupModal({ onSaved }) {
             setSaving(true);
             setError('');
             try {
-                const res = await api.post('/api/settings', { NTFY_TOPIC: trimmed });
-                const data = await res.json();
-                if (!res.ok) throw new Error(data.error || 'Failed to save ntfy topic');
+                const data = await api.post('/api/settings', { NTFY_TOPIC: trimmed });
+                if (data?.error) throw new Error(data.error || 'Failed to save ntfy topic');
             } catch (err) {
                 setError(err.message || 'Failed to save ntfy topic');
                 setSaving(false);
@@ -55,7 +57,7 @@ export default function ApiKeySetupModal({ onSaved }) {
             }
             setSaving(false);
         }
-        onSaved();
+        await onSaved();
     };
 
     return (
@@ -108,7 +110,7 @@ export default function ApiKeySetupModal({ onSaved }) {
                     ) : (
                         <>
                             <p className="text-sm text-[#8696a0]">
-                                Enter an <span className="text-[#e9edef] font-medium">ntfy</span> topic URL to receive push notifications when summaries are ready.
+                                Enter an <span className="text-[#e9edef] font-medium">ntfy</span> topic URL to receive push notifications when summaries are ready. You can skip this and add it later.
                             </p>
                             <input
                                 type="text"

@@ -11,7 +11,7 @@ const FIELDS = [
     { key: 'DEFAULT_MESSAGE_LIMIT', label: 'Default Message Limit', type: 'number' },
 ];
 
-export default function SettingsModal({ onClose }) {
+export default function SettingsModal({ onClose, onShowTutorial }) {
     const [values, setValues] = useState({});
     const [showKey, setShowKey] = useState(false);
     const [saving, setSaving] = useState(false);
@@ -101,25 +101,34 @@ export default function SettingsModal({ onClose }) {
 
                 {/* Footer */}
                 <div className="px-5 py-4 border-t border-[#2a3942] flex items-center justify-between gap-3">
-                    <button
-                        onClick={handleLogoutWhatsApp}
-                        disabled={loggingOut || saving}
-                        className="px-4 py-2 text-sm text-red-300 hover:text-red-200 rounded-lg hover:bg-red-500/10 disabled:opacity-50"
-                    >
-                        {loggingOut ? 'Logging out...' : 'Logout WhatsApp'}
-                    </button>
+                    <div className="flex items-center gap-2">
+                        <button
+                            onClick={handleLogoutWhatsApp}
+                            disabled={loggingOut || saving}
+                            className="px-4 py-2 text-sm text-red-300 hover:text-red-200 rounded-lg hover:bg-red-500/10 disabled:opacity-50"
+                        >
+                            {loggingOut ? 'Logging out...' : 'Logout WhatsApp'}
+                        </button>
+                        <button
+                            onClick={onShowTutorial}
+                            disabled={saving || loggingOut}
+                            className="px-4 py-2 text-sm text-[#8696a0] hover:text-[#e9edef] rounded-lg hover:bg-[#2a3942] disabled:opacity-50"
+                        >
+                            Show Tutorial
+                        </button>
+                    </div>
                     <div className="flex items-center gap-3">
-                    <button onClick={onClose} className="px-4 py-2 text-sm text-[#8696a0] hover:text-[#e9edef] rounded-lg hover:bg-[#2a3942]">
-                        Cancel
-                    </button>
-                    <button
-                        onClick={handleSave}
-                        disabled={saving}
-                        className="flex items-center gap-2 px-5 py-2 bg-[#00a884] hover:bg-[#00c49a] text-white text-sm rounded-lg font-medium transition-colors disabled:opacity-50"
-                    >
-                        <Save size={14} />
-                        {saved ? 'Saved!' : saving ? 'Saving...' : 'Save'}
-                    </button>
+                        <button onClick={onClose} className="px-4 py-2 text-sm text-[#8696a0] hover:text-[#e9edef] rounded-lg hover:bg-[#2a3942]">
+                            Cancel
+                        </button>
+                        <button
+                            onClick={handleSave}
+                            disabled={saving}
+                            className="flex items-center gap-2 px-5 py-2 bg-[#00a884] hover:bg-[#00c49a] text-white text-sm rounded-lg font-medium transition-colors disabled:opacity-50"
+                        >
+                            <Save size={14} />
+                            {saved ? 'Saved!' : saving ? 'Saving...' : 'Save'}
+                        </button>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,20 @@
+{
+  "chats": {},
+  "chatDirectory": {
+    "status@broadcast": {
+      "chatId": "status@broadcast",
+      "chatName": "status",
+      "isGroup": false,
+      "phones": [
+        "918847279862",
+        "918360054278",
+        "917814907388",
+        "918283969047"
+      ],
+      "updatedAt": "2026-03-15T11:17:32.659Z"
+    }
+  },
+  "chatNames": {
+    "status": "status@broadcast"
+  }
+}

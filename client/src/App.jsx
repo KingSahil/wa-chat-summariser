@@ -44,8 +44,29 @@ export default function App() {
     const [isCheckingApiKey, setIsCheckingApiKey] = useState(true);
     const [hasApiKey, setHasApiKey] = useState(false);
     const [hasNtfyTopic, setHasNtfyTopic] = useState(false);
-    const [hasSeenTutorial, setHasSeenTutorial] = useState(true);
+    const [hasSeenTutorial, setHasSeenTutorial] = useState(false);
     const [showTutorial, setShowTutorial] = useState(false);
+
+    async function refreshSetupState() {
+        try {
+            const data = await api.get('/api/settings');
+            const apiKeySet = Boolean(data?.GROQ_API_KEY_SET);
+            const ntfyTopicSet = Boolean(data?.NTFY_TOPIC_SET);
+            const seen = Boolean(data?.TUTORIAL_SEEN);
+
+            setHasApiKey(apiKeySet);
+            setHasNtfyTopic(ntfyTopicSet);
+            setHasSeenTutorial(seen);
+            setShowTutorial(apiKeySet && !seen);
+        } catch {
+            setHasApiKey(false);
+            setHasNtfyTopic(false);
+            setHasSeenTutorial(false);
+            setShowTutorial(false);
+        } finally {
+            setIsCheckingApiKey(false);
+        }
+    }
 
     useEffect(() => {
         if (status === 'connected') {
@@ -53,27 +74,13 @@ export default function App() {
                 .then(data => setChats(Array.isArray(data) ? data : []))
                 .catch(() => {});
 
-            api.get('/api/settings')
-                .then(data => {
-                    setHasApiKey(Boolean(data?.GROQ_API_KEY_SET));
-                    setHasNtfyTopic(Boolean(data?.NTFY_TOPIC_SET));
-                    const seen = Boolean(data?.TUTORIAL_SEEN);
-                    setHasSeenTutorial(seen);
-                    if (Boolean(data?.GROQ_API_KEY_SET) && Boolean(data?.NTFY_TOPIC_SET) && !seen) {
-                        setShowTutorial(true);
-                    }
-                })
-                .catch(() => {
-                    setHasApiKey(false);
-                    setHasNtfyTopic(false);
-                })
-                .finally(() => {
-                    setIsCheckingApiKey(false);
-                });
+            refreshSetupState();
         } else {
             setIsCheckingApiKey(true);
             setHasApiKey(false);
             setHasNtfyTopic(false);
+            setHasSeenTutorial(false);
+            setShowTutorial(false);
         }
     }, [status]);
 
@@ -112,14 +119,18 @@ export default function App() {
                 summary={summary}
                 setSummary={setSummary}
             />
-            {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
-            {(!hasApiKey || !hasNtfyTopic) && <ApiKeySetupModal onSaved={() => {
-                setHasApiKey(true);
-                setHasNtfyTopic(true);
-                if (!hasSeenTutorial) {
+            {showSettings && <SettingsModal
+                onClose={() => setShowSettings(false)}
+                onShowTutorial={() => {
+                    setShowSettings(false);
                     setShowTutorial(true);
-                }
-            }} />
+                }}
+            />}
+            {(!hasApiKey || !hasNtfyTopic) && <ApiKeySetupModal
+                hasApiKey={hasApiKey}
+                hasNtfyTopic={hasNtfyTopic}
+                onSaved={refreshSetupState}
+            />
             }
             {showTutorial && <TutorialModal onClose={() => {
                 api.post('/api/settings', { TUTORIAL_SEEN: 'true' }).catch(() => {});

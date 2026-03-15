@@ -122,6 +122,7 @@ export class WaUserSession {
         this.client              = null;
         this.watchdogTimer       = null;
         this.unreadSyncTimer     = null;
+        this.restartTimer        = null;
         this.restarting          = false;
         this.unreadSummaryBuckets = new Map();
         this.runtimeFetchCache   = new Map();
@@ -148,7 +149,7 @@ export class WaUserSession {
             GROQ_MODEL:            this.getSetting('GROQ_MODEL'),
             NTFY_TOPIC:            this.getSetting('NTFY_TOPIC'),
             NTFY_TOPIC_SET:        Boolean(this.getSetting('NTFY_TOPIC')),
-            TUTORIAL_SEEN:         this.getSetting('TUTORIAL_SEEN') === 'true',
+            TUTORIAL_SEEN:         this.userSettings.TUTORIAL_SEEN === 'true',
             NTFY_TITLE:            this.getSetting('NTFY_TITLE'),
             NTFY_PRIORITY:         this.getSetting('NTFY_PRIORITY'),
             DEFAULT_MESSAGE_LIMIT: this.getSetting('DEFAULT_MESSAGE_LIMIT', '50'),
@@ -175,6 +176,14 @@ export class WaUserSession {
                 this.userSettings[key] = updates[key];
             }
         }
+        await mkdir(dirname(this.settingsFile), { recursive: true });
+        await writeFile(this.settingsFile, JSON.stringify(this.userSettings, null, 2), 'utf-8');
+    }
+
+    async resetOnboardingSettings() {
+        delete this.userSettings.GROQ_API_KEY;
+        delete this.userSettings.NTFY_TOPIC;
+        delete this.userSettings.TUTORIAL_SEEN;
         await mkdir(dirname(this.settingsFile), { recursive: true });
         await writeFile(this.settingsFile, JSON.stringify(this.userSettings, null, 2), 'utf-8');
     }
@@ -456,30 +465,53 @@ export class WaUserSession {
         this.unreadSummaryBuckets.delete(chatId);
     }
 
+    scheduleRestart(source = 'INIT', delayMs = 10_000) {
+        if (this.restarting || this.restartTimer) return;
+        this.restartTimer = setTimeout(() => {
+            this.restartTimer = null;
+            this.restartClient(source);
+        }, delayMs);
+    }
+
+    beginClientInitialisation(source = 'INIT') {
+        this.cleanupChromiumSingletonFiles().finally(() =>
+            this.client.initialize().catch(err => {
+                const detail = isTargetClosedError(err)
+                    ? `${err.message} — Chromium navigated during WhatsApp boot`
+                    : err.message;
+                this.emit('error', `[${source}] initialize() failed: ${detail} — retrying in 10 s...`);
+                this.scheduleRestart(source, 10_000);
+            })
+        );
+    }
+
     // ── Client restart ────────────────────────────────────────────────────────
-    async restartClient() {
+    async restartClient(source = 'WATCHDOG') {
         if (this.restarting) return;
         this.restarting = true;
+        if (this.restartTimer) {
+            clearTimeout(this.restartTimer);
+            this.restartTimer = null;
+        }
         this.status = 'loading';
-        this.emit('error', '[WATCHDOG] Destroying stale client...');
+        this.emit('error', `[${source}] Destroying stale client...`);
+
+        if (this.watchdogTimer) { clearInterval(this.watchdogTimer); this.watchdogTimer = null; }
+        if (this.unreadSyncTimer) { clearInterval(this.unreadSyncTimer); this.unreadSyncTimer = null; }
 
         const browserProc = this.client?.pupBrowser?.process();
         if (browserProc && !browserProc.killed) {
             try { browserProc.kill(); } catch {}
         }
         try { await this.client.destroy(); } catch {}
+        this.client = null;
         await this.cleanupChromiumSingletonFiles();
 
         setTimeout(() => {
             this.restarting = false;
-            this.emit('info', '[WATCHDOG] Re-initialising WhatsApp client...');
+            this.emit('info', `[${source}] Re-initialising WhatsApp client...`);
             this.client = this.createAndBindClient();
-            this.cleanupChromiumSingletonFiles().finally(() =>
-                this.client.initialize().catch(err => {
-                    this.emit('error', `[INIT] initialize() failed: ${err.message} — retrying in 10 s...`);
-                    setTimeout(() => this.restartClient(), 10_000);
-                })
-            );
+            this.beginClientInitialisation('INIT');
         }, 5_000);
     }
 
@@ -899,12 +931,7 @@ export class WaUserSession {
     async start() {
         await this.loadSettings();
         this.client = this.createAndBindClient();
-        this.cleanupChromiumSingletonFiles().finally(() =>
-            this.client.initialize().catch(err => {
-                this.emit('error', `[INIT] initialize() failed on startup: ${err.message} — retrying in 10 s...`);
-                setTimeout(() => this.restartClient(), 10_000);
-            })
-        );
+        this.beginClientInitialisation('INIT');
     }
 
     async logout() {
@@ -913,6 +940,7 @@ export class WaUserSession {
 
         if (this.watchdogTimer)   { clearInterval(this.watchdogTimer);   this.watchdogTimer   = null; }
         if (this.unreadSyncTimer) { clearInterval(this.unreadSyncTimer); this.unreadSyncTimer = null; }
+        if (this.restartTimer)    { clearTimeout(this.restartTimer);      this.restartTimer    = null; }
 
         let didLogoutGracefully = false;
         try {
@@ -933,6 +961,9 @@ export class WaUserSession {
         try { await this.clearAuthStorageWithRetries(); }
         catch (err) { this.emit('error', `[LOGOUT] Failed to clear auth storage: ${err.message}`); }
 
+        try { await this.resetOnboardingSettings(); }
+        catch (err) { this.emit('error', `[LOGOUT] Failed to reset onboarding settings: ${err.message}`); }
+
         this.unreadSummaryBuckets.clear();
         this.runtimeFetchCache.clear();
         await this.cleanupChromiumSingletonFiles();
@@ -943,11 +974,6 @@ export class WaUserSession {
         await sleep(1500);
         this.restarting = false;
         this.client = this.createAndBindClient();
-        this.cleanupChromiumSingletonFiles().finally(() =>
-            this.client.initialize().catch(err => {
-                this.emit('error', `[INIT] initialize() failed after logout: ${err.message} — retrying in 10 s...`);
-                setTimeout(() => this.restartClient(), 10_000);
-            })
-        );
+        this.beginClientInitialisation('LOGOUT');
     }
 }
