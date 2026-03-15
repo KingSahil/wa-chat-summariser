@@ -5,8 +5,7 @@ import { Server } from 'socket.io';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { writeFile, readFile } from 'fs/promises';
-import { init, client, summariseChat, sendNtfy, getStatus, resetUnreadCount } from './main.js';
+import { initSessionManager, getOrCreateSession, getSession } from './SessionManager.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -31,17 +30,54 @@ app.use(express.json());
 const clientDist = path.join(__dirname, 'client', 'dist');
 app.use(express.static(clientDist));
 
+// ── Session middleware ─────────────────────────────────────────────────────────
+// Validates X-Session-Id header and attaches the session to req.session.
+function isValidSessionId(id) {
+    return typeof id === 'string'
+        && id.length >= 8
+        && id.length <= 64
+        && /^[a-zA-Z0-9_-]+$/.test(id);
+}
+
+function requireSession(req, res, next) {
+    const sessionId = req.headers['x-session-id'];
+    if (!isValidSessionId(sessionId)) {
+        return res.status(400).json({ error: 'Missing or invalid X-Session-Id header' });
+    }
+    const session = getSession(sessionId);
+    if (!session) {
+        return res.status(404).json({ error: 'Session not found. Reconnect to create one.' });
+    }
+    req.session = session;
+    next();
+}
+
 // ── REST API ──────────────────────────────────────────────────────────────────
 
-app.get('/api/status', (req, res) => {
-    res.json(getStatus());
+// Register / ensure a session exists.
+// Called by the frontend on first load with a client-generated UUID.
+app.post('/api/sessions', async (req, res) => {
+    try {
+        const { sessionId } = req.body || {};
+        if (!isValidSessionId(sessionId)) {
+            return res.status(400).json({ error: 'Invalid sessionId' });
+        }
+        const { isNew } = await getOrCreateSession(sessionId);
+        res.json({ sessionId, isNew });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
 });
 
-app.get('/api/chats', async (req, res) => {
+app.get('/api/status', requireSession, (req, res) => {
+    res.json(req.session.getStatus());
+});
+
+app.get('/api/chats', requireSession, async (req, res) => {
     try {
-        const { status } = getStatus();
+        const { status } = req.session.getStatus();
         if (status !== 'connected') return res.status(503).json({ error: 'WhatsApp not connected yet' });
-        const chats = await client.getChats();
+        const chats = await req.session.client.getChats();
         const payload = chats.slice(0, 100).map(c => ({
             id: c.id._serialized,
             name: c.name || c.id.user,
@@ -56,78 +92,57 @@ app.get('/api/chats', async (req, res) => {
     }
 });
 
-app.post('/api/chats/:id/read', async (req, res) => {
+app.post('/api/chats/:id/read', requireSession, async (req, res) => {
     try {
-        const { status } = getStatus();
+        const { status } = req.session.getStatus();
         if (status !== 'connected') return res.status(503).json({ error: 'WhatsApp not connected yet' });
-        const chats = await client.getChats();
+        const chats = await req.session.client.getChats();
         const chat = chats.find(c => c.id._serialized === req.params.id);
         if (!chat) return res.status(404).json({ error: 'Chat not found' });
         await chat.sendSeen();
-        resetUnreadCount(req.params.id);
+        req.session.resetUnreadCount(req.params.id);
         res.json({ ok: true });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 });
 
-app.post('/api/summarise', async (req, res) => {
+app.post('/api/summarise', requireSession, async (req, res) => {
     try {
         const { chatId, limit = 50 } = req.body;
         if (!chatId) return res.status(400).json({ error: 'chatId required' });
-
-        const chats = await client.getChats();
+        const chats = await req.session.client.getChats();
         const chat = chats.find(c => c.id._serialized === chatId);
         if (!chat) return res.status(404).json({ error: 'Chat not found' });
-
-        const summary = await summariseChat(chat, parseInt(limit));
-        await sendNtfy(summary);
-        io.emit('summary_done', summary);
+        const summary = await req.session.summariseChat(chat, parseInt(limit));
+        await req.session.sendNtfy(summary);
+        io.to(req.session.sessionId).emit('summary_done', summary);
         res.json({ summary });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 });
 
-app.post('/api/settings', async (req, res) => {
+app.post('/api/logout', requireSession, async (req, res) => {
     try {
-        const allowed = ['GROQ_API_KEY', 'GROQ_MODEL', 'NTFY_TOPIC', 'NTFY_TITLE', 'NTFY_PRIORITY', 'DEFAULT_MESSAGE_LIMIT', 'TUTORIAL_SEEN'];
-        const envPath = path.join(__dirname, '.env');
-        let content = await readFile(envPath, 'utf-8');
-
-        for (const key of allowed) {
-            if (req.body[key] !== undefined) {
-                if (key === 'GROQ_API_KEY' && String(req.body[key]).trim() === '***') continue;
-                const regex = new RegExp(`^${key}=.*$`, 'm');
-                const line = `${key}=${req.body[key]}`;
-                if (regex.test(content)) {
-                    content = content.replace(regex, line);
-                } else {
-                    content += `\n${line}`;
-                }
-                process.env[key] = req.body[key];
-            }
-        }
-
-        await writeFile(envPath, content, 'utf-8');
+        await req.session.logout();
         res.json({ ok: true });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 });
 
-app.get('/api/settings', async (req, res) => {
-    res.json({
-        GROQ_API_KEY: process.env.GROQ_API_KEY ? '***' : '',
-        GROQ_API_KEY_SET: Boolean(process.env.GROQ_API_KEY),
-        GROQ_MODEL: process.env.GROQ_MODEL || '',
-        NTFY_TOPIC: process.env.NTFY_TOPIC || '',
-        NTFY_TOPIC_SET: Boolean(process.env.NTFY_TOPIC),
-        TUTORIAL_SEEN: process.env.TUTORIAL_SEEN === 'true',
-        NTFY_TITLE: process.env.NTFY_TITLE || '',
-        NTFY_PRIORITY: process.env.NTFY_PRIORITY || '',
-        DEFAULT_MESSAGE_LIMIT: process.env.DEFAULT_MESSAGE_LIMIT || '50',
-    });
+app.get('/api/settings', requireSession, (req, res) => {
+    res.json(req.session.getSettingsForApi());
+});
+
+app.post('/api/settings', requireSession, async (req, res) => {
+    try {
+        await req.session.saveSettings(req.body);
+        res.json({ ok: true });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // Catch-all: serve React app
@@ -136,9 +151,20 @@ app.use((req, res) => {
 });
 
 // ── Socket.io ─────────────────────────────────────────────────────────────────
-io.on('connection', socket => {
-    console.log('[WS] Client connected:', socket.id);
-    const { status, qr } = getStatus();
+// Each socket joins its own session room; events are scoped per-user.
+io.on('connection', async (socket) => {
+    const sessionId = socket.handshake.auth?.sessionId;
+    if (!isValidSessionId(sessionId)) {
+        socket.disconnect();
+        return;
+    }
+
+    socket.join(sessionId);
+    console.log(`[WS] Socket ${socket.id} joined session ${sessionId.slice(0, 8)}...`);
+
+    // Create session if it doesn't exist yet (first-time connection).
+    const { session } = await getOrCreateSession(sessionId);
+    const { status, qr } = session.getStatus();
     socket.emit('status', status);
     if (status === 'qr' && qr) socket.emit('qr', qr);
     if (status === 'connected') socket.emit('ready');
@@ -161,4 +187,4 @@ httpServer.on('error', (err) => {
     }
 });
 
-init(io);
+initSessionManager(io).catch(err => console.error('[SERVER] Failed to init session manager:', err));

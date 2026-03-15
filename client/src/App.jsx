@@ -9,7 +9,18 @@ import ApiKeySetupModal from './components/ApiKeySetupModal';
 import TutorialModal from './components/TutorialModal';
 
 export default function App() {
-    const { status, qr, logs, summary, setSummary } = useSocket();
+    // Initialise session ID synchronously so api.js and useSocket can use it
+    // immediately without waiting for an async effect.
+    const [sessionId] = useState(() => {
+        let id = localStorage.getItem('wa_session_id');
+        if (!id) {
+            id = crypto.randomUUID();
+            localStorage.setItem('wa_session_id', id);
+        }
+        return id;
+    });
+
+    const { status, qr, logs, summary, setSummary } = useSocket(sessionId);
     const [chats, setChats] = useState([]);
     const [selectedChat, setSelectedChat] = useState(null);
     const [showSettings, setShowSettings] = useState(false);

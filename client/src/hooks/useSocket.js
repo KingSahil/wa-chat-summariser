@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 // In production (Vercel): VITE_BACKEND_URL = your Cloudflare tunnel URL
 const BACKEND = import.meta.env.VITE_BACKEND_URL || '';
 
-export function useSocket() {
+export function useSocket(sessionId) {
     const [status, setStatus] = useState('loading');
     const [qr, setQr] = useState(null);
     const [logs, setLogs] = useState([]);
@@ -13,7 +13,8 @@ export function useSocket() {
     const socketRef = useRef(null);
 
     useEffect(() => {
-        const socket = io(BACKEND, { path: '/socket.io' });
+        if (!sessionId) return;
+        const socket = io(BACKEND, { path: '/socket.io', auth: { sessionId } });
         socketRef.current = socket;
 
         socket.on('status', s => setStatus(s));

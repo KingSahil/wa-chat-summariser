@@ -16,6 +16,7 @@ export default function SettingsModal({ onClose }) {
     const [showKey, setShowKey] = useState(false);
     const [saving, setSaving] = useState(false);
     const [saved, setSaved] = useState(false);
+    const [loggingOut, setLoggingOut] = useState(false);
 
     useEffect(() => {
         api.get('/api/settings').then(d => setValues(d));
@@ -27,6 +28,19 @@ export default function SettingsModal({ onClose }) {
         setSaving(false);
         setSaved(true);
         setTimeout(() => setSaved(false), 2000);
+    };
+
+    const handleLogoutWhatsApp = async () => {
+        const confirmed = window.confirm('Logout this connected WhatsApp session? You will need to scan QR again.');
+        if (!confirmed) return;
+
+        try {
+            setLoggingOut(true);
+            await api.post('/api/logout', {});
+            onClose();
+        } finally {
+            setLoggingOut(false);
+        }
     };
 
     return (
@@ -86,7 +100,15 @@ export default function SettingsModal({ onClose }) {
                 </div>
 
                 {/* Footer */}
-                <div className="px-5 py-4 border-t border-[#2a3942] flex justify-end gap-3">
+                <div className="px-5 py-4 border-t border-[#2a3942] flex items-center justify-between gap-3">
+                    <button
+                        onClick={handleLogoutWhatsApp}
+                        disabled={loggingOut || saving}
+                        className="px-4 py-2 text-sm text-red-300 hover:text-red-200 rounded-lg hover:bg-red-500/10 disabled:opacity-50"
+                    >
+                        {loggingOut ? 'Logging out...' : 'Logout WhatsApp'}
+                    </button>
+                    <div className="flex items-center gap-3">
                     <button onClick={onClose} className="px-4 py-2 text-sm text-[#8696a0] hover:text-[#e9edef] rounded-lg hover:bg-[#2a3942]">
                         Cancel
                     </button>
@@ -98,6 +120,7 @@ export default function SettingsModal({ onClose }) {
                         <Save size={14} />
                         {saved ? 'Saved!' : saving ? 'Saving...' : 'Save'}
                     </button>
+                    </div>
                 </div>
             </div>
         </div>

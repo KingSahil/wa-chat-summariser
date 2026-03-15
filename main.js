@@ -3,7 +3,7 @@ import pkg from 'whatsapp-web.js';
 import qrcode from 'qrcode-terminal';
 import Groq from 'groq-sdk';
 import axios from 'axios';
-import { readFile, writeFile, unlink, mkdir, appendFile } from 'fs/promises';
+import { readFile, writeFile, unlink, mkdir, appendFile, rm } from 'fs/promises';
 import { join, dirname } from 'path';
 // systemPrompt is inlined by esbuild from generated-prompt.cjs (built by build.js)
 import systemPrompt from './generated-prompt.cjs';
@@ -44,6 +44,13 @@ const MAX_MEDIA_ANALYSIS_PER_SUMMARY = parseInt(process.env.MAX_MEDIA_ANALYSIS_P
 const ENABLE_MEDIA_ANALYSIS = (process.env.ENABLE_MEDIA_ANALYSIS || 'true').toLowerCase() !== 'false';
 const VISION_MODEL = process.env.GROQ_VISION_MODEL || '';
 const MAX_VISION_BYTES = parseInt(process.env.MEDIA_VISION_MAX_BYTES || '3000000');
+const ALLOW_PUBLIC_COMMANDS = (process.env.ALLOW_PUBLIC_COMMANDS || 'false').toLowerCase() === 'true';
+const ALLOWED_COMMAND_PHONES = new Set(
+    String(process.env.ALLOWED_COMMAND_PHONES || '')
+        .split(',')
+        .map((v) => v.trim())
+        .filter(Boolean)
+);
 const SUPPORTED_VISION_MIME_TYPES = new Set([
     'image/jpeg',
     'image/jpg',
@@ -77,6 +84,49 @@ const UNREAD_SYNC_INTERVAL = 30 * 1000;
 let _watchdogTimer = null;
 let _restarting    = false;
 let _unreadSyncTimer = null;
+
+async function cleanupChromiumSingletonFiles() {
+    const sessionDir = join(process.cwd(), '.wwebjs_auth', 'session');
+    const singletonFiles = ['SingletonLock', 'SingletonSocket', 'SingletonCookie'];
+
+    for (const file of singletonFiles) {
+        try {
+            await unlink(join(sessionDir, file));
+        } catch {
+            // Ignore missing/locked files and continue cleanup attempts.
+        }
+    }
+}
+
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function isRetriableAuthCleanupError(err) {
+    const code = String(err?.code || '').toUpperCase();
+    return code === 'EBUSY' || code === 'EPERM' || code === 'ENOTEMPTY';
+}
+
+async function clearAuthStorageWithRetries(maxAttempts = 10) {
+    const authDir = join(process.cwd(), '.wwebjs_auth');
+    let lastError = null;
+
+    for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+        try {
+            await rm(authDir, { recursive: true, force: true });
+            return;
+        } catch (err) {
+            lastError = err;
+            if (!isRetriableAuthCleanupError(err) || attempt === maxAttempts) {
+                throw err;
+            }
+            // Backoff gives Chromium/SQLite time to release file handles on Windows.
+            await sleep(300 * attempt);
+        }
+    }
+
+    if (lastError) throw lastError;
+}
 
 function sanitizeForWhatsApp(text) {
     if (!text) return '';
@@ -121,6 +171,11 @@ function forceWordCount(text, targetWords) {
     const padded = [...words];
     while (padded.length < targetWords) padded.push('...');
     return padded.join(' ');
+}
+
+function isTargetClosedError(err) {
+    const msg = String(err?.message || '').toLowerCase();
+    return msg.includes('target closed') || msg.includes('execution context was destroyed');
 }
 
 function isSummarizeCommand(text) {
@@ -173,6 +228,17 @@ function extractPhoneFromJid(jid) {
     const raw = String(jid || '');
     const match = raw.match(/(\d{6,15})/);
     return match ? match[1] : '';
+}
+
+function isCommandAllowedForMessage(msg) {
+    if (msg?.fromMe) return true;
+    if (!ALLOW_PUBLIC_COMMANDS) return false;
+
+    // If no whitelist is configured, allow everyone when public mode is on.
+    if (ALLOWED_COMMAND_PHONES.size === 0) return true;
+
+    const authorPhone = extractPhoneFromJid(msg?.author || msg?.from);
+    return authorPhone ? ALLOWED_COMMAND_PHONES.has(authorPhone) : false;
 }
 
 async function loadSummaryMemory() {
@@ -437,6 +503,7 @@ async function syncUnreadSummaryBuckets() {
             }
         }
     } catch (err) {
+        if (_restarting || isTargetClosedError(err)) return;
         emit('error', `[AUTO] Failed syncing unread counts: ${err.message}`);
     }
 }
@@ -463,10 +530,9 @@ async function restartClient() {
 
     try { await client.destroy(); } catch {}
 
-    // Remove Chromium's SingletonLock so a fresh launch never thinks the old
-    // instance is still alive (handles the case where kill() was async).
-    const lockFile = join(process.cwd(), '.wwebjs_auth', 'session', 'SingletonLock');
-    try { await unlink(lockFile); } catch {}
+    // Remove Chromium singleton artifacts so a fresh launch doesn't think an
+    // old browser instance is still active.
+    await cleanupChromiumSingletonFiles();
 
     setTimeout(() => {
         _restarting = false;
@@ -475,12 +541,12 @@ async function restartClient() {
         // destroyed instance leaves stale Puppeteer execution contexts that
         // cause "Execution context was destroyed" ProtocolErrors on inject().
         client = createAndBindClient();
-        client.initialize().catch(err => {
+        cleanupChromiumSingletonFiles().finally(() => client.initialize().catch(err => {
             // initialize() can reject if the page navigates mid-inject;
             // schedule another full restart instead of crashing.
             emit('error', `[INIT] initialize() failed: ${err.message} — retrying in 10 s...`);
             setTimeout(() => restartClient(), 10_000);
-        });
+        }));
     }, 5_000);
 }
 
@@ -926,7 +992,7 @@ function _attachMessageCreate(c) {
             } catch { /* ignore */ }
         }
 
-        if (isGeneralCommand(msg.body) && msg.fromMe) {
+        if (isGeneralCommand(msg.body) && isCommandAllowedForMessage(msg)) {
             try {
                 const replyChat = await withTimeout(msg.getChat(), 15_000, 'getChat general reply');
                 const question = String(msg.body || '').trim().slice('!general'.length).trim();
@@ -938,7 +1004,7 @@ function _attachMessageCreate(c) {
             return;
         }
 
-        if ((msg.body.startsWith("!summarise") || msg.body.startsWith("!summarize")) && msg.fromMe) {
+        if ((msg.body.startsWith("!summarise") || msg.body.startsWith("!summarize")) && isCommandAllowedForMessage(msg)) {
             const raw = msg.body;
             const detailed = raw.trimEnd().toLowerCase().endsWith(' detail');
             const stripped = detailed ? raw.trimEnd().slice(0, -7).trimEnd() : raw; // remove trailing ' detail'
@@ -996,10 +1062,71 @@ function _attachMessageCreate(c) {
 
 export function init(io) {
     _io = io;
-    client.initialize().catch(err => {
+    cleanupChromiumSingletonFiles().finally(() => client.initialize().catch(err => {
         emit('error', `[INIT] initialize() failed on startup: ${err.message} — retrying in 10 s...`);
         setTimeout(() => restartClient(), 10_000);
-    });
+    }));
+}
+
+export async function logoutWhatsAppSession() {
+    emit('info', '[LOGOUT] Logging out current WhatsApp session...');
+    _restarting = true;
+
+    if (_watchdogTimer) {
+        clearInterval(_watchdogTimer);
+        _watchdogTimer = null;
+    }
+    if (_unreadSyncTimer) {
+        clearInterval(_unreadSyncTimer);
+        _unreadSyncTimer = null;
+    }
+
+    // Try graceful WhatsApp unlink first so it disappears from Linked Devices.
+    // Only force-kill Chromium if graceful logout fails.
+    let didLogoutGracefully = false;
+    try {
+        await withTimeout(client.logout(), 20_000, 'logout');
+        didLogoutGracefully = true;
+    } catch (err) {
+        emit('error', `[LOGOUT] logout() failed: ${err.message}`);
+    }
+
+    if (!didLogoutGracefully) {
+        const browserProc = client.pupBrowser?.process();
+        if (browserProc && !browserProc.killed) {
+            try { browserProc.kill(); } catch {}
+        }
+    }
+
+    try {
+        await withTimeout(client.destroy(), 20_000, 'destroy after logout');
+    } catch (err) {
+        emit('error', `[LOGOUT] destroy() failed: ${err.message}`);
+    }
+
+    // Remove persisted LocalAuth data so next init always starts logged out.
+    try {
+        await clearAuthStorageWithRetries();
+    } catch (err) {
+        emit('error', `[LOGOUT] Failed to clear auth storage: ${err.message}`);
+    }
+
+    unreadSummaryBuckets.clear();
+    runtimeFetchCache.clear();
+    await cleanupChromiumSingletonFiles();
+    _status = 'loading';
+    _qr = null;
+    if (_io) _io.emit('status', 'loading');
+
+    // Give Chromium a short grace period to fully release file handles.
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    client = createAndBindClient();
+    cleanupChromiumSingletonFiles().finally(() => client.initialize().catch((err) => {
+        emit('error', `[LOGOUT] initialize() failed after logout: ${err.message} — retrying in 10 s...`);
+        setTimeout(() => restartClient(), 10_000);
+    }));
+    _restarting = false;
 }
 
 // Safety net: prevent any stray unhandled rejections from crashing the process.
